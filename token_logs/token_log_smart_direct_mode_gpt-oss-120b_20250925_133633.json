@@ -1,0 +1,87 @@
+{
+  "session_info": {
+    "session_name": "smart_direct_mode_gpt-oss-120b_20250925_133633",
+    "start_time": "2025-09-25T13:36:33.244036",
+    "last_update": "2025-09-25T13:37:08.501913",
+    "duration_seconds": 35.25787687301636
+  },
+  "summary": {
+    "total_calls": 2,
+    "total_prompt_tokens": 21470,
+    "total_completion_tokens": 3284,
+    "total_tokens": 24754,
+    "total_cost": 0.0
+  },
+  "categories": {
+    "RAG分析": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "一致性检查": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "向量生成": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "ASCET数据提取": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "基础分析": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "其他API调用": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    }
+  },
+  "recent_calls": [
+    {
+      "call_number": 1,
+      "timestamp": "2025-09-25T13:37:01.613251",
+      "api_name": "RAG增强分析",
+      "api_type": "gpt-oss-120b",
+      "category": "RAG增强分析",
+      "context": "位置变量映射错误检测",
+      "prompt_tokens": 10735,
+      "completion_tokens": 1764,
+      "total_tokens": 12499,
+      "cost": 0.174986,
+      "session_time": 28.36921453475952
+    },
+    {
+      "call_number": 2,
+      "timestamp": "2025-09-25T13:37:08.501773",
+      "api_name": "RAG增强分析",
+      "api_type": "gpt-oss-120b",
+      "category": "RAG增强分析",
+      "context": "位置变量映射错误检测",
+      "prompt_tokens": 10735,
+      "completion_tokens": 1520,
+      "total_tokens": 12255,
+      "cost": 0.17157,
+      "session_time": 35.257737159729004
+    }
+  ]
+}

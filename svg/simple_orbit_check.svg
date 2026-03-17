@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" fill="white"/>
+  
+  <!-- 椭圆轨道 -->
+  <ellipse cx="128" cy="128" rx="104" ry="44"
+           transform="rotate(-24 128 128)"
+           fill="none" stroke="#60A5FA" stroke-width="10"/>
+  
+  <!-- 主环 -->
+  <circle cx="128" cy="128" r="74"
+          fill="none" stroke="#2563EB" stroke-width="16"/>
+  
+  <!-- 对勾 -->
+  <path d="M100 128 L120 148 L160 108"
+        fill="none" stroke="#16A34A" stroke-width="14"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- 卫星点 -->
+  <circle cx="206" cy="62" r="8" fill="#2563EB"/>
+  <circle cx="50" cy="194" r="8" fill="#2563EB"/>
+</svg>

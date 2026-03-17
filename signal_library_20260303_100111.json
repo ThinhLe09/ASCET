@@ -1,0 +1,172 @@
+{
+  "a2a_signals": {
+    "component_path": "\\EncapSWLibrary\\SystemCores\\Esp9CBEncapSWCust\\Driver_brake_intension",
+    "component_type": "A2A",
+    "timestamp": "2026-03-03T10:01:10.906064",
+    "send_messages": [],
+    "receive_messages": [],
+    "parameters": [
+      {
+        "name": "BrakeRequest_ABS_PMc",
+        "type": "cont",
+        "scope": "imported",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": ""
+      },
+      {
+        "name": "BrakeRequest_PMc_ForDecoupling",
+        "type": "cont",
+        "scope": "local",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "-20.0",
+        "max": "400.0",
+        "default_value": "0.0"
+      }
+    ],
+    "variables": [
+      {
+        "name": "BlsForDecoupling",
+        "type": "log",
+        "scope": "local",
+        "kind": "Variable",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": "0.0"
+      }
+    ],
+    "constants": [],
+    "other_elements": [
+      {
+        "name": "BlsForDecoupling/return",
+        "type": "log",
+        "scope": null,
+        "kind": "Return Value",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": ""
+      },
+      {
+        "name": "calc/BlsAsw",
+        "type": "log",
+        "scope": null,
+        "kind": "Method Argument",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": ""
+      },
+      {
+        "name": "calc/DiastatusBls",
+        "type": "cont",
+        "scope": null,
+        "kind": "Method Argument",
+        "unit": "",
+        "comment": "",
+        "min": "0.0",
+        "max": "255.0",
+        "default_value": ""
+      },
+      {
+        "name": "calc/pCmpF_MC1",
+        "type": "cont",
+        "scope": null,
+        "kind": "Method Argument",
+        "unit": "",
+        "comment": "",
+        "min": "-42.5",
+        "max": "425.0",
+        "default_value": ""
+      },
+      {
+        "name": "calc/TargetStatePMcForAbsMeasured",
+        "type": "enum",
+        "scope": null,
+        "kind": "Method Argument",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": ""
+      }
+    ]
+  },
+  "xpass_signals": {
+    "component_path": "\\Customer\\CEVT\\Package\\PowerTrain\\Parameter\\_CEVT_PowerTrain",
+    "component_type": "XPass",
+    "timestamp": "2026-03-03T10:01:11.221761",
+    "send_messages": [],
+    "receive_messages": [],
+    "parameters": [
+      {
+        "name": "TCSInterface_GBI_nMotMin",
+        "type": "cont",
+        "scope": "exported",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "0.0",
+        "max": "30000.0",
+        "default_value": "1300.0"
+      },
+      {
+        "name": "FC_TCS_INTERFACE_GearBoxInflu",
+        "type": "enum",
+        "scope": "exported",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": "FC_TCS_INTERFACE_GearBoxInflu_OFF"
+      },
+      {
+        "name": "TCSInterface_GBI_MbVDC",
+        "type": "log",
+        "scope": "exported",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "",
+        "max": "",
+        "default_value": "0.0"
+      },
+      {
+        "name": "TCSInterface_GBI_MPTRed",
+        "type": "cont",
+        "scope": "exported",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "-30000.0",
+        "max": "30000.0",
+        "default_value": "200.0"
+      },
+      {
+        "name": "TCSInterface_GBI_nMotMax",
+        "type": "cont",
+        "scope": "exported",
+        "kind": "Parameter",
+        "unit": "",
+        "comment": "",
+        "min": "0.0",
+        "max": "30000.0",
+        "default_value": "3000.0"
+      }
+    ],
+    "variables": [],
+    "constants": [],
+    "other_elements": []
+  },
+  "scan_timestamp": "2026-03-03T10:01:10.871836"
+}

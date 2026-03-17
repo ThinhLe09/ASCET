@@ -1,0 +1,39 @@
+{
+  "spec_file": "buildv1.spec",
+  "main_file": "GUImainv93.py",
+  "exe_name": "AscetUnitCopilotV3_3",
+  "output_dir": "AscetUnitCopilotV3_3",
+  "required_modules": [
+    "RagCoreV1.py",
+    "Structurefliter.py",
+    "token_tracker.py",
+    "AscetToolCallv14.py",
+    "AscetdsdTool.py",
+    "model_config.py",
+    "response_handler.py",
+    "dSD_GenToolV10.py",
+    "AscetAgentv8GPTNVV3.py",
+    "ai_error_arbitrator.py",
+    "util/detect_current_ascet.py",
+    "util/Spinner.py"
+  ],
+  "resource_directories": [
+    {
+      "source": "svg",
+      "target": "svg"
+    },
+    {
+      "source": "RAG",
+      "target": "RAG"
+    }
+  ],
+  "exclude_patterns": [
+    "*.pyc",
+    "__pycache__",
+    ".git",
+    ".gitignore",
+    "*.log",
+    "test_*",
+    "*_test.py"
+  ]
+}

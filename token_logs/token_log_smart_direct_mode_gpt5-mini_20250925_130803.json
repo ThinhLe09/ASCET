@@ -1,0 +1,74 @@
+{
+  "session_info": {
+    "session_name": "smart_direct_mode_gpt5-mini_20250925_130803",
+    "start_time": "2025-09-25T13:08:03.451609",
+    "last_update": "2025-09-25T13:08:09.013843",
+    "duration_seconds": 5.562235116958618
+  },
+  "summary": {
+    "total_calls": 1,
+    "total_prompt_tokens": 254,
+    "total_completion_tokens": 0,
+    "total_tokens": 254,
+    "total_cost": 0.00508
+  },
+  "categories": {
+    "RAG分析": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "一致性检查": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "向量生成": {
+      "prompt": 254,
+      "completion": 0,
+      "total": 254,
+      "calls": 1,
+      "cost": 0.00508
+    },
+    "ASCET数据提取": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "基础分析": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    },
+    "其他API调用": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0,
+      "cost": 0.0
+    }
+  },
+  "recent_calls": [
+    {
+      "call_number": 1,
+      "timestamp": "2025-09-25T13:08:09.013843",
+      "api_name": "向量生成",
+      "api_type": "embedding",
+      "category": "向量生成",
+      "context": "文本长度: 639 字符",
+      "prompt_tokens": 254,
+      "completion_tokens": 0,
+      "total_tokens": 254,
+      "cost": 0.00508,
+      "session_time": 5.562235116958618
+    }
+  ]
+}

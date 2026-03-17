@@ -1,0 +1,15 @@
+{
+  "total_entries": 6,
+  "last_updated": 1755569614.7754037,
+  "entry_hashes": [
+    "0ecd8b919628071ed4079209fa809411",
+    "7016b8f325c10ec70b3600c024598b77",
+    "4c198d4acc80e95844a8627901acc2c6",
+    "41eccfecbaa6ab7f00bdc8a71b542810",
+    "7a86bd27c08a467d441059265be8a83c",
+    "0e8c75f14942b10f5ca2d7274fcc0b26"
+  ],
+  "index_vectors": 3,
+  "dimension": 1536,
+  "unique_hashes": 6
+}
