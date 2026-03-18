@@ -3070,9 +3070,9 @@ class DatabaseScanWorker(QThread):
             self.status_signal.emit(f"Diagram export failed: {str(e)}")
             return None
     
-    def scan_diagram_files(self, export_dir: str) -> List[tuple]:
+    def scan_diagram_files(self, export_dir: str) -> List[dict]:
         """Scan exported directory for diagram files (.amd files)
-        Returns list of (diagram_name, file_path) tuples"""
+        Returns list of dicts with diagram_name, file_path, and relative_path"""
         diagram_files = []
         
         try:
@@ -3091,7 +3091,15 @@ class DatabaseScanWorker(QThread):
                                 # Filter for valid diagram files
                                 if '<SimpleElement' in content or '<Connection' in content:
                                     clean_name = file_name.replace('.specification.amd', '').replace('.dp.amd', '').replace('.amd', '')
-                                    diagram_files.append((clean_name, fpath))
+                                    
+                                    # Calculate relative path from export_dir
+                                    rel_path = os.path.relpath(fpath, export_dir)
+                                    
+                                    diagram_files.append({
+                                        'name': clean_name,
+                                        'file_path': fpath,
+                                        'relative_path': rel_path
+                                    })
                         except:
                             pass
             
@@ -5793,7 +5801,7 @@ class AscetAgentMainWindow(QMainWindow):
             QMessageBox.critical(self, "Scan Failed", f"Scan failed:\n{message}")
     
     def populate_class_tree(self):
-        """Populate class structure tree with classes and diagrams"""
+        """Populate class structure tree with classes and diagrams in correct hierarchy"""
         self.class_tree.clear()
         
         if not self.available_classes and not self.diagram_files:
@@ -5825,23 +5833,52 @@ class AscetAgentMainWindow(QMainWindow):
                 if i < len(parts) - 1:
                     current_dict = current_dict[part]["__children"]
         
-        # Add diagrams to tree
+        # Add diagrams to tree in their correct folder positions
         if self.diagram_files:
-            # Create or get "Diagrams" folder node
-            if "_Diagrams_📊" not in path_dict:
-                path_dict["_Diagrams_📊"] = {
-                    "__path": "_Diagrams_📊",
-                    "__children": {},
-                    "__is_class": False,
-                    "__is_diagram": False
-                }
-            
-            diagrams_dict = path_dict["_Diagrams_📊"]["__children"]
-            
-            for diagram_name, diagram_path in self.diagram_files:
-                # Create diagram entry
+            for diagram_info in self.diagram_files:
+                diagram_name = diagram_info['name']
+                diagram_path = diagram_info['file_path']
+                relative_path = diagram_info['relative_path']
+                
+                # Parse relative path to find correct position in tree
+                # Convert backslashes to forward slashes for consistency
+                rel_parts = relative_path.replace('\\', '/').split('/')
+                
+                # Remove file extension from last part if it's there
+                if rel_parts[-1].endswith('.amd'):
+                    rel_parts[-1] = diagram_name
+                else:
+                    rel_parts[-1] = diagram_name
+                
+                # Navigate/create path in path_dict
+                current_dict = path_dict
+                current_path = ""
+                
+                # Process all parts except the last one (which is the diagram itself)
+                for i, part in enumerate(rel_parts[:-1]):
+                    if not part:  # Skip empty parts
+                        continue
+                    
+                    if current_path:
+                        current_path += "\\"
+                    current_path += part
+                    
+                    if part not in current_dict:
+                        current_dict[part] = {
+                            "__path": current_path,
+                            "__children": {},
+                            "__is_class": False,
+                            "__is_diagram": False
+                        }
+                    current_dict = current_dict[part]["__children"]
+                
+                # Add the diagram as final item
+                if current_path:
+                    current_path += "\\"
+                current_path += diagram_name
+                
                 safe_name = f"📊 {diagram_name}"
-                diagrams_dict[safe_name] = {
+                current_dict[safe_name] = {
                     "__path": diagram_path,
                     "__children": {},
                     "__is_class": False,
@@ -5859,13 +5896,10 @@ class AscetAgentMainWindow(QMainWindow):
                 
                 # Setup icons
                 if value.get("__is_diagram", False):
-                    # Diagram file - use file icon
                     item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_FileIcon))
                 elif value["__is_class"]:
-                    # Class - use file icon
                     item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_FileIcon))
                 else:
-                    # Folder - use folder icon
                     item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_DirIcon))
                 
                 parent.addChild(item)
@@ -5873,6 +5907,7 @@ class AscetAgentMainWindow(QMainWindow):
                 if value["__children"]:
                     add_items(item, value["__children"])
         
+        # Add all items to the tree
         for key, value in sorted(path_dict.items()):
             item = QTreeWidgetItem([key])
             item.setData(0, Qt.UserRole, value["__path"])
