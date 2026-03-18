@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specifications toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<Layout graphicOID="-1" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+		<LineStyle width="1" type="LineSolid">
+			<Color red="0" green="0" blue="0"/>
+		</LineStyle>
+		<FillColor red="65535" green="65535" blue="0"/>
+		<Position x="960" y="600"/>
+		<LabelPosition x="960" y="820"/>
+		<Interfaces>
+			<MethodPort methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" defaultMethod="false">
+				<SequenceCall graphicOID="-1" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+					<Position x="1010" y="390"/>
+				</SequenceCall>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="BrakeLightSwitch" elementOID="_040gm004j5h01o07100gbsil1450o">
+					<Position x="840" y="560"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="BrakePressureMasterCylinder" elementOID="_040gm004j5h01o07100gbsil145go">
+					<Position x="840" y="600"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="v_Veh_x" elementOID="_040gm004j5h01o07100gbsil1460o">
+					<Position x="840" y="680"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="a_Veh_x" elementOID="_040gm004j5h01o07100gbsil146go">
+					<Position x="840" y="720"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="Cust_Addon" elementOID="_040gm004j5h01o07100gbsil1470o">
+					<Position x="840" y="650"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="ABSActive" elementOID="_040gm004j5h01o07100gbsil147go">
+					<Position x="840" y="760"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="Brake_request" elementOID="_040gm004j5h01o07100gbsil148go">
+					<Position x="840" y="520"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="a_veh_x_Target_VAF" elementOID="_040gm004j5h01o07100gbsil1490o">
+					<Position x="840" y="490"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="vaf_brake" elementOID="_040gm004j5h01o07100gbsil149go">
+					<Position x="840" y="620"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_FL" elementOID="_040gm004j5h01o071010fo0dqo82a">
+					<Position x="840" y="420"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_FR" elementOID="_040gm004j5h01o071010fo55aggia">
+					<Position x="840" y="430"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_RL" elementOID="_040gm004j5h01o071010fo6fhsoia">
+					<Position x="840" y="440"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_RR" elementOID="_040gm004j5h01o071010fo6fhspia">
+					<Position x="840" y="450"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementName="TargetStateHAZ" elementOID="_040gm004j5h01o071010fogtrm32a">
+					<Position x="840" y="470"/>
+				</SelectorPort>
+			</MethodPort>
+			<MethodPort methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" defaultMethod="false">
+				<SequenceCall graphicOID="-1" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+					<Position x="900" y="390"/>
+				</SequenceCall>
+				<SelectorPort graphicOID="-1" direction="down" visibility="true" nameVisibility="true" elementName="V_Veh_Init" elementOID="_040gm004j5h01o07100gbsil14ago">
+					<Position x="980" y="410"/>
+				</SelectorPort>
+			</MethodPort>
+			<MethodPort methodName="set" defaultMethod="true">
+				<SequenceCall graphicOID="-1" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+					<Position x="700" y="830"/>
+				</SequenceCall>
+				<SelectorPort graphicOID="-1" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+					<Position x="840" y="790"/>
+				</SelectorPort>
+			</MethodPort>
+			<ReturnPort graphicOID="-1" location="left" visibility="true" nameVisibility="true" methodName="HazardWarning" methodOID="_040gm004j5h01o07100gbsil14bgo" returnElementOID="_040gm004j5h01o07100gbsil14a0o" defaultPort="false" tempVar="false">
+				<Position x="1080" y="600"/>
+			</ReturnPort>
+			<ReturnPort graphicOID="-1" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+				<Position x="1080" y="790"/>
+			</ReturnPort>
+		</Interfaces>
+		<Size x="120" y="190"/>
+		<Icon>
+			<Size x="120" y="190"/>
+		</Icon>
+	</Layout>
+	<Specification name="Main" public="public">
+		<BlockDiagramSpecification>
+			<ESDLCode>
+				<MethodBodies>
+					<MethodBody methodName="calc"/>
+					<MethodBody methodName="HazardWarning"/>
+				</MethodBodies>
+			</ESDLCode>
+			<DiagramElements>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="5">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="65">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="760" y="200"/>
+							<BendPoint x="760" y="400"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="13">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="153">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="760" y="790"/>
+							<BendPoint x="760" y="660"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="26">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="14">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="410" y="780"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="31">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="15">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="410" y="800"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="37">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="6">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="360" y="220"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="42">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="16">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="410" y="820"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="46">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="17">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="410" y="860"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="48">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="51">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="190" y="100"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="52">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="68">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="420" y="100"/>
+							<BendPoint x="420" y="130"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="61">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="152">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="760" y="570"/>
+							<BendPoint x="760" y="630"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="73">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="76">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="1430" y="400"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="83">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="60">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="450" y="480"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="88">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="57">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="420" y="500"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="96">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="58">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="420" y="520"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="100">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="7">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="360" y="150"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="112">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="8">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="360" y="180"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="115">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="81">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="80" y="390"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="118">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="59">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="420" y="540"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="129">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="154">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="790" y="1110"/>
+							<BendPoint x="790" y="680"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="136">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="124">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="370" y="1080"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="139">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="125">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="370" y="1100"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="143">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="126">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="370" y="1130"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="147">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="127">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="370" y="1160"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="155">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="67">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="940" y="420"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="166">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="70">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="370" y="1060"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="168">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="72">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="1100" y="200"/>
+							<BendPoint x="1100" y="380"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="180">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="170">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="930" y="140"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="184">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="171">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="930" y="150"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="188">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="172">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="930" y="160"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="192">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="173">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="930" y="170"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="196">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="169">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="930" y="120"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="0" elementName="HAZ_BrakePressure_Warning" elementOID="_040gm004j5h01o071010edrhen8gs" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="590" y="200"/>
+						<LabelPosition x="580" y="270"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o07100gbpanitu0k" defaultMethod="false">
+								<SequenceCall graphicOID="24" connectOID="68" sequenceNumber="12" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="510" y="130"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="6" direction="right" visibility="true" nameVisibility="true" elementName="BrakePressure_Master_Cylinder" elementOID="_040gm004j5h01o07100gbpanits0k">
+									<Position x="450" y="220"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="7" direction="right" visibility="true" nameVisibility="true" elementName="v_veh_x" elementOID="_040gm004j5h01o07100gbpanitsgk">
+									<Position x="450" y="150"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="8" direction="right" visibility="true" nameVisibility="true" elementName="Brake_light_Switch" elementOID="_040gm004j5h01o07100gbpanitt0k">
+									<Position x="450" y="180"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o071010gqemanelm" defaultMethod="false">
+								<SequenceCall graphicOID="97" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="670" y="130"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="9" direction="down" visibility="false" nameVisibility="false">
+									<Position x="460" y="140"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="11" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="460" y="260"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="4" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="450" y="260"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="5" location="left" visibility="true" nameVisibility="true" methodName="BrakeHazard" methodOID="_040gm004j5h01o07100gbpanittgk" returnElementOID="_040gm004j5h01o07100gbpanitrgk" defaultPort="false" tempVar="false">
+								<Position x="730" y="200"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="3" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="730" y="260"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="140" y="60"/>
+						<Icon>
+							<Size x="140" y="60"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="1" elementName="HAZ_ABS_Warning" elementOID="_040gm004j5h01o071010h0o6d8eoa" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="false">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="530" y="840"/>
+						<LabelPosition x="530" y="910"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o071010h09697oo8" defaultMethod="false">
+								<SequenceCall graphicOID="20" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="20" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="450" y="750"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="14" direction="right" visibility="true" nameVisibility="true" elementName="v_veh_x" elementOID="_040gm004j5h01o071010h09697m88">
+									<Position x="450" y="780"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="15" direction="right" visibility="true" nameVisibility="true" elementName="a_veh_x" elementOID="_040gm004j5h01o071010h09697mo8">
+									<Position x="450" y="800"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="16" direction="right" visibility="true" nameVisibility="true" elementName="ABSActive" elementOID="_040gm004j5h01o071010h09697n88">
+									<Position x="450" y="820"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="17" direction="right" visibility="true" nameVisibility="true" elementName="Brake_Request" elementOID="_040gm004j5h01o071010h09697no8">
+									<Position x="450" y="860"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o071010h09697p88" defaultMethod="false">
+								<SequenceCall graphicOID="21" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="480" y="740"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="18" direction="down" visibility="false" nameVisibility="false">
+									<Position x="480" y="750"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="19" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="480" y="930"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="10" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="450" y="930"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="13" location="left" visibility="true" nameVisibility="true" methodName="ABS_Warning" methodOID="_040gm004j5h01o071010h09697o88" returnElementOID="_040gm004j5h01o071010h09697lo8" defaultPort="false" tempVar="false">
+								<Position x="610" y="790"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="2" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="610" y="930"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="80" y="90"/>
+						<Icon>
+							<Size x="80" y="90"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="12" elementName="HAZ_V_vech_delayed" elementOID="_040gm004j5h01o071010efe6b2q0u" type="Class" flexibleCreated="true" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="63736" green="63736" blue="65535"/>
+						<Position x="165" y="435"/>
+						<LabelPosition x="170" y="500"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s7gb1hdl4lg0" defaultMethod="false">
+								<SequenceCall graphicOID="85" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="1" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="100" y="380"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="81" direction="right" visibility="true" nameVisibility="true" elementName="v_veh_x" elementOID="_040gm004j5h01o070s7gb1hdl4k00">
+									<Position x="100" y="390"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="init" methodOID="_040gm004j5h01o070s7gb1hdl4m00" defaultMethod="false">
+								<SequenceCall graphicOID="86" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="80" y="440"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="79" direction="right" visibility="false" nameVisibility="false" elementName="v_veh_x_init" elementOID="_040gm004j5h01o070s7gb1hdl4kg0">
+									<Position x="100" y="450"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="84" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="110" y="520"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="78" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="100" y="490"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="83" location="left" visibility="true" nameVisibility="true" methodName="Veh_Speed_Diff_Set" methodOID="_040gm004j5h01o070s7gb1hdl4mg0" returnElementOID="_040gm004j5h01o070s7gb1hdl4l00" defaultPort="false" tempVar="false">
+								<Position x="230" y="480"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="39" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="230" y="490"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="65" y="55"/>
+						<Icon>
+							<Size x="65" y="55"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="22" elementName="v_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1460o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="380" y="780"/>
+						<LabelPosition x="310" y="780"/>
+						<Interfaces>
+							<ReturnPort graphicOID="26" location="left"/>
+							<SelectorPort graphicOID="23" location="right">
+								<SequenceCall graphicOID="27" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="340" y="770"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="25" elementName="HAZ_Output" elementOID="_040gm004j5h01o071010eedb1cvgu" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="1260" y="400"/>
+						<LabelPosition x="1260" y="450"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o07100gbr5r94bgm" defaultMethod="false">
+								<SequenceCall graphicOID="113" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="40" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="1140" y="360"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="65" direction="right" visibility="true" nameVisibility="true" elementName="BrakeHazard" elementOID="_040gm004j5h01o07100gbr5r94a0m">
+									<Position x="1140" y="400"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="67" direction="right" visibility="true" nameVisibility="true" elementName="DrivingHazard" elementOID="_040gm004j5h01o07100gbr5r94agm">
+									<Position x="1140" y="420"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="72" direction="right" visibility="true" nameVisibility="true" elementName="HAZ_Available" elementOID="_040gm004j5h01o071010fou3rff2a">
+									<Position x="1140" y="380"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o071010foog4uvia" defaultMethod="false">
+								<SequenceCall graphicOID="198" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="1170" y="350"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="74" direction="down" visibility="false" nameVisibility="false">
+									<Position x="1150" y="360"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="75" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="1150" y="470"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="64" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="1140" y="440"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="73" location="left" visibility="true" nameVisibility="true" methodName="HazardWarning" methodOID="_040gm004j5h01o07100gbr5r94c0m" returnElementOID="_040gm004j5h01o07100gbr5r94b0m" defaultPort="false" tempVar="false">
+								<Position x="1380" y="400"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="38" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="1380" y="440"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="120" y="40"/>
+						<Icon>
+							<Size x="120" y="40"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="28" elementName="BrakePressureMasterCylinder" methodName="calc" elementOID="_040gm004j5h01o07100gbsil145go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="330" y="220"/>
+						<LabelPosition x="220" y="220"/>
+						<Interfaces>
+							<ReturnPort graphicOID="37" location="left"/>
+							<SelectorPort graphicOID="36" location="right">
+								<SequenceCall graphicOID="40" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="290" y="210"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="29" elementName="a_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil146go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="380" y="800"/>
+						<LabelPosition x="300" y="800"/>
+						<Interfaces>
+							<ReturnPort graphicOID="31" location="left"/>
+							<SelectorPort graphicOID="30" location="right">
+								<SequenceCall graphicOID="34" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="340" y="790"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="32" elementName="FS_Brake_Pressure_Based_warning" elementOID="_040gm004j5h01o07100gbsil1400o" type="Parameter">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="160" y="100"/>
+						<LabelPosition x="140" y="120"/>
+						<Interfaces>
+							<ReturnPort graphicOID="48" location="left"/>
+							<SelectorPort graphicOID="33" location="right">
+								<SequenceCall graphicOID="49" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="120" y="90"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="35" elementName="ABSActive" methodName="calc" elementOID="_040gm004j5h01o07100gbsil147go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="380" y="820"/>
+						<LabelPosition x="310" y="820"/>
+						<Interfaces>
+							<ReturnPort graphicOID="42" location="left"/>
+							<SelectorPort graphicOID="41" location="right">
+								<SequenceCall graphicOID="43" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="340" y="810"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="44" elementName="Brake_request" methodName="calc" elementOID="_040gm004j5h01o07100gbsil148go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="380" y="860"/>
+						<LabelPosition x="310" y="860"/>
+						<Interfaces>
+							<ReturnPort graphicOID="46" location="left"/>
+							<SelectorPort graphicOID="45" location="right">
+								<SequenceCall graphicOID="47" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="340" y="850"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<Control graphicOID="50" type="IfThen" arguments="1" returns="1">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="330" y="100"/>
+						<Interfaces>
+							<SelectorPort graphicOID="51" location="left">
+								<SequenceCall graphicOID="53" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="10" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="310" y="80"/>
+								</SequenceCall>
+							</SelectorPort>
+							<ReturnPort graphicOID="52" location="right" index="0"/>
+						</Interfaces>
+					</Control>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="54" elementName="HAZ_Deceleration_Warning" elementOID="_040gm004j5h01o07100gbsil1430o" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="false">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="530" y="510"/>
+						<LabelPosition x="530" y="610"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s608a0c7mvu4" defaultMethod="false">
+								<SequenceCall graphicOID="66" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="15" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="460" y="420"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="58" direction="right" visibility="true" nameVisibility="true" elementName="a_veh_x" elementOID="_040gm004j5h01o070s608asco7ae4">
+									<Position x="460" y="520"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="59" direction="right" visibility="true" nameVisibility="true" elementName="Brake_Request" elementOID="_040gm004j5h01o070s608atogbau4">
+									<Position x="460" y="540"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="60" direction="right" visibility="true" nameVisibility="true" elementName="V_DiffMax_Set" elementOID="_040gm004j5h01o070s608av4k7be4">
+									<Position x="460" y="470"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="57" direction="right" visibility="true" nameVisibility="true" elementName="v_veh_x" elementOID="_040gm004j5h01o070s608aqm176u4">
+									<Position x="460" y="500"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o070s608c60rjmu8" defaultMethod="false">
+								<SequenceCall graphicOID="69" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="470" y="400"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="62" direction="down" visibility="false" nameVisibility="false">
+									<Position x="480" y="420"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="63" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="480" y="600"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="56" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="460" y="600"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="61" location="left" visibility="true" nameVisibility="true" methodName="Deceleration_Warning" methodOID="_040gm004j5h01o070s608ci6hrne8" returnElementOID="_040gm004j5h01o070s608civ9joe8" defaultPort="false" tempVar="false">
+								<Position x="600" y="570"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="55" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="600" y="600"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="70" y="90"/>
+						<Icon>
+							<Size x="70" y="90"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="71" elementName="return" methodName="HazardWarning" elementOID="_040gm004j5h01o07100gbsil14a0o" type="Return">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="1460" y="400"/>
+						<LabelPosition x="1540" y="400"/>
+						<Interfaces>
+							<SelectorPort graphicOID="76" location="right">
+								<SequenceCall graphicOID="77" methodName="HazardWarning" methodOID="_040gm004j5h01o07100gbsil14bgo" sequenceNumber="25" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="1600" y="410"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="80" elementName="v_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1460o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="390" y="500"/>
+						<LabelPosition x="320" y="500"/>
+						<Interfaces>
+							<ReturnPort graphicOID="88" location="left"/>
+							<SelectorPort graphicOID="82" location="right">
+								<SequenceCall graphicOID="102" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="350" y="490"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="89" elementName="a_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil146go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="390" y="520"/>
+						<LabelPosition x="310" y="520"/>
+						<Interfaces>
+							<ReturnPort graphicOID="96" location="left"/>
+							<SelectorPort graphicOID="95" location="right">
+								<SequenceCall graphicOID="101" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="350" y="510"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="90" elementName="v_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1460o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="50" y="390"/>
+						<LabelPosition x="50" y="410"/>
+						<Interfaces>
+							<ReturnPort graphicOID="115" location="left"/>
+							<SelectorPort graphicOID="91" location="right">
+								<SequenceCall graphicOID="120" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="10" y="380"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="98" elementName="v_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1460o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="330" y="150"/>
+						<LabelPosition x="270" y="150"/>
+						<Interfaces>
+							<ReturnPort graphicOID="100" location="left"/>
+							<SelectorPort graphicOID="99" location="right">
+								<SequenceCall graphicOID="114" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="290" y="140"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="110" elementName="BrakeLightSwitch" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1450o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="330" y="180"/>
+						<LabelPosition x="250" y="180"/>
+						<Interfaces>
+							<ReturnPort graphicOID="112" location="left"/>
+							<SelectorPort graphicOID="111" location="right">
+								<SequenceCall graphicOID="133" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="290" y="170"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="116" elementName="Brake_request" methodName="calc" elementOID="_040gm004j5h01o07100gbsil148go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="390" y="540"/>
+						<LabelPosition x="320" y="540"/>
+						<Interfaces>
+							<ReturnPort graphicOID="118" location="left"/>
+							<SelectorPort graphicOID="117" location="right">
+								<SequenceCall graphicOID="119" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="350" y="530"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="121" elementName="HAZ_VAF_Warning" elementOID="_040gm004j5h01o07100gbsil144go" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="false">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="530" y="1130"/>
+						<LabelPosition x="530" y="1200"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s608hnvi5fea" defaultMethod="false">
+								<SequenceCall graphicOID="131" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="25" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="440" y="1050"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="124" direction="right" visibility="true" nameVisibility="true" elementName="v_veh_x" elementOID="_040gm004j5h01o070s608hq0olmea">
+									<Position x="440" y="1080"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="125" direction="right" visibility="true" nameVisibility="true" elementName="a_veh_x" elementOID="_040gm004j5h01o070s608htkbohec">
+									<Position x="440" y="1100"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="126" direction="right" visibility="true" nameVisibility="true" elementName="Cust_VAF_Enabled" elementOID="_040gm004j5h01o070s608hv2rkhuc">
+									<Position x="440" y="1130"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="127" direction="right" visibility="true" nameVisibility="true" elementName="a_veh_x_Target_VAF" elementOID="_040gm004j5h01o070s608i0gvoiec">
+									<Position x="440" y="1160"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="70" direction="right" visibility="true" nameVisibility="true" elementName="vaf_brake" elementOID="_040gm004j5h01o070sb0i6vjd9u70">
+									<Position x="440" y="1060"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o070s608if9o0ruc" defaultMethod="false">
+								<SequenceCall graphicOID="132" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="480" y="1040"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="128" direction="down" visibility="false" nameVisibility="false">
+									<Position x="480" y="1050"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="130" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="480" y="1220"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="123" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="440" y="1210"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="129" location="left" visibility="true" nameVisibility="true" methodName="VAF_Warning" methodOID="_040gm004j5h01o070s608igdcosec" returnElementOID="_040gm004j5h01o070s608ii8i8tec" defaultPort="false" tempVar="false">
+								<Position x="620" y="1110"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="122" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="620" y="1210"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="90" y="80"/>
+						<Icon>
+							<Size x="90" y="80"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="134" elementName="v_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1460o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="340" y="1080"/>
+						<LabelPosition x="270" y="1080"/>
+						<Interfaces>
+							<ReturnPort graphicOID="136" location="left"/>
+							<SelectorPort graphicOID="135" location="right">
+								<SequenceCall graphicOID="163" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="300" y="1070"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="137" elementName="a_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil146go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="340" y="1100"/>
+						<LabelPosition x="260" y="1100"/>
+						<Interfaces>
+							<ReturnPort graphicOID="139" location="left"/>
+							<SelectorPort graphicOID="138" location="right">
+								<SequenceCall graphicOID="140" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="300" y="1090"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="141" elementName="Cust_Addon" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1470o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="340" y="1130"/>
+						<LabelPosition x="260" y="1130"/>
+						<Interfaces>
+							<ReturnPort graphicOID="143" location="left"/>
+							<SelectorPort graphicOID="142" location="right">
+								<SequenceCall graphicOID="144" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="300" y="1120"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="145" elementName="a_veh_x_Target_VAF" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1490o" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="340" y="1160"/>
+						<LabelPosition x="250" y="1160"/>
+						<Interfaces>
+							<ReturnPort graphicOID="147" location="left"/>
+							<SelectorPort graphicOID="146" location="right">
+								<SequenceCall graphicOID="148" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="300" y="1150"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="149" elementName="HAZ_Selection_Strategy" elementOID="_040gm004j5h01o07100gbsil141go" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="870" y="640"/>
+						<LabelPosition x="870" y="710"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s608skklulf2" defaultMethod="false">
+								<SequenceCall graphicOID="158" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="35" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="810" y="580"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="152" direction="right" visibility="true" nameVisibility="true" elementName="Deceleration_Warning" elementOID="_040gm004j5h01o070s608tatf4tf4">
+									<Position x="810" y="630"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="153" direction="right" visibility="true" nameVisibility="true" elementName="ABS_Warning" elementOID="_040gm004j5h01o070s608th9du3v4">
+									<Position x="810" y="660"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="154" direction="right" visibility="true" nameVisibility="true" elementName="VAF_Warning" elementOID="_040gm004j5h01o070s608u74ajvf6">
+									<Position x="810" y="680"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o070s608uht7nvv6" defaultMethod="false">
+								<SequenceCall graphicOID="159" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="870" y="570"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="156" direction="down" visibility="false" nameVisibility="false">
+									<Position x="820" y="580"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="157" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="820" y="730"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="151" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="810" y="700"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="155" location="left" visibility="true" nameVisibility="true" methodName="Driving_Hazard" methodOID="_040gm004j5h01o070s608uoopg1f8" returnElementOID="_040gm004j5h01o070s608uq64c2f8" defaultPort="false" tempVar="false">
+								<Position x="930" y="590"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="150" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="930" y="700"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="60" y="60"/>
+						<Icon>
+							<Size x="60" y="60"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="160" elementName="HAZ_Available" elementOID="_040gm004j5h01o071010fmeeqdmi0" type="Class" flexibleCreated="true" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="1000" y="170"/>
+						<LabelPosition x="1000" y="250"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o071010flrl5ui1u" defaultMethod="false">
+								<SequenceCall graphicOID="176" methodName="calc" methodOID="_040gm004j5h01o07100gbsil14b0o" sequenceNumber="30" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="940" y="100"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="169" direction="right" visibility="true" nameVisibility="true" elementName="TargetStateHAZ" elementOID="_040gm004j5h01o071010flrl5uf1u">
+									<Position x="940" y="120"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="170" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_FL" elementOID="_040gm004j5h01o071010flrl5ufhu">
+									<Position x="940" y="140"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="171" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_FR" elementOID="_040gm004j5h01o071010flrl5ug1u">
+									<Position x="940" y="150"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="172" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_RL" elementOID="_040gm004j5h01o071010flrl5ughu">
+									<Position x="940" y="160"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="173" direction="right" visibility="true" nameVisibility="true" elementName="WSS_Quality_RR" elementOID="_040gm004j5h01o071010flrl5uh1u">
+									<Position x="940" y="170"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="init" methodOID="_040gm004j5h01o071010flrl5uihu" defaultMethod="false">
+								<SequenceCall graphicOID="177" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="1020" y="90"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="174" direction="down" visibility="false" nameVisibility="false">
+									<Position x="1000" y="100"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="175" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="950" y="290"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="162" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="940" y="240"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="168" location="left" visibility="true" nameVisibility="true" methodName="Available" methodOID="_040gm004j5h01o071010flrl5uhhu" returnElementOID="_040gm004j5h01o071010flrl5uehu" defaultPort="false" tempVar="false">
+								<Position x="1060" y="200"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="161" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="1060" y="240"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="60" y="70"/>
+						<Icon>
+							<Size x="60" y="70"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="164" elementName="vaf_brake" methodName="calc" elementOID="_040gm004j5h01o07100gbsil149go" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="340" y="1060"/>
+						<LabelPosition x="280" y="1060"/>
+						<Interfaces>
+							<ReturnPort graphicOID="166" location="left"/>
+							<SelectorPort graphicOID="165" location="right">
+								<SequenceCall graphicOID="167" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="300" y="1050"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="178" elementName="WSS_Quality_FL" methodName="calc" elementOID="_040gm004j5h01o071010fo0dqo82a" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="900" y="140"/>
+						<LabelPosition x="830" y="140"/>
+						<Interfaces>
+							<ReturnPort graphicOID="180" location="left"/>
+							<SelectorPort graphicOID="179" location="right">
+								<SequenceCall graphicOID="181" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="860" y="130"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="182" elementName="WSS_Quality_FR" methodName="calc" elementOID="_040gm004j5h01o071010fo55aggia" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="900" y="150"/>
+						<LabelPosition x="830" y="150"/>
+						<Interfaces>
+							<ReturnPort graphicOID="184" location="left"/>
+							<SelectorPort graphicOID="183" location="right">
+								<SequenceCall graphicOID="185" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="860" y="140"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="186" elementName="WSS_Quality_RL" methodName="calc" elementOID="_040gm004j5h01o071010fo6fhsoia" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="900" y="160"/>
+						<LabelPosition x="830" y="160"/>
+						<Interfaces>
+							<ReturnPort graphicOID="188" location="left"/>
+							<SelectorPort graphicOID="187" location="right">
+								<SequenceCall graphicOID="189" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="860" y="150"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="190" elementName="WSS_Quality_RR" methodName="calc" elementOID="_040gm004j5h01o071010fo6fhspia" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="900" y="170"/>
+						<LabelPosition x="830" y="170"/>
+						<Interfaces>
+							<ReturnPort graphicOID="192" location="left"/>
+							<SelectorPort graphicOID="191" location="right">
+								<SequenceCall graphicOID="193" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="860" y="160"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="194" elementName="TargetStateHAZ" methodName="calc" elementOID="_040gm004j5h01o071010fogtrm32a" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="900" y="120"/>
+						<LabelPosition x="830" y="120"/>
+						<Interfaces>
+							<ReturnPort graphicOID="196" location="left"/>
+							<SelectorPort graphicOID="195" location="right">
+								<SequenceCall graphicOID="197" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="860" y="110"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="200" y="20"/>
+						<Text>/****************************&#13;
+Functional switch to make OFF/ON&#13;
+Brake pressure based warning&#13;
+&#13;
+****************************/</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="620" y="30"/>
+						<Text>/****************************************************&#13;
+HAZ Warning logic based on Brake pressure at master cyllinder&#13;
+&#13;
+****************************************************/&#13;
+</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="110" y="290"/>
+						<Text>/********************&#13;
+Vehicle velocity difference&#13;
+Caluclation &#13;
+&#13;
+********************/</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="1610" y="300"/>
+						<Text>/***********************************&#13;
+&#13;
+HAZ Warning logic Out put&#13;
+&#13;
+************************************/&#13;
+</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="360" y="320"/>
+						<Text>/****************************&#13;
+Functional switch to make OFF/ON&#13;
+Vehicle velocity difference calc&#13;
+&#13;
+****************************/</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="520" y="670"/>
+						<Text>/***********************************&#13;
+HAZ Warning logic based on ABS activation&#13;
+&#13;
+***********************************/</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="580" y="310"/>
+						<Text>/***********************************&#13;
+&#13;
+HAZ Warning logic based on actual decelaration&#13;
+&#13;
+************************************/&#13;
+</Text>
+					</Comment>
+				</DiagramElement>
+				<DiagramElement>
+					<Comment visible="true">
+						<Position x="530" y="950"/>
+						<Text>/***********************************&#13;
+HAZ Warning logic based on target decelaration&#13;
+from VAFs( other controllers)&#13;
+&#13;
+*************************************/</Text>
+					</Comment>
+				</DiagramElement>
+			</DiagramElements>
+		</BlockDiagramSpecification>
+	</Specification>
+	<Specification name="Init" public="public">
+		<BlockDiagramSpecification>
+			<ESDLCode>
+				<MethodBodies>
+					<MethodBody methodName="Init"/>
+				</MethodBodies>
+			</ESDLCode>
+			<DiagramElements>
+				<DiagramElement>
+					<Connection connectionPointNumber="2">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<Start graphicOID="77">
+							<Position x="0" y="0"/>
+						</Start>
+						<End graphicOID="74">
+							<Position x="0" y="0"/>
+						</End>
+						<ConnectionLine commentLine="false">
+							<BendPoint x="100" y="350"/>
+						</ConnectionLine>
+					</Connection>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="2" elementName="HAZ_Deceleration_Warning" elementOID="_040gm004j5h01o07100gbsil1430o" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="false">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="540" y="360"/>
+						<LabelPosition x="540" y="470"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s608a0c7mvu4" defaultMethod="false">
+								<SequenceCall graphicOID="33" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="560" y="270"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="13" direction="right" visibility="false" nameVisibility="false" elementName="a_veh_x" elementOID="_040gm004j5h01o070s608asco7ae4">
+									<Position x="470" y="370"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="14" direction="right" visibility="false" nameVisibility="false" elementName="Brake_Request" elementOID="_040gm004j5h01o070s608atogbau4">
+									<Position x="470" y="390"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="17" direction="right" visibility="false" nameVisibility="false" elementName="V_DiffMax_Set" elementOID="_040gm004j5h01o070s608av4k7be4">
+									<Position x="470" y="320"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="12" direction="right" visibility="false" nameVisibility="false" elementName="v_veh_x" elementOID="_040gm004j5h01o070s608aqm176u4">
+									<Position x="470" y="350"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o070s608c60rjmu8" defaultMethod="false">
+								<SequenceCall graphicOID="41" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="15" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="490" y="260"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="19" direction="down" visibility="true" nameVisibility="true">
+									<Position x="490" y="270"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="24" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="480" y="480"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="11" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="470" y="450"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="18" location="left" visibility="false" nameVisibility="false" methodName="Deceleration_Warning" methodOID="_040gm004j5h01o070s608ci6hrne8" returnElementOID="_040gm004j5h01o070s608civ9joe8" defaultPort="false" tempVar="false">
+								<Position x="610" y="420"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="10" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="610" y="450"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="70" y="90"/>
+						<Icon>
+							<Size x="70" y="90"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="15" elementName="HAZ_ABS_Warning" elementOID="_040gm004j5h01o071010h0o6d8eoa" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="false">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="530" y="620"/>
+						<LabelPosition x="530" y="735"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o071010h09697oo8" defaultMethod="false">
+								<SequenceCall graphicOID="40" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="410" y="510"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="23" direction="right" visibility="false" nameVisibility="false" elementName="v_veh_x" elementOID="_040gm004j5h01o071010h09697m88">
+									<Position x="450" y="560"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="35" direction="right" visibility="false" nameVisibility="false" elementName="a_veh_x" elementOID="_040gm004j5h01o071010h09697mo8">
+									<Position x="450" y="580"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="36" direction="right" visibility="false" nameVisibility="false" elementName="ABSActive" elementOID="_040gm004j5h01o071010h09697n88">
+									<Position x="450" y="600"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="37" direction="right" visibility="false" nameVisibility="false" elementName="Brake_Request" elementOID="_040gm004j5h01o071010h09697no8">
+									<Position x="450" y="640"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o071010h09697p88" defaultMethod="false">
+								<SequenceCall graphicOID="46" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="20" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="510" y="520"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="38" direction="down" visibility="true" nameVisibility="true">
+									<Position x="480" y="530"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="39" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="480" y="710"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="20" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="450" y="710"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="21" location="left" visibility="false" nameVisibility="false" methodName="ABS_Warning" methodOID="_040gm004j5h01o071010h09697o88" returnElementOID="_040gm004j5h01o071010h09697lo8" defaultPort="false" tempVar="false">
+								<Position x="610" y="570"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="16" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="610" y="710"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="80" y="90"/>
+						<Icon>
+							<Size x="80" y="90"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="27" elementName="HAZ_Output" elementOID="_040gm004j5h01o071010eedb1cvgu" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="1230" y="480"/>
+						<LabelPosition x="1230" y="530"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o07100gbr5r94bgm" defaultMethod="false">
+								<SequenceCall graphicOID="51" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="1260" y="410"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="30" direction="right" visibility="false" nameVisibility="false" elementName="BrakeHazard" elementOID="_040gm004j5h01o07100gbr5r94a0m">
+									<Position x="1110" y="480"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="31" direction="right" visibility="false" nameVisibility="false" elementName="DrivingHazard" elementOID="_040gm004j5h01o07100gbr5r94agm">
+									<Position x="1110" y="500"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="32" direction="right" visibility="false" nameVisibility="false" elementName="HAZ_Available" elementOID="_040gm004j5h01o071010fou3rff2a">
+									<Position x="1110" y="460"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o071010foog4uvia" defaultMethod="false">
+								<SequenceCall graphicOID="48" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="40" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="1190" y="420"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="47" direction="down" visibility="true" nameVisibility="true">
+									<Position x="1120" y="440"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="49" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="1120" y="550"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="29" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="1110" y="520"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="45" location="left" visibility="false" nameVisibility="false" methodName="HazardWarning" methodOID="_040gm004j5h01o07100gbr5r94c0m" returnElementOID="_040gm004j5h01o07100gbr5r94b0m" defaultPort="false" tempVar="false">
+								<Position x="1350" y="480"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="28" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="1350" y="520"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="120" y="40"/>
+						<Icon>
+							<Size x="120" y="40"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="42" elementName="HAZ_VAF_Warning" elementOID="_040gm004j5h01o07100gbsil144go" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="false">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="550" y="910"/>
+						<LabelPosition x="550" y="1000"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s608hnvi5fea" defaultMethod="false">
+								<SequenceCall graphicOID="71" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="460" y="850"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="52" direction="right" visibility="false" nameVisibility="false" elementName="v_veh_x" elementOID="_040gm004j5h01o070s608hq0olmea">
+									<Position x="460" y="860"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="53" direction="right" visibility="false" nameVisibility="false" elementName="a_veh_x" elementOID="_040gm004j5h01o070s608htkbohec">
+									<Position x="460" y="880"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="55" direction="right" visibility="false" nameVisibility="false" elementName="Cust_VAF_Enabled" elementOID="_040gm004j5h01o070s608hv2rkhuc">
+									<Position x="460" y="910"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="67" direction="right" visibility="false" nameVisibility="false" elementName="a_veh_x_Target_VAF" elementOID="_040gm004j5h01o070s608i0gvoiec">
+									<Position x="460" y="940"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="1" direction="right" visibility="false" nameVisibility="false" elementName="vaf_brake" elementOID="_040gm004j5h01o070sb0i6vjd9u70">
+									<Position x="460" y="840"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o070s608if9o0ruc" defaultMethod="false">
+								<SequenceCall graphicOID="72" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="25" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="500" y="820"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="68" direction="down" visibility="true" nameVisibility="true">
+									<Position x="500" y="830"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="70" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="490" y="1020"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="44" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="460" y="990"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="69" location="left" visibility="false" nameVisibility="false" methodName="VAF_Warning" methodOID="_040gm004j5h01o070s608igdcosec" returnElementOID="_040gm004j5h01o070s608ii8i8tec" defaultPort="false" tempVar="false">
+								<Position x="640" y="890"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="43" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="640" y="990"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="90" y="80"/>
+						<Icon>
+							<Size x="90" y="80"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="50" elementName="HAZ_V_vech_delayed" elementOID="_040gm004j5h01o071010efe6b2q0u" type="Class" flexibleCreated="true" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="63736" green="63736" blue="65535"/>
+						<Position x="230" y="370"/>
+						<LabelPosition x="250" y="500"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s7gb1hdl4lg0" defaultMethod="false">
+								<SequenceCall graphicOID="85" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="200" y="250"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="81" direction="right" visibility="false" nameVisibility="false" elementName="v_veh_x" elementOID="_040gm004j5h01o070s7gb1hdl4k00">
+									<Position x="160" y="290"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="init" methodOID="_040gm004j5h01o070s7gb1hdl4m00" defaultMethod="false">
+								<SequenceCall graphicOID="86" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="1" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="210" y="250"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="74" direction="right" visibility="true" nameVisibility="true" elementName="v_veh_x_init" elementOID="_040gm004j5h01o070s7gb1hdl4kg0">
+									<Position x="160" y="350"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="84" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="170" y="510"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="73" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="160" y="480"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="83" location="left" visibility="false" nameVisibility="false" methodName="Veh_Speed_Diff_Set" methodOID="_040gm004j5h01o070s7gb1hdl4mg0" returnElementOID="_040gm004j5h01o070s7gb1hdl4l00" defaultPort="false" tempVar="false">
+								<Position x="300" y="380"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="54" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="300" y="480"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="70" y="110"/>
+						<Icon>
+							<Size x="70" y="110"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="56" elementName="HAZ_Selection_Strategy" elementOID="_040gm004j5h01o07100gbsil141go" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="890" y="640"/>
+						<LabelPosition x="890" y="710"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o070s608skklulf2" defaultMethod="false">
+								<SequenceCall graphicOID="65" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="810" y="620"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="59" direction="right" visibility="false" nameVisibility="false" elementName="Deceleration_Warning" elementOID="_040gm004j5h01o070s608tatf4tf4">
+									<Position x="830" y="630"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="60" direction="right" visibility="false" nameVisibility="false" elementName="ABS_Warning" elementOID="_040gm004j5h01o070s608th9du3v4">
+									<Position x="830" y="660"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="61" direction="right" visibility="false" nameVisibility="false" elementName="VAF_Warning" elementOID="_040gm004j5h01o070s608u74ajvf6">
+									<Position x="830" y="680"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o070s608uht7nvv6" defaultMethod="false">
+								<SequenceCall graphicOID="66" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="35" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="840" y="570"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="63" direction="down" visibility="true" nameVisibility="true">
+									<Position x="840" y="580"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="64" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="840" y="730"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="58" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="830" y="700"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="62" location="left" visibility="false" nameVisibility="false" methodName="Driving_Hazard" methodOID="_040gm004j5h01o070s608uoopg1f8" returnElementOID="_040gm004j5h01o070s608uq64c2f8" defaultPort="false" tempVar="false">
+								<Position x="950" y="590"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="57" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="950" y="700"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="60" y="60"/>
+						<Icon>
+							<Size x="60" y="60"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<SimpleElement graphicOID="75" elementName="V_Veh_Init" methodName="Init" elementOID="_040gm004j5h01o07100gbsil14ago" type="Argument">
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="70" y="300"/>
+						<LabelPosition x="70" y="310"/>
+						<Interfaces>
+							<ReturnPort graphicOID="77" location="left"/>
+							<SelectorPort graphicOID="76" location="right">
+								<SequenceCall graphicOID="78" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="30" y="290"/>
+								</SequenceCall>
+							</SelectorPort>
+						</Interfaces>
+					</SimpleElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="79" elementName="HAZ_Available" elementOID="_040gm004j5h01o071010fmeeqdmi0" type="Class" flexibleCreated="true" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="890" y="230"/>
+						<LabelPosition x="890" y="320"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o071010flrl5ui1u" defaultMethod="false">
+								<SequenceCall graphicOID="95" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="830" y="160"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="88" direction="right" visibility="false" nameVisibility="false" elementName="TargetStateHAZ" elementOID="_040gm004j5h01o071010flrl5uf1u">
+									<Position x="830" y="180"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="89" direction="right" visibility="false" nameVisibility="false" elementName="WSS_Quality_FL" elementOID="_040gm004j5h01o071010flrl5ufhu">
+									<Position x="830" y="200"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="90" direction="right" visibility="false" nameVisibility="false" elementName="WSS_Quality_FR" elementOID="_040gm004j5h01o071010flrl5ug1u">
+									<Position x="830" y="210"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="91" direction="right" visibility="false" nameVisibility="false" elementName="WSS_Quality_RL" elementOID="_040gm004j5h01o071010flrl5ughu">
+									<Position x="830" y="220"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="92" direction="right" visibility="false" nameVisibility="false" elementName="WSS_Quality_RR" elementOID="_040gm004j5h01o071010flrl5uh1u">
+									<Position x="830" y="230"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="init" methodOID="_040gm004j5h01o071010flrl5uihu" defaultMethod="false">
+								<SequenceCall graphicOID="96" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="30" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="910" y="150"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="93" direction="down" visibility="true" nameVisibility="true">
+									<Position x="890" y="160"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="94" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="840" y="350"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="82" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="830" y="300"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="87" location="left" visibility="false" nameVisibility="false" methodName="Available" methodOID="_040gm004j5h01o071010flrl5uhhu" returnElementOID="_040gm004j5h01o071010flrl5uehu" defaultPort="false" tempVar="false">
+								<Position x="950" y="260"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="80" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="950" y="300"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="60" y="70"/>
+						<Icon>
+							<Size x="60" y="70"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+				<DiagramElement>
+					<ComplexElement graphicOID="97" elementName="HAZ_BrakePressure_Warning" elementOID="_040gm004j5h01o071010edrhen8gs" type="Class" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+						<LineStyle width="1" type="LineSolid">
+							<Color red="0" green="0" blue="0"/>
+						</LineStyle>
+						<FillColor red="65535" green="65535" blue="65535"/>
+						<Position x="580" y="110"/>
+						<LabelPosition x="610" y="210"/>
+						<Interfaces>
+							<MethodPort methodName="calc" methodOID="_040gm004j5h01o07100gbpanitu0k" defaultMethod="false">
+								<SequenceCall graphicOID="106" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+									<Position x="450" y="30"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="101" direction="right" visibility="false" nameVisibility="false" elementName="BrakePressure_Master_Cylinder" elementOID="_040gm004j5h01o07100gbpanits0k">
+									<Position x="440" y="130"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="102" direction="right" visibility="false" nameVisibility="false" elementName="v_veh_x" elementOID="_040gm004j5h01o07100gbpanitsgk">
+									<Position x="440" y="60"/>
+								</SelectorPort>
+								<SelectorPort graphicOID="103" direction="right" visibility="false" nameVisibility="false" elementName="Brake_light_Switch" elementOID="_040gm004j5h01o07100gbpanitt0k">
+									<Position x="440" y="90"/>
+								</SelectorPort>
+							</MethodPort>
+							<MethodPort methodName="Init" methodOID="_040gm004j5h01o071010gqemanelm" defaultMethod="false">
+								<SequenceCall graphicOID="107" methodName="Init" methodOID="_040gm004j5h01o07100gbsil14c0o" sequenceNumber="10" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="450" y="40"/>
+								</SequenceCall>
+								<TriggerPort graphicOID="104" direction="down" visibility="true" nameVisibility="true">
+									<Position x="450" y="50"/>
+								</TriggerPort>
+							</MethodPort>
+							<MethodPort methodName="set" defaultMethod="true">
+								<SequenceCall graphicOID="105" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+									<Position x="450" y="170"/>
+								</SequenceCall>
+								<SelectorPort graphicOID="99" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+									<Position x="440" y="170"/>
+								</SelectorPort>
+							</MethodPort>
+							<ReturnPort graphicOID="100" location="left" visibility="false" nameVisibility="false" methodName="BrakeHazard" methodOID="_040gm004j5h01o07100gbpanittgk" returnElementOID="_040gm004j5h01o07100gbpanitrgk" defaultPort="false" tempVar="false">
+								<Position x="720" y="110"/>
+							</ReturnPort>
+							<ReturnPort graphicOID="98" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+								<Position x="720" y="170"/>
+							</ReturnPort>
+						</Interfaces>
+						<Size x="140" y="60"/>
+						<Icon>
+							<Size x="140" y="60"/>
+						</Icon>
+					</ComplexElement>
+				</DiagramElement>
+			</DiagramElements>
+		</BlockDiagramSpecification>
+	</Specification>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>8oPpy01n4hx1d6HcZP+WFyP8V8U=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>DVJaY3APDRTojZ9/JF6XOwjQfXqCDqzagv+nZiyIpUOg7Mtdn80687mnZQ38oI/6
+jA0ZpzvILpXcr6Pgm+8X3jccAzalCBsG86aqnldXh7tySChfnrsiFtKRdnldPrRK
+W+2+OEfKcAUiXt/gHAui0raTA4BjKOI3Pt9QeoEMcQ3f8VzkZ4vNv5oKDBYc5MZs
+w0iefm0nANnp0f4DyyFs78NRgSv3DZWUybVkKvtul9F60Z/+7Nm8S0lIFbOE3tFS
+SnIjJVMhntUqo671gFp0lFx4Am/m77T2UfThBGvufJFl5E52AE1awRjJmrnwJwEV
+cspGi/k/0vNeIcUvkxmlxw==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Specifications>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0" buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+	<ImplementationConfiguration implementationSetName="Impl" implementationSetOID="_040qm02ncg001lo70ceh5mkuvo5ek"/>
+	<DataConfiguration dataSetName="Data" dataSetOID="_040qm02ncg001lo70ceh5mkuvo5uk"/>
+	<OsLogic>
+		<OsEntry>
+			<TargetKey name="PC"/>
+			<OsDescription coopLevels="20" preempLevels="0" eventLevels="0" enableMonitoring="true" enableTickDuration="true" tickDuration="1000000000">
+				<OperationModes>
+					<OperationMode name="inactive" id="0" isStartMode="false" isCTMode="false"/>
+					<OperationMode name="active" id="1" isStartMode="true" isCTMode="true"/>
+				</OperationModes>
+				<Tasks/>
+				<OsSettings>
+					<Group name="OperatingSystem">
+						<Option name="OS_CONFIG_TOOL_CMD" type="String" value=""/>
+						<Option name="OS_LIBS" type="String" value=""/>
+						<Option name="osType" type="String" value=""/>
+						<Option name="P_OS_INCLUDE" type="String" value=""/>
+						<Option name="P_OS_LIBRARY" type="String" value=""/>
+						<Option name="PROJ_OIL_FILE" type="String" value=""/>
+					</Group>
+				</OsSettings>
+			</OsDescription>
+		</OsEntry>
+	</OsLogic>
+	<ModelConfiguration>
+		<FormulasFile type="FORMULA">_Environment.project.formulas.dp.amd</FormulasFile>
+		<ImplementationTypesFile type="IMPLEMENTATION">_Environment.project.implementationTypes.dp.amd</ImplementationTypesFile>
+	</ModelConfiguration>
+	<BuildConfiguration buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+		<Platform platformKey="PC_BORLANDCV45_unknown">
+			<Target name="PC" key="PC"/>
+			<Compiler name="BORLANDCV45" path="C:\Program Files (x86)\ETAS\ASCET6.1.5\Tools\Compiler\bc\"/>
+			<CodeGenerator type="PHYSICAL_EXPERIMENT"/>
+		</Platform>
+		<BuildSettings>
+			<Group name="build">
+				<Option name="castStrategy" type="String" value="Legacy"/>
+				<Option name="codeSyntax" type="boolean" value="true"/>
+				<Option name="commentFormula" type="boolean" value="true"/>
+				<Option name="commentGenerationInfo" type="boolean" value="true"/>
+				<Option name="commentSpecificationSource" type="boolean" value="true"/>
+				<Option name="considerDepParams" type="boolean" value="true"/>
+				<Option name="dataLogging" type="boolean" value="false"/>
+				<Option name="definesForEnumValues" type="boolean" value="false"/>
+				<Option name="forceParenthesisLogicalBinOp" type="boolean" value="false"/>
+				<Option name="genDependencyFiles" type="boolean" value="false"/>
+				<Option name="generateMapFile" type="boolean" value="true"/>
+				<Option name="generateMethodsDT" type="boolean" value="true"/>
+				<Option name="genOSConfiguration" type="boolean" value="true"/>
+				<Option name="maxLoopIterate" type="int" value="1000"/>
+				<Option name="oneModuleOnly" type="boolean" value="false"/>
+				<Option name="prefixComponentName" type="String" value=""/>
+				<Option name="protectDiv" type="boolean" value="true"/>
+				<Option name="protectDivSignedOverflow" type="boolean" value="false"/>
+				<Option name="protectVecIndex" type="boolean" value="true"/>
+				<Option name="useGlobalId" type="boolean" value="true"/>
+				<Option name="useLongNames" type="boolean" value="true"/>
+				<Option name="usePMI" type="boolean" value="true"/>
+			</Group>
+		</BuildSettings>
+	</BuildConfiguration>
+	<SimulationConfiguration experimentTarget="ExperimentOfflinePC"/>
+	<HiddenMessageTypes/>
+	<IgnoredMessageTypes/>
+	<PromotedToErrorMessageTypes/>
+	<PromotedToWarningMessageTypes/>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>c9etuF7iAHh34vHeKrG8fRf9+Qs=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>NayV71U3SzHT0BC43psC2lYqIoy22V39hP+OkuQXFTgIrgAeesaaFaYeQG4A0CDJ
+iz7zRTOft46r4os+Qfe0VIBQtFCjQAkjskoagiw7pbDdzm6U+ZzjzY0n4HMjLSkL
+OumF/PnpqDv81ZnrpFLi3+tBEF5DkCcFxdm51oZXVN6Dmya2anNDPj7pEJou/pDY
+8YNMRA2SxB8V4UWo/KpKrsB4WXS7h0sS7i/XTO0zUbEI1QEVCeY22I/PPVmpHOO8
+uL3GdV9rExVmJpiXHYW7akDLiNb2CGFK4er23yUH/Lw45Qwc6d3oUTnIcnWagkdk
+LH37VXyaDqlVU5w1/mXmYg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Project>

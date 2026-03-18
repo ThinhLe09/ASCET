@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="HAZ_Core" nameSpace="/PlatformLibrary/Package/HAZ_HazardWarning/Private" OID="_040gm004j5h01o07100gbsil17ugm" timeStamp="2026-03-09T11:14:55" componentType="ASCET_Class" specificationType="BlockDiagram" defaultProjectName="HAZ_Core_DEFAULT" defaultProjectOID="_040gm004j5h01o07100gbsil6sg0o">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5130"/>
+		<Notes>
+			<Note name="ASCET-SCM-TCM">
+				<Text>&lt;VersionInfos&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.6&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-12T09:45:26&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.5&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-08T20:11:59&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.4&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-03T20:09:42&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.3&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-02T22:49:39&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.2&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-02T22:03:53&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.1&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-02T18:17:14&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;1.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm004j5h01o07100gbsil17ugm&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-08-01T21:32:03&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.4.1.0.1.2&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-07-29T11:22:04&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.4.1.0.1.1&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-07-22T14:25:35&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.4.1.0.1.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-07-13T12:03:52&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.4.1.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-06-21T13:30:45&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.4&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-05-18T14:01:06&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.3&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-05-16T13:40:19&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.2&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-04-28T10:56:36&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;HAZ_Proto_Core&lt;/Name&gt;&#13;
+    &lt;Number&gt;0.1&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040gm001ipk01no71gff3r41bri04&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2016-03-17T18:37:35&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+&lt;/VersionInfos&gt;</Text>
+				<View name="view"/>
+			</Note>
+		</Notes>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="V1.6" configurationID=""/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements>
+			<Element name="FS_Brake_Pressure_Based_warning" OID="_040gm004j5h01o07100gbsil1400o" ignore="false">
+				<Comment>Functional switch for Brake pressure based warning</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="true" volatile="false" calibrated="true" set="false" get="false" read="true" write="false" reference="false">
+							<Formula code="x">
+								<Formal name="x" OID="_040gm004j5h01o070s3ganokpfrpg"/>
+							</Formula>
+						</PrimitiveAttributes>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="FS_Brake_Pressure_Based_warning_" OID="_040gm004j5h01o07100gbsil140go" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="imported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_ABS_Warning" OID="_040gm004j5h01o071010h0o6d8eoa" ignore="false">
+				<Comment>ABS /Low Mue braking warning</Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/DrivingSituation/HAZ_ABSActive_Warning" componentID="_040gm004j5h01o071010h09697do8" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_Available" OID="_040gm004j5h01o071010fmeeqdmi0" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/HAZ_Available" componentID="_040gm004j5h01o071010flrl5ud1u" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_BrakePressure_Warning" OID="_040gm004j5h01o071010edrhen8gs" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/BrakePressure/HAZ_BrakePressure_Warning" componentID="_040gm004j5h01o07100gbpanitngk" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_Deceleration_Warning" OID="_040gm004j5h01o07100gbsil1430o" ignore="false">
+				<Comment>High Mue/ Deceleration based warning</Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/Deceleration/HAZ_Deceleration_Warning" componentID="_040gm004j5h01o070s608a0btusu4" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_Output" OID="_040gm004j5h01o071010eedb1cvgu" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/HAZWarning/HAZ_Output" componentID="_040gm004j5h01o07100gbr5r946gm" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_Selection_Strategy" OID="_040gm004j5h01o07100gbsil141go" ignore="false">
+				<Comment>Hazard warning selection based on customer requirement</Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/HAZWarning/HAZ_Selection_Strategy" componentID="_040gm004j5h01o070s608skkc6if2" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_V_vech_delayed" OID="_040gm004j5h01o071010efe6b2q0u" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/Deceleration/HAZ_V_vech_delayed" componentID="_040gm004j5h01o070s7gb1hdh4dg0" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_VAF_Warning" OID="_040gm004j5h01o07100gbsil144go" ignore="false">
+				<Comment>Value added function based warning ex:AEB/CMBB/ customer configuration</Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/VAF_BasedWarning/HAZ_VAF_Warning" componentID="_040gm004j5h01o070s608hnv8dcea" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+		</Elements>
+		<MethodSignatures>
+			<MethodSignature name="calc" OID="_040gm004j5h01o07100gbsil14b0o" public="true" default="false" defaultMethod="true" hidden="false" availableForOS="false">
+				<Arguments>
+					<Argument name="BrakeLightSwitch" OID="_040gm004j5h01o07100gbsil1450o" ignore="false">
+						<Comment>Brake light awitch</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="BrakePressureMasterCylinder" OID="_040gm004j5h01o07100gbsil145go" ignore="false">
+						<Comment>Master Cyllinder Pressure </Comment>
+						<ElementAttributes modelType="scalar" basicModelType="cont" unit="bar">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="v_Veh_x" OID="_040gm004j5h01o07100gbsil1460o" ignore="false">
+						<Comment>Vehicle velocity </Comment>
+						<ElementAttributes modelType="scalar" basicModelType="cont" unit="m/s">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="a_Veh_x" OID="_040gm004j5h01o07100gbsil146go" ignore="false">
+						<Comment>Vehicle deceleration</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="cont" unit="m/s2">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="Cust_Addon" OID="_040gm004j5h01o07100gbsil1470o" ignore="false">
+						<Comment>VAF configuration</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="ABSActive" OID="_040gm004j5h01o07100gbsil147go" ignore="false">
+						<Comment>ABS Intervention </Comment>
+						<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="Brake_request" OID="_040gm004j5h01o07100gbsil148go" ignore="false">
+						<Comment>Brake requested by driver or bls || bls asw||ABS</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="a_veh_x_Target_VAF" OID="_040gm004j5h01o07100gbsil1490o" ignore="false">
+						<Comment>Vaf target deceleration</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="cont" unit="m/s^2">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="vaf_brake" OID="_040gm004j5h01o07100gbsil149go" ignore="false">
+						<Comment>braking from Vaf</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="WSS_Quality_FL" OID="_040gm004j5h01o071010fo0dqo82a" ignore="false">
+						<Comment>Quality of WSS of FL</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="WSS_Quality_FR" OID="_040gm004j5h01o071010fo55aggia" ignore="false">
+						<Comment>Quality of WSS of FL</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="WSS_Quality_RL" OID="_040gm004j5h01o071010fo6fhsoia" ignore="false">
+						<Comment>Quality of WSS of FL</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="WSS_Quality_RR" OID="_040gm004j5h01o071010fo6fhspia" ignore="false">
+						<Comment>Quality of WSS of FL</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="TargetStateHAZ" OID="_040gm004j5h01o071010fogtrm32a" ignore="false">
+						<Comment>Target State for HAZ</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="enumeration" unit="">
+							<ScalarType>
+								<EnumerationAttributes enumerationName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/Enumerations/STM_State_HAZ" enumerationOID="_040gm004j5h01o070s60acfu7oj02" kind="parameter" scope="local" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+				</Arguments>
+			</MethodSignature>
+			<MethodSignature name="HazardWarning" OID="_040gm004j5h01o07100gbsil14bgo" public="true" default="false" defaultMethod="false" hidden="false" availableForOS="false">
+				<Return OID="_040gm004j5h01o07100gbsil14a0o">
+					<Comment>Hazard warning output</Comment>
+					<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+						<ScalarType>
+							<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+						</ScalarType>
+					</ElementAttributes>
+				</Return>
+			</MethodSignature>
+			<MethodSignature name="Init" OID="_040gm004j5h01o07100gbsil14c0o" public="true" default="false" defaultMethod="false" hidden="false" availableForOS="false">
+				<Arguments>
+					<Argument name="V_Veh_Init" OID="_040gm004j5h01o07100gbsil14ago" ignore="false">
+						<Comment>Vehicle velocity </Comment>
+						<ElementAttributes modelType="scalar" basicModelType="cont" unit="m/s">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+				</Arguments>
+			</MethodSignature>
+		</MethodSignatures>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>gaz8iTd/2YvNOh+Z2jVVHdzEDj0=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>fv5BZBUNKr0vb//fZtNrGJYIPEKxegYR7TrB5gSi2lMxcYaFJUyP66X6JhuSVxec
+iGMlgPnBNeDu8BnNxFGR0cbtuXdNKwuwk4VVVOK5Y0rgSUfo8CLR3oMNUme4e7gl
+Rmvz7BqRMtYjvFZ+x2E9P3NQWYfq6E5dptWAMWtbE/fdNbq5IanhqrbBtmEEm3Un
+yG/3jP2YoHhqsyZe8Pfq9WARM+U13Q0xgfq/l83suR9cgIh0o/HL4yoAhn3rZk6N
+DhlXW3z78VxdcnpD0LZZahT49WlPG8dlrGKh6NUkgdJQ6X42aHl8PVAEVisFapNY
+2YfRjDck4yOeTXjxaK7uxg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>

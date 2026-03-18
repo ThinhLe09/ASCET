@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0" buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+	<ImplementationConfiguration implementationSetName="Impl" implementationSetOID="_040gm004j5h01o07100gbsil8si0o"/>
+	<DataConfiguration dataSetName="Data" dataSetOID="_040gm004j5h01o07100gbsil8shgo"/>
+	<OsLogic>
+		<OsEntry>
+			<TargetKey name="PC.Generic"/>
+			<OsDescription coopLevels="20" preempLevels="0" eventLevels="0" enableMonitoring="true" enableTickDuration="true" tickDuration="1000000000">
+				<OperationModes>
+					<OperationMode name="inactive" id="0" isStartMode="false" isCTMode="false"/>
+					<OperationMode name="active" id="1" isStartMode="true" isCTMode="true"/>
+				</OperationModes>
+				<Tasks/>
+				<OsSettings>
+					<Group name="OperatingSystem">
+						<Option name="AR_XML_CONFIG_FILE" type="String" value=""/>
+						<Option name="DO_ARXML_CONFIG" type="boolean" value="false"/>
+						<Option name="DO_OS_CONFIG" type="boolean" value="false"/>
+						<Option name="OS_CONFIG_TOOL_CMD" type="String" value=""/>
+						<Option name="OS_LIBS" type="String" value=""/>
+						<Option name="OS_TEMPLATE" type="String" value=""/>
+						<Option name="osType" type="String" value="Generic"/>
+						<Option name="P_OS_INCLUDE" type="String" value=""/>
+						<Option name="P_OS_LIBRARY" type="String" value=""/>
+						<Option name="PROJ_OIL_FILE" type="String" value=""/>
+					</Group>
+				</OsSettings>
+			</OsDescription>
+		</OsEntry>
+	</OsLogic>
+	<ModelConfiguration>
+		<FormulasFile type="FORMULA">HAZ_Core.project.formulas.dp.amd</FormulasFile>
+		<ImplementationTypesFile type="IMPLEMENTATION">HAZ_Core.project.implementationTypes.dp.amd</ImplementationTypesFile>
+	</ModelConfiguration>
+	<BuildConfiguration buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+		<Platform platformKey="PC_BORLANDCV45_unknown">
+			<Target name="PC" key="PC"/>
+			<Compiler name="BORLANDCV45" path="C:\Program Files (x86)\ETAS\ASCET6.1.5\Tools\Compiler\bc\"/>
+			<CodeGenerator type="PHYSICAL_EXPERIMENT"/>
+		</Platform>
+		<BuildSettings>
+			<Group name="build">
+				<Option name="cacheLocking" type="boolean" value="true"/>
+				<Option name="cacheLockKindCode" type="boolean" value="true"/>
+				<Option name="cacheLockKindData" type="boolean" value="true"/>
+				<Option name="castStrategy" type="String" value="MISRA"/>
+				<Option name="codeSyntax" type="boolean" value="true"/>
+				<Option name="commentElementDeclSource" type="boolean" value="true"/>
+				<Option name="commentFormula" type="boolean" value="true"/>
+				<Option name="commentGenerationInfo" type="boolean" value="true"/>
+				<Option name="commentSpecificationSource" type="boolean" value="true"/>
+				<Option name="dataLogging" type="boolean" value="false"/>
+				<Option name="definesForEnumValues" type="boolean" value="false"/>
+				<Option name="eHooksBuildOptions" type="String" value=""/>
+				<Option name="eHooksBypassImplementation" type="String" value="NONE"/>
+				<Option name="eHooksConfigFile" type="String" value=""/>
+				<Option name="eHooksGlobalNamespace" type="String" value="BP_"/>
+				<Option name="eHooksProjectFile" type="String" value=""/>
+				<Option name="forceParenthesisLogicalBinOp" type="boolean" value="false"/>
+				<Option name="genDependencyFiles" type="boolean" value="false"/>
+				<Option name="generateDataStructures" type="String" value="USELOCAL"/>
+				<Option name="generateMapFile" type="boolean" value="true"/>
+				<Option name="generateMethodsDT" type="boolean" value="true"/>
+				<Option name="genOSConfiguration" type="boolean" value="true"/>
+				<Option name="makeHeaderStructure" type="String" value="Component"/>
+				<Option name="maxLockedWays" type="String" value="768 kB"/>
+				<Option name="maxLoopIterate" type="int" value="1000"/>
+				<Option name="mcaCountingMode" type="String" value="boolean mode"/>
+				<Option name="mcaCoverageAnalysis" type="boolean" value="false"/>
+				<Option name="mcaDebuggingSupport" type="boolean" value="false"/>
+				<Option name="mcaValueRangeAnalysis" type="boolean" value="false"/>
+				<Option name="parenthesizeForReadability" type="boolean" value="false"/>
+				<Option name="prefixComponentName" type="String" value=""/>
+				<Option name="protectDiv" type="boolean" value="true"/>
+				<Option name="protectDivSignedOverflow" type="boolean" value="true"/>
+				<Option name="protectVecIndex" type="boolean" value="true"/>
+				<Option name="useAccessMacros" type="MultiSelectionEnum" value="\variables\messages"/>
+				<Option name="useGlobalId" type="boolean" value="true"/>
+				<Option name="useLongNames" type="boolean" value="true"/>
+				<Option name="usePMI" type="boolean" value="true"/>
+			</Group>
+			<Group name="asam2MC">
+				<Option name="ETargetHexCodeIncludesROMCode" type="String" value="false"/>
+				<Option name="Formulawithunit" type="String" value="false"/>
+				<Option name="Suppressexportsprototypewithinasap2" type="String" value="false"/>
+				<Option name="Suppressexportswithinasap2" type="String" value="false"/>
+				<Option name="SuppressGroupInformationInAsap2" type="String" value="false"/>
+			</Group>
+		</BuildSettings>
+	</BuildConfiguration>
+	<SimulationConfiguration experimentTarget="ExperimentOfflinePC"/>
+	<HiddenMessageTypes/>
+	<IgnoredMessageTypes/>
+	<PromotedToErrorMessageTypes/>
+	<PromotedToWarningMessageTypes/>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>OxprJkfUSrkTpyXbqHWHOb3YuQs=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>g1T/IseVvKRmEvrrmm4niJUdKZi3RrQl56mCEQlDRz1S1LPw+R4JBImAM3oIlq1l
+YQOZT1k6QSFS7dqFmcoQ4X+72IXNpG0fv/zRFjTiPNyKIrV9mIpJsoKi0rgbClfL
+7XKF+pDAOluURIX6GCMd3hk+OKlXFgmvlepSfLKl9367tlIOAOeatZqvBAB5t8XD
++coigN4bggPRwy4QLwrZRATZhYcjyko1QuQvu3HEmqEJD19KUTJ1pBCBbAXb3Upw
++6IB0veAQJgUVWoeMpEWEkeHqpfN/m73qo/NVdsVTlOYwjoRwywykG0kdmqxnJqB
+EoAc1eZeQNdKxf7WmjLZ4g==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Project>

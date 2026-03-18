@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentImplementation toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.1">
+	<ImplementationSet name="TestValue_C_DEFAULT" default="false" classConfig="true" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="false" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040g08k1c0001k07187g7g825ilmu">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:58" timeStampCounter="5264"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="dT" elementOID="_040g08k1c0001k07187g7g8282mmu">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="false" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0" formula="dT" master="Model" physType="real64" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0.0" max="2147.483"/>
+							<ImplementationInterval min="0" max="16777211"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="TestValue_C" elementOID="_040g08k1c0001k07187g7g829an6u">
+					<ComplexImplementation implementationName="Kl" implementationOID="_040g060kg0001k070g705b1a7kj00"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<ImplementationSet name="Impl" default="true" classConfig="false" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="false" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040g08k1c0001k07187g7g825ikmu">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:58" timeStampCounter="5267"/>
+	</ImplementationSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>iolXATu4V1LMZG0EMQ37diKSG2Y=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>nMmSHCKsp5LKG+ke4SkWWQMCXVTOfc8SdqBhk+8xZwK+T2fSjSnBYrOYeoYi9DWa
+lRH9731fac3nSQM2rqMqoQEdwkB0RKqEsWuKJKvQC7R0+WU2F9nXD9bgCFtj9OGx
+T6g3h6a66aek4QWzYtxDlMKuoUo5XXfiKwwrPAPZvLb+4dwUqq3cuSyOVRzjGu3n
+nCdM42aRDOlDYBCS6RT+nRO3B+GN8IVaMzblo7C/jxDp9GLa2Y7SAw7xFr4eFpZR
+9pzBkuUF+OHKSAlTCStMCKZ1XZEuWwvv3+pseoCVijWWtleKP9CE1/5ABWDOWOkm
+6yxWF6xfLZwA6MlFXzh0wg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentImplementation>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0" buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+	<ImplementationConfiguration implementationSetName="Impl" implementationSetOID="_040qm02id4001lo704a0ge60ampg0"/>
+	<DataConfiguration dataSetName="Data" dataSetOID="_040qm02id4001lo704a0ge605mp00"/>
+	<OsLogic>
+		<OsEntry>
+			<TargetKey name="PC"/>
+			<OsDescription coopLevels="20" preempLevels="0" eventLevels="0" enableMonitoring="true" enableTickDuration="true" tickDuration="1000000000">
+				<OperationModes>
+					<OperationMode name="inactive" id="0" isStartMode="false" isCTMode="false"/>
+					<OperationMode name="active" id="1" isStartMode="true" isCTMode="true"/>
+				</OperationModes>
+				<Tasks/>
+				<OsSettings>
+					<Group name="OperatingSystem"/>
+				</OsSettings>
+			</OsDescription>
+		</OsEntry>
+	</OsLogic>
+	<ModelConfiguration>
+		<FormulasFile type="FORMULA">_Environment_BitPos.project.formulas.dp.amd</FormulasFile>
+		<ImplementationTypesFile type="IMPLEMENTATION">_Environment_BitPos.project.implementationTypes.dp.amd</ImplementationTypesFile>
+	</ModelConfiguration>
+	<BuildConfiguration buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+		<Platform platformKey="PC_BORLANDCV45_unknown">
+			<Target name="PC" key="PC"/>
+			<Compiler name="BORLANDCV45" path="C:\Program Files (x86)\ETAS\ASCET6.1.5\Tools\Compiler\bc\"/>
+			<CodeGenerator type="PHYSICAL_EXPERIMENT"/>
+		</Platform>
+		<BuildSettings>
+			<Group name="build">
+				<Option name="addSourceCode" type="boolean" value="false"/>
+				<Option name="castStrategy" type="String" value="Legacy"/>
+				<Option name="dataLogging" type="boolean" value="false"/>
+				<Option name="definesForEnumValues" type="boolean" value="false"/>
+				<Option name="generateMapFile" type="boolean" value="true"/>
+				<Option name="generateMethodsDT" type="boolean" value="true"/>
+				<Option name="maxLoopIterate" type="int" value="1000"/>
+				<Option name="needsIntegerCode" type="boolean" value="true"/>
+				<Option name="needsIntegerType" type="boolean" value="true"/>
+				<Option name="oneHeaderOnly" type="boolean" value="false"/>
+				<Option name="oneModuleOnly" type="boolean" value="false"/>
+				<Option name="optimizeMultipleLevelDirectAccess" type="boolean" value="false"/>
+				<Option name="optimizeOneLevelDirectAccess" type="boolean" value="false"/>
+				<Option name="prefixComponentName" type="String" value=""/>
+				<Option name="protectDiv" type="boolean" value="true"/>
+				<Option name="protectDivSignedOverflow" type="boolean" value="false"/>
+				<Option name="protectVecIndex" type="boolean" value="true"/>
+				<Option name="useGlobalId" type="boolean" value="true"/>
+				<Option name="useLongNames" type="boolean" value="true"/>
+				<Option name="viewingCode" type="boolean" value="false"/>
+				<Option name="warningLevel" type="int" value="1"/>
+			</Group>
+			<Group name="codeOptimization">
+				<Option name="commonSubexpressionElimination" type="boolean" value="true"/>
+				<Option name="constantFoldingOnArithmeticOperations" type="boolean" value="true"/>
+				<Option name="constantFoldingOnControlFlow" type="boolean" value="true"/>
+				<Option name="constantFoldingOnLogicalOperations" type="boolean" value="true"/>
+				<Option name="operatorSimplificatonGeneral" type="boolean" value="true"/>
+				<Option name="operatorSimplificatonRespectIntervals" type="boolean" value="true"/>
+				<Option name="optimizeMultipleLevelDirectAccess" type="boolean" value="false"/>
+				<Option name="optimizeOneLevelDirectAccess" type="boolean" value="false"/>
+				<Option name="optimizeStaticActionsForSM" type="boolean" value="false"/>
+				<Option name="outlineAutomaticallyGeneratedMethodsForSM" type="boolean" value="false"/>
+			</Group>
+		</BuildSettings>
+	</BuildConfiguration>
+	<SimulationConfiguration experimentTarget="ExperimentOfflinePC"/>
+	<HiddenMessageTypes/>
+	<IgnoredMessageTypes/>
+	<PromotedToErrorMessageTypes/>
+	<PromotedToWarningMessageTypes/>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>BS1kSl8AAdd2qGVWKi0mFPgUEMU=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>ogrcl5N5jZEgSNUY7QZ9eWtxWAMhRuhM+EuS0tgbzJDHyB9N1RnVIndzk0DVwm0y
+qP8HWbqyqBmd/VizwYI8oBXt5k+HE+o1+e34hLL3VzNSVKLNYDYwMHKLbUe4r8kM
+Aq5ycTaJ2wS64NCUYyYTXqsDV+gJtYf8daDEjjY2pA/icL+gqHlKPwuzfCyBlBSo
+lFa7LYRcL6TrGAQxYs7cjVs3Oo935mcH1jQAoKtdMjZCwkqkXXrXEb3KPWY7u5xM
+AjYpAXUMeZ02gWWdH8lcFsY1rqdNkJvVYbDjUNfxuOk7eaVqEJCwf0Kiu3QHjokz
+RdYz2QgXVgl7bNiN6T+D/g==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Project>

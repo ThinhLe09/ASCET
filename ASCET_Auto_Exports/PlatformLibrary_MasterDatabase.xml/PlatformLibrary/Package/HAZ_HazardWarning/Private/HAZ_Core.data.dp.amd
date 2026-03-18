@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentData toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<DataSet name="HAZ_Core_DEFAULT" OID="_040gm004j5h01o07100gbsilasigo" default="false" classConfig="true">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5119"/>
+		<DataEntry elementName="dT" elementOID="_040gm004j5h01o07100gbsil6sggo">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="0.0"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<DataSet name="Data" OID="_040gm004j5h01o07100gbsil8shgo" default="true" classConfig="false">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5120"/>
+		<DataEntry elementName="HAZ_Core" elementOID="_040gm004j5h01o07100gbsil6sh0o">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o07100gbsil14cgo"/>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>6o/FgEYYKhZ2Ej48+Tw/ud9dDSs=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>Qd5ddhgzg7pO6gBp2G1JA7d6cLU6lxqiIVeZ8D96s0EIO+ak2Y6Eni2/fyWicbLU
+romZ4e9tj0ZpREKOqRBlBP1URjRQb+XmxzR0sz5qakoRmDciaQ69VVX5xQ5prDUm
+jrBAbYzXIb6lOJqNSH6J3kleSBur93a0VcOnZaWF08dLqe0IUcGd2K3IdkaB1vnu
+qBfgwpuH7uTcOFzpXh4nII7WF16DIJplO/W38xS8IENH3oAJNrUSGkm0RN0u9c7z
+9gra1t+0mJV4pjnbAukL47emPLTLd5nbs0Iv8QO20XAyGQn244Kh9IKHML2JsHcU
+6zkOiTbLFjezsvMP8NttPg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentData>

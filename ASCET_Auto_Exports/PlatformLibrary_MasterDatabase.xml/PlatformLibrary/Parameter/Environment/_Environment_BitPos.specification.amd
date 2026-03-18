@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specifications toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<Layout graphicOID="-1" flexibleCreated="false" hidePinNames="true" hideName="false" hideClassName="true" hideIcon="true">
+		<LineStyle width="1" type="LineSolid">
+			<Color red="0" green="0" blue="0"/>
+		</LineStyle>
+		<FillColor red="0" green="65535" blue="0"/>
+		<Position x="500" y="500"/>
+		<LabelPosition x="500" y="500"/>
+		<Interfaces>
+			<MethodPort methodName="set" defaultMethod="true">
+				<SequenceCall graphicOID="-1" sequenceNumber="0" userVisibility="true" startAtomic="false" endAtomic="false">
+					<Position x="410" y="540"/>
+				</SequenceCall>
+				<SelectorPort graphicOID="-1" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+					<Position x="400" y="510"/>
+				</SelectorPort>
+			</MethodPort>
+			<ReturnPort graphicOID="-1" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+				<Position x="600" y="510"/>
+			</ReturnPort>
+		</Interfaces>
+		<Size x="100" y="10"/>
+		<Icon>
+			<Size x="100" y="10"/>
+		</Icon>
+	</Layout>
+	<Specification name="Main" public="public">
+		<ESDLSpecification>
+			<ESDLCode>
+				<MethodBodies/>
+			</ESDLCode>
+		</ESDLSpecification>
+	</Specification>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>s6N4Rsfp7wO4LF1Efq3TK14Y+Vo=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>b/leTjmRZTsiIAhESWDRErVeSiw788Vn5wrdJxIeLgGk9qNJSXaLqc6nn/rPzLiS
+aecde4A2LkOsz4i9Gdu6MJY3LG+W14BdpiVtXprl7wTzsghTePukqx6mRkHmgdWL
+GJYio5PlrPcGpj5A66XJHR4l91XqGa2ZqazjVzXdox4EZOutRiX1TWqF/YT3b72B
+MGB9AgOYZhcAc/LQormU5vZR5zpgBQMa4ir9CTLvt8HWRA+q/+0d2w5Tj20NGf3y
+oEKAvIdWpvGbp6JjPV0vxAyAgHWoiQFzQEIBGoP7K/NVk0/eDYw0P+QupnsfVr5/
+YLQlrguFglGRikigY1sN8A==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Specifications>

@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentImplementation toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.1">
+	<ImplementationSet name="_Environment_BitPos" default="false" classConfig="true" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="false" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040qm02id4001lo704a0ge5vk2n00">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:56" timeStampCounter="5140"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_0" elementOID="_040qm02id4001lo704a0ge5uc1v00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_1" elementOID="_040qm02id4001lo704a0ge5uc1s00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_10" elementOID="_040qm02id4001lo704a0ge5uc2c00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_11" elementOID="_040qm02id4001lo704a0ge5uc2i00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_12" elementOID="_040qm02id4001lo704a0ge5uc2900">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_13" elementOID="_040qm02id4001lo704a0ge5uc24g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_14" elementOID="_040qm02id4001lo704a0ge5uc2cg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_15" elementOID="_040qm02id4001lo704a0ge5uc21g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_16" elementOID="_040qm02id4001lo704a0ge5uc2fg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_17" elementOID="_040qm02id4001lo704a0ge5uc25g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_18" elementOID="_040qm02id4001lo704a0ge5uc2200">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_19" elementOID="_040qm02id4001lo704a0ge5uc2000">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_2" elementOID="_040qm02id4001lo704a0ge5uc1ng0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_20" elementOID="_040qm02id4001lo704a0ge5uc2700">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_21" elementOID="_040qm02id4001lo704a0ge5uc2e00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_22" elementOID="_040qm02id4001lo704a0ge5uc2500">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_23" elementOID="_040qm02id4001lo704a0ge5uc1u00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_24" elementOID="_040qm02id4001lo704a0ge5uc26g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_25" elementOID="_040qm02id4001lo704a0ge5uc1qg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_26" elementOID="_040qm02id4001lo704a0ge5uc2ag0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_27" elementOID="_040qm02id4001lo704a0ge5uc22g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_28" elementOID="_040qm02id4001lo704a0ge5uc1q00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_29" elementOID="_040qm02id4001lo704a0ge5uc1r00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_3" elementOID="_040qm02id4001lo704a0ge5uc1t00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_30" elementOID="_040qm02id4001lo704a0ge5uc2dg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_31" elementOID="_040qm02id4001lo704a0ge5uc2j00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_4" elementOID="_040qm02id4001lo704a0ge5uc1ug0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_5" elementOID="_040qm02id4001lo704a0ge5uc1pg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_6" elementOID="_040qm02id4001lo704a0ge5uc2bg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_7" elementOID="_040qm02id4001lo704a0ge5uc1p00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_8" elementOID="_040qm02id4001lo704a0ge5uc2800">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="enumBit_9" elementOID="_040qm02id4001lo704a0ge5uc20g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_0" elementOID="_040qm02id4001lo704a0ge5uc2h00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_1" elementOID="_040qm02id4001lo704a0ge5uc2100">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_10" elementOID="_040qm02id4001lo704a0ge5uc2g00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_11" elementOID="_040qm02id4001lo704a0ge5uc2ig0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_12" elementOID="_040qm02id4001lo704a0ge5uc2d00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_13" elementOID="_040qm02id4001lo704a0ge5uc1mg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_14" elementOID="_040qm02id4001lo704a0ge5uc2a00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_15" elementOID="_040qm02id4001lo704a0ge5uc29g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_16" elementOID="_040qm02id4001lo704a0ge5uc2gg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_17" elementOID="_040qm02id4001lo704a0ge5uc1kg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_18" elementOID="_040qm02id4001lo704a0ge5uc1sg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_19" elementOID="_040qm02id4001lo704a0ge5uc1m00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_2" elementOID="_040qm02id4001lo704a0ge5uc2b00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_20" elementOID="_040qm02id4001lo704a0ge5uc1n00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_21" elementOID="_040qm02id4001lo704a0ge5uc1rg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_22" elementOID="_040qm02id4001lo704a0ge5uc1l00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_23" elementOID="_040qm02id4001lo704a0ge5uc23g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_24" elementOID="_040qm02id4001lo704a0ge5uc2k00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_25" elementOID="_040qm02id4001lo704a0ge5uc2jg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_26" elementOID="_040qm02id4001lo704a0ge5uc1o00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_27" elementOID="_040qm02id4001lo704a0ge5uc1tg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_28" elementOID="_040qm02id4001lo704a0ge5uc27g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_29" elementOID="_040qm02id4001lo704a0ge5uc2300">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_3" elementOID="_040qm02id4001lo704a0ge5uc28g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_30" elementOID="_040qm02id4001lo704a0ge5uc1lg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_31" elementOID="_040qm02id4001lo704a0ge5uc1og0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_4" elementOID="_040qm02id4001lo704a0ge5uc2eg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_5" elementOID="_040qm02id4001lo704a0ge5uc2hg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_6" elementOID="_040qm02id4001lo704a0ge5uc2600">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_7" elementOID="_040qm02id4001lo704a0ge5uc2f00">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_8" elementOID="_040qm02id4001lo704a0ge5uc1vg0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ValueOf_Bit_9" elementOID="_040qm02id4001lo704a0ge5uc2400">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="4294967295"/>
+							<ImplementationInterval min="0" max="4294967295"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<ImplementationSet name="Wo" default="true" classConfig="false" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="false" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040qm02id4001lo704a0ge5ukql00">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:56" timeStampCounter="5143"/>
+	</ImplementationSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>f/JnnkfNx+MGpK/+i5fsWEe/ztY=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>XvFLVoX8fs4oxh5KAtHR68Ed+MYpH1OjQioLQuHzTRPWiG3ci15HMZuoCNVsx0Pc
+x/gl7rGOmANZgU7/vX1TmysVWyihW3VyElSOhXzlqziENyYUI4lk3Lz7wA4ZKyms
+meUIDzil34gAj8TAwXkKXedTRhNNcnYRvpzzVISDUQJbEHgQeGnexWstc3qaxYG7
+6wwpTx01+KmRCPQrPgpINBz4/Kh0T9lTEL+bw3P6MPAmo/tK+PmGvWKDPna7k0mR
+q48Urp26n/V8Ok81VPbCzJJvhCHv8e4jM7BXiwqnqrm1YTBMDwdOQoiMjynmKmss
+SWvYZHF6IZbZ30HmLmd9Ew==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentImplementation>

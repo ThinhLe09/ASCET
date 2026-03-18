@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentData toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<DataSet name="_Environment_DEFAULT" OID="_040qm02ncg001lo70ceh5mkuvo6uk" default="false" classConfig="true">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:49" timeStampCounter="4828"/>
+		<DataEntry elementName="dT" elementOID="_040qm02ncg001lo70ceh5mlqs89uk">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="0.0"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_Environment" elementOID="_040qm02ncg001lo70ceh5mlqu8bek">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02ncg001lo70ceh5mkv9g9ek"/>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<DataSet name="Data" OID="_040qm02ncg001lo70ceh5mkuvo5uk" default="true" classConfig="false">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:49" timeStampCounter="4829"/>
+	</DataSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>ZzFUKWzEg/8ZQogHiiqV3mhJfjg=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>W10Eai3h/lhxJRe+RbczEKIttQe0O1abapq1Fv0tnGSgDe3GeHt30s04cblVY+FD
+u0pWozcL+s3cCpX+akmTGsl3AS02qWOZFB3oDTRCjc5GoqbHWEjN9xb8Pkb6Sllr
+ElbNg0LnNSkiIlZEqSWSaOCIhuJcVtJahEUJhNcPc7DOUF8o8suKcozyuD0H+V6C
+wTaL/d79Gs4MMQdz5aLKQXVk+1gJiQKjkEYj8Gfm2AGeVqg1uZGzK3ojsnErgFzJ
+iuNfgBpQg87Mmvyw69+xHLr2PqsAH1ribUwKfO1DCdbfr1Umfs+7uAYr/jJDIULI
+YyTRcx96hle3oI16YM1hNA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentData>

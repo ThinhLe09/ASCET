@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EE_GUI ToolName="ASCET" Version="6.1.4.0">
+	<Experiment ID="_040g000000001qg70c4hiiv5qm370" Version="Undefined" Name="Default" timestamp="1999-01-24T19:02:11" comment="Experiment Environment for: Raddruckkorrektur" collapsedView="false" animatedStates="false">
+		<Layers>
+			<Layer>
+				<LayerLayout/>
+			</Layer>
+		</Layers>
+		<Elements/>
+	</Experiment>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>fqRpN6Zkctk+2F5rppIKJZoiGqY=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>fHVxLSHsJMMKnJGe6CrQg0b9AvhEW41/AtXX0nio4ZjBCjzNo3/NCR3IIL00UiVu
+OrqMf8V4ZJAIuvLfZ2FqosIjZytPbagL85CSAIhxDNQLTTDVifiyA6/zsJ215LdV
+8sTqU5UvJ7ztYSZj0knxaGg6M89N8m1e/6TKUtde9vb1yGyG+sT+RYBc2fQOggDP
+9a0XX9crIIMbUPKjm2ojWZ3tso/6F2ci7cKhK5axt+xPAr0LvTlFP82FE408iEG7
+VHZsmqPNmgFP7HgipTZCHNx88Qn0AcZgIcGMVIe7AYvMGwYwOuT6IfFul7BP9e0+
+2TVcPps055wzrN5fQouGCA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</EE_GUI>

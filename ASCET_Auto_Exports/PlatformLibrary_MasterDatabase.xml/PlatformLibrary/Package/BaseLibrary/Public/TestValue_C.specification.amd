@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specifications toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<Layout graphicOID="-1" flexibleCreated="false" hidePinNames="false" hideName="false" hideClassName="true" hideIcon="true">
+		<LineStyle width="1" type="LineSolid">
+			<Color red="0" green="0" blue="0"/>
+		</LineStyle>
+		<FillColor red="65535" green="65535" blue="65535"/>
+		<Position x="500" y="500"/>
+		<LabelPosition x="500" y="530"/>
+		<Interfaces>
+			<MethodPort methodName="set" defaultMethod="true">
+				<SequenceCall graphicOID="-1" sequenceNumber="0" userVisibility="false" startAtomic="false" endAtomic="false">
+					<Position x="460" y="550"/>
+				</SequenceCall>
+				<SelectorPort graphicOID="-1" direction="bottomLeft" visibility="false" nameVisibility="false" name="aValue">
+					<Position x="445" y="520"/>
+				</SelectorPort>
+			</MethodPort>
+			<ReturnPort graphicOID="-1" location="left" visibility="true" nameVisibility="true" methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00" returnElementOID="_040g060kg0001k070g705b17g0500" defaultPort="false" tempVar="false">
+				<Position x="555" y="500"/>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementOID="_040g060kg0001k070g705b17g05g0" elementName="Comparator">
+					<Position x="445" y="490"/>
+				</SelectorPort>
+				<SelectorPort graphicOID="-1" direction="right" visibility="true" nameVisibility="true" elementOID="_040g060kg0001k070g705btnvh800" elementName="CompareValue">
+					<Position x="445" y="510"/>
+				</SelectorPort>
+			</ReturnPort>
+			<ReturnPort graphicOID="-1" location="bottomRight" visibility="false" nameVisibility="false" methodName="get" defaultPort="true" tempVar="false">
+				<Position x="555" y="520"/>
+			</ReturnPort>
+		</Interfaces>
+		<Size x="55" y="20"/>
+		<Icon>
+			<Size x="55" y="20"/>
+		</Icon>
+	</Layout>
+	<Specification name="Main" public="public">
+		<CCodeSpecification>
+			<CCode>
+				<CodeVariant target="Default" generator="undefined">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock></CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1112" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1130" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1135" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_ANSI" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_TMS470" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PC" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PPC" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="Prototyping" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PSL" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTPRO-PC" generator="PhysicalObject">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock></CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTPRO-PC" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTS" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="T8" generator="Physical">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="undefined" generator="undefined">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock></CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1112" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1112" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1112" generator="PhysicalObject" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1112" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1130" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1130" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1130" generator="PhysicalObject" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1130" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1135" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1135" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="ES1135" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_ANSI" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_ANSI" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_ANSI" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_TMS470" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_TMS470" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_TMS470" generator="PhysicalObject" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="G_TMS470" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PC" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PC" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PC" generator="PhysicalObject" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PC" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PPC" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PPC" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PPC" generator="PhysicalObject" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PPC" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="Prototyping" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="Prototyping" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="Prototyping" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PSL" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PSL" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="PSL" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTPRO-PC" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTPRO-PC" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTS" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTS" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="RTS" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+return ((Comparator &amp; CompareValue) &gt; 0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="T8" generator="Implementation" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="T8" generator="Object" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="T8" generator="PhysicalObject" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+				<CodeVariant target="T8" generator="Quantized" implementationOID="_040g060kg0001k070g705b1a7kj00" implementationName="Kl">
+					<HeaderBlock></HeaderBlock>
+					<MethodBodies>
+						<MethodBody methodName="AND" methodOID="_040g060kg0001k070g705b17g0e00">
+							<CodeBlock>// AND prüft, ob CompareValue in &#13;
+// Comparator enthalten ist&#13;
+   return ((Comparator&amp;CompareValue)&gt;0);</CodeBlock>
+						</MethodBody>
+					</MethodBodies>
+				</CodeVariant>
+			</CCode>
+		</CCodeSpecification>
+	</Specification>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>pwUqT5lbn5RjaMaNL9lA+6bDRWg=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>TVZzPoSbA8r+QG/1ieAP1v5ofhjkZpg0eW7tnTTVA8CPw6GiY366rpkiuXTM+HcN
+SjOQbPQ09kysXbGMi/4cSeGySTbdTRHq8b+0WxS8EqcxPg2R/x7+Byo4gDZCh+zl
+cY4xoEUnM4XDahVlqrAxc4+gmHWX9klgmc89ytvI6rHloJrZ1mlIlSo2UDMgJ/aW
+spDYW9fGufgQCtUB8TWgi61QWjHj5y2oh0ek2Smr7P+WIdQdzQ8NIpySLoB9khuB
+C8fdpSwcwqBN+bgEg9Q1Od8dL1Gv/hmh3Tv+743/jXpZ++TM6n7rpohYnnHRk+pI
+GGRMItALE1rxmNaGx+wkug==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Specifications>

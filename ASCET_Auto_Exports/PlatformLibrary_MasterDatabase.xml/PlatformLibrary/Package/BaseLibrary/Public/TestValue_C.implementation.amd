@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentImplementation toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.1">
+	<ImplementationSet name="TestValue_C" default="false" classConfig="true" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="false" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040g060kg0001k070g705b1gdcl00">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:58" timeStampCounter="5258"/>
+	</ImplementationSet>
+	<ImplementationSet name="Kl" default="true" classConfig="false" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="false" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="on" userDefinedOrder="false" OID="_040g060kg0001k070g705b1a7kj00">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:58" timeStampCounter="5261"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="Comparator" methodName="AND" elementOID="_040g060kg0001k070g705b17g05g0">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="CompareValue" methodName="AND" elementOID="_040g060kg0001k070g705btnvh800">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1.0" formula="IDENTITY" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="return" methodName="AND" elementOID="_040g060kg0001k070g705b17g0500">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="bit" memoryLocationInstance="Default" additionalInformation="bitbasisname=&#13;&#10;bitbasistype=&#13;&#10;bitpos=" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>VMPskPedRSmIBehTtPY8ktVHXL0=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>mJnwoZWW4cW5dQazxCVugb8Nenkqz+41GbR/oYOQ58boQbrhWdCQaE+73foMTsSU
+7fkAhNaRqaW4VfqEutm4CI7Trd5nBoktBJYj3LsumkcgRrPqF8ZUepsCXpyyFM/T
+4w2d951wAcHZtRgXF+7JQvEf9kFUkRz4o7SQsO9QOjrDLYkzLBBgV7fedTs+MlWO
+pM+SD7mI2q79iulZ9pyeLeLkPidrTDH2d9aI2vZk/3OTFI4xW8Kq1aTEfW/KblNp
+wmXZWxJFdLOlSFOaETZZJ806yZ29DWJ5IL8EqZZoZ1W+sRQ0NZxW7O19uj0FcLoz
+uM9fUDmJfVbFLsHRhmHYbQ==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentImplementation>

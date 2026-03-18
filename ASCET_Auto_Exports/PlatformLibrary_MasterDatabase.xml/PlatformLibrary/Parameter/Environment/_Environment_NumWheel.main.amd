@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="_Environment_NumWheel" nameSpace="/PlatformLibrary/Parameter/Environment" OID="_040qm02180001m07186h633s22mle" timeStamp="2026-03-09T11:14:48" componentType="ASCET_Class" specificationType="ESDL" defaultProjectName="_Environment_NumWheel_DEFAULT" defaultProjectOID="_040qm02180001m07186h633v3qv5e">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:48" timeStampCounter="4763"/>
+		<Notes>
+			<Note name="2009.09.15 16:49:19 Current Changes">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.0L&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.15 16:49:19&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02180001m07186h633s22mle&#13;
+&#13;
+Item is Locked!</Text>
+			</Note>
+			<Note name="02-11-08 Item-History">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition: -&#13;
+author: CS-CC/EVD2-Zoebele&#13;
+&#13;
+what:&#13;
+Correction of wrong default setting of Drive_Modus &#13;
+and DriveMode_ForRTA .&#13;
+why:&#13;
+Previous version lead to an error when calculating &#13;
+parameter dependencies.&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.0&#13;
+author: zea2si&#13;
+when:2006.05.08 15:17:12&#13;
+what:&#13;
+new class&#13;
+why:&#13;
+new Parametertree&#13;
+CSCRM00006901&#13;
+itempath:RM\ASW\Mosar\_01_BuildingBlocks\Parameter\Environment&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E1.0&#13;
+author: sma2si&#13;
+when:2006.06.21 15:34:23&#13;
+what:&#13;
+&#13;
+why:&#13;
+&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.1&#13;
+author: sma2si&#13;
+when:2006.06.21 15:35:40&#13;
+what:&#13;
+Norm_X_Max included&#13;
+why:&#13;
+required for BaseLib-class Norm&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E1.1&#13;
+ASCET_version: V5.1&#13;
+author: zea2si&#13;
+when:2006.11.14 13:06:52&#13;
+what:&#13;
+Parameterupdate BsVu814_BL6_2__ABS_061113.dcm&#13;
+why:&#13;
+Base ABS Parameter Idiada Database 6_3&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.1.2.0&#13;
+ASCET_version: V5.1&#13;
+author: zea2si&#13;
+when:2006.11.14 13:34:58&#13;
+what:&#13;
+Parameterupdate BsVu814_BL6_2__ABS_061113.dcm&#13;
+why:&#13;
+Base ABS Parameter Idiada Database 6_3&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E1.1.2.0&#13;
+ASCET_version: V5.1&#13;
+author: ZEA2SI&#13;
+when:2007.01.16 19:07:59&#13;
+what:&#13;
+new path&#13;
+why:&#13;
+&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.0&#13;
+ASCET_version: V5.1&#13;
+author: zea2si&#13;
+when:2007.01.21 13:18:08&#13;
+what:&#13;
+new pathfirst edition&#13;
+&#13;
+why:&#13;
+Anpassung Parameterstruktur  &#13;
+Baseline 9&#13;
+itempath:RM\ASW\Mosar\Parameter\Environment&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.0&#13;
+ASCET Version: V5.1&#13;
+Author       : sma2si&#13;
+When         : 2007.02.28 14:10:53&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge6pkiu00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.2&#13;
+ASCET Version: V5.1&#13;
+Author       : sma2si&#13;
+When         : 2007.03.01 11:48:53&#13;
+---------------------------------------&#13;
+What: MyMin included&#13;
+Why : parameter restructure&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge6pkiu00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.2&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.07.15 13:15:43&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge6pkiu00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.3&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.22 17:35:09&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+      CSCRM00057469&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge6pkiu00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.3&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2008.04.17 13:10:56&#13;
+---------------------------------------&#13;
+What: set ZwoPi to calibration = yes&#13;
+Why : Bugfix EcuCodeGen 3.3&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge6pkiu00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.5&#13;
+ASCET Version: V5.1&#13;
+Author       : rat2si&#13;
+When         : 2008.04.18 09:38:18&#13;
+---------------------------------------&#13;
+What: Dependent characteristic ZwoPi was changed to independent and calibration = no&#13;
+Why : Bugfix EcuCodeGen 3.3, CSCRM00089374&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge6pkiu00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rat2si&#13;
+When         : 2008.10.13 14:25:13&#13;
+---------------------------------------&#13;
+What: parameters Num_Whl_XY were moved from class _StateABS&#13;
+Why : SWGR 117111&#13;
+---------------------------------------&#13;
+OID     : 040qm02180001m07186h633s22mle&#13;
+Itempath: RM\ASW\Mosar\PlatformLibrary\Parameter\Environment&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.0L&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.15 16:49:19&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02180001m07186h633s22mle&#13;
+&#13;
+Item is Locked!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.0.1.0&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.16 08:58:16&#13;
+---------------------------------------&#13;
+What: &#13;
+      Clean all objects from the ASCET items&#13;
+Why : &#13;
+      Request:  CSCRM00156278 Reduce the size of the ASCET database&#13;
+      Task: CSCRM00156311&#13;
+---------------------------------------&#13;
+OID     : 040qm02180001m07186h633s22mle</Text>
+			</Note>
+			<Note name="ASCET-SCM-TCM">
+				<Text>&lt;VersionInfos&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;_Environment_NumWheel&lt;/Name&gt;&#13;
+    &lt;Number&gt;5.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040qm02180001m07186h633s22mle&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2011-05-23T14:29:00&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+&lt;/VersionInfos&gt;</Text>
+				<View name="view"/>
+			</Note>
+		</Notes>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="V5.0" configurationID=""/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements>
+			<Element name="Num_Whl_FL" OID="_040qm02180001m07186h67e3ev75e" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="sysconstant" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="true" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="Num_Whl_FR" OID="_040qm02180001m07186h67e3ev85e" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="sysconstant" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="true" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="Num_Whl_RL" OID="_040qm02180001m07186h67e3eva5e" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="sysconstant" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="true" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="Num_Whl_RR" OID="_040qm02180001m07186h67e3ev95e" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="sysconstant" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="true" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+		</Elements>
+		<MethodSignatures/>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:48"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:48"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:48"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:48"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:48"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:48"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>stPNuJjxSXDXgdH1BrLDCS4wocQ=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>hOI5CTtdx6c51RoXIioRVhqvsWpa4oPzEVq7oNjZm7YHlcnFViRYQTKEuBp2qEUA
+Lr4dOv7/FvxNgzYGHfInv3MU70rzPHa9u7oyCSl8cs2mgl2tvnQVDsiFJer+h2WM
+kIS4rNd++gr+lWuKD8b/cE1jip57UfDYoFxnB0rtgHVpND58n8M1A5HyiZCxtDri
+BxKnxBwXajDoFpxfNBxecjfbw82+5+WgTWt/Z5Qnn3bYG151vQFoY2FhZVk2kaRK
+Z6pV5I6zOwFtJPcwu/r7Mm74J8sSojk6JxIQuASTILsagRirdKs2Tdy5yDERvzav
+hHZSYawtMmdMHYyYDYSO/Q==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>

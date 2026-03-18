@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0" buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+	<ImplementationConfiguration implementationSetName="Impl" implementationSetOID="_040g08k1c0001k07187g7g825ikmu"/>
+	<DataConfiguration dataSetName="Data" dataSetOID="_040g08k1c0001k07187g7g825il6u"/>
+	<OsLogic/>
+	<ModelConfiguration>
+		<FormulasFile type="FORMULA">TestValue_C.project.formulas.dp.amd</FormulasFile>
+		<ImplementationTypesFile type="IMPLEMENTATION">TestValue_C.project.implementationTypes.dp.amd</ImplementationTypesFile>
+	</ModelConfiguration>
+	<BuildConfiguration buildConfigKey="PC_BORLANDCV45_1_ttfttft_1000_">
+		<Platform platformKey="PC_BORLANDCV45_unknown">
+			<Target name="PC" key="PC"/>
+			<Compiler name="BORLANDCV45" path="C:\Program Files (x86)\ETAS\ASCET6.1.5\Tools\Compiler\bc\"/>
+			<CodeGenerator type="PHYSICAL_EXPERIMENT"/>
+		</Platform>
+		<BuildSettings>
+			<Group name="build">
+				<Option name="castStrategy" type="String" value="Legacy"/>
+				<Option name="dataLogging" type="boolean" value="false"/>
+				<Option name="definesForEnumValues" type="boolean" value="false"/>
+				<Option name="generateMapFile" type="boolean" value="true"/>
+				<Option name="generateMethodsDT" type="boolean" value="true"/>
+				<Option name="maxLoopIterate" type="int" value="1000"/>
+				<Option name="needsIntegerCode" type="boolean" value="true"/>
+				<Option name="needsIntegerType" type="boolean" value="true"/>
+				<Option name="oneHeaderOnly" type="boolean" value="false"/>
+				<Option name="oneModuleOnly" type="boolean" value="false"/>
+				<Option name="optimizeMultipleLevelDirectAccess" type="boolean" value="false"/>
+				<Option name="optimizeOneLevelDirectAccess" type="boolean" value="false"/>
+				<Option name="prefixComponentName" type="String" value=""/>
+				<Option name="protectDiv" type="boolean" value="true"/>
+				<Option name="protectDivSignedOverflow" type="boolean" value="false"/>
+				<Option name="protectVecIndex" type="boolean" value="true"/>
+				<Option name="useGlobalId" type="boolean" value="true"/>
+				<Option name="useLongNames" type="boolean" value="true"/>
+				<Option name="warningLevel" type="int" value="1"/>
+			</Group>
+			<Group name="iaSettings">
+				<Option name="representableBits" type="int" value="32"/>
+			</Group>
+		</BuildSettings>
+	</BuildConfiguration>
+	<SimulationConfiguration experimentTarget="ExperimentOfflinePC"/>
+	<HiddenMessageTypes/>
+	<IgnoredMessageTypes/>
+	<PromotedToErrorMessageTypes/>
+	<PromotedToWarningMessageTypes/>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>kIg+K4rjMcNulAUQex29IXAQ9xY=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>W38/YEyKq17SKv4iD+JzP4Ds3/sOrKMNIxPBmrLxoSKOpnu7AeAM1ssljTvjFtZs
+Ebvob6iPRulE4Zuwrq7WutrLwkUZaaxrgPlBOLgCcFk7KzXIWIwnDguer37oHAJZ
+9wFkyYtOVNNHtZlNJ7cgP2SFoH3Z9fk8Mxoceh8zgKvS1p1+zgswLhlSFAwHJ/hR
+hCxe9ZKwK0GZ9Hb9kMnrjqMGV9V4wxsHyuNtBq1RyB3LDVw9O8uNzJh5379zBWZs
+Eib0MVOzEeMg4sN/tFz9cwmEbhAnGLDWdSDJ1/RlePD+JaUp86s5DAaqiQky7fak
+tTjtDFurWOmJ7DI27mG2GA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</Project>

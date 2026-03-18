@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentData toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<DataSet name="_Environment" OID="_040qm02ncg001lo70ceh5ni0loeuk" default="false" classConfig="true">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:49" timeStampCounter="4821"/>
+	</DataSet>
+	<DataSet name="Data" OID="_040qm02ncg001lo70ceh5mkv9g9ek" default="true" classConfig="false">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:49" timeStampCounter="4822"/>
+		<DataEntry elementName="_BitPos" elementOID="_040qm02ncg001lo70ceh5mmr5gcek">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02id4001lo704a0ge5ufqkg0"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_BlsQualityGrades" elementOID="_040qm02ncg001m070s10q4hhdmnqo">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02ncg001m070s10q4752ueqo"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_Constants" elementOID="_040qm02ncg001lo70ceh5mncaccuk">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02id4001lo704a0ge6pqr300"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_CycleTimes" elementOID="_040qm02ncg001lo70ceh5mp9h8dek">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02id4001lo704a0ge7j77og0"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_DirectionInfo" elementOID="_040qm02l60001lo70k40741qu8a28">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02l60001lo70k1ggmait29hk"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_Environment_APBHallQualityGrades" elementOID="_040g0001j0001mg7189gj4r1qmcg4">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm03n8s001mg70o90800h2aog0"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_NumWheel" elementOID="_040qm02180001m07186h6kbf9ve5e">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02180001m07186h633tkus5e"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_PsQualityGrades" elementOID="_040qm02ncg001m070s10q3p8o6bao">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02ncg001m070s10q1ppca2qo"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="_QualityGrades" elementOID="_040qm02ncg001lo70ceh5mqq60duk">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040qm02g4o001lo70c417ngnesog4"/>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>Tmk3HcWQ1zrPhWtLvPM3G/YVt8Q=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>Ox+ZDZSqOnZBTxJ6x3PmVzvl7dLo+EO5Cg8bwIODQAfYueYkdX2j/a0ZyihHC2Ej
+wKcSy8rLhvZKIx6PJE5+xUyS6kVZ673JH7/1GXZL1O+29FtzmEcYpTynF2VTZ2eX
+vt+R8+nHprpUE154Z6yQFc3ERunmKjOtM/IO+RDjVG1VkRBkaA6lvk/2Loyv+C4N
+aMS7Qvjra1XJu+UpCGnnGnM6aF2DIaf2yoP+Z2FOUrBfW6ix7OwCc9kPlCr6Okls
++LWbWTKMs5CnieQkeHsttOknrFGjg4oA3dSvoqbIeY9X6p5ggeCj+v76Tz5O5aF5
+Eacth0QNmqBjC/Js7fzFsA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentData>

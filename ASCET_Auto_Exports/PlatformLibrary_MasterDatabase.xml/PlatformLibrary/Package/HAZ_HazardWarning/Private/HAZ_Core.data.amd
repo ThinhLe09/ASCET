@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentData toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<DataSet name="HAZ_Core" OID="_040gm004j5h01o07100gbsil30dgo" default="false" classConfig="true">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5112"/>
+	</DataSet>
+	<DataSet name="Data" OID="_040gm004j5h01o07100gbsil14cgo" default="true" classConfig="false">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5113"/>
+		<DataEntry elementName="FS_Brake_Pressure_Based_warning" elementOID="_040gm004j5h01o07100gbsil1400o">
+			<DataVariant name="default">
+				<Dependency>
+					<Parameter formalName="x" formalOID="_040gm004j5h01o070s3ganokpfrpg" valueName="FS_Brake_Pressure_Based_warning_" valueOID="_040gm004j5h01o07100gbsil140go"/>
+				</Dependency>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_ABS_Warning" elementOID="_040gm004j5h01o071010h0o6d8eoa">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o071010h09697po8"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_Available" elementOID="_040gm004j5h01o071010fmeeqdmi0">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o071010flrl7uj1u"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_BrakePressure_Warning" elementOID="_040gm004j5h01o071010edrhen8gs">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o07100gbpanktv0k"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_Deceleration_Warning" elementOID="_040gm004j5h01o07100gbsil1430o">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o070s608a0btuve4"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_Output" elementOID="_040gm004j5h01o071010eedb1cvgu">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o07100gbr5rb4d0m"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_Selection_Strategy" elementOID="_040gm004j5h01o07100gbsil141go">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o070s608skke6kv2"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_V_vech_delayed" elementOID="_040gm004j5h01o071010efe6b2q0u">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o070s7gb1hdl4n00"/>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="HAZ_VAF_Warning" elementOID="_040gm004j5h01o07100gbsil144go">
+			<DataVariant name="default">
+				<ComplexType dataName="Data" dataOID="_040gm004j5h01o070s608hnv8deua"/>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>SYYASVzFhVghKuMNe7TVFmst5F8=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>BGVIiFS6bzv4DDZJVZZjqOyxSsk8Jv5tX457XuR8T5RHtREaXbZHijYE02KE0zzP
+vCd2TGCyWW9tkQjLNN+xbgM+zgtwMpolLsbhfFWeET34GM5kTRvhmMf7beufplyz
+v60RKMqvRHJXZRphQ6X+Cr14Jg7kRMQk99sHq6CzeJsB7PIn6I5cwlozplX9zghY
+8+RY/ddtSSUo6STqtN26ehzd0KGCK44taKsRpsT4EEkK4kDOxsucAM6ILYVKCrue
++F1uZLmGuAD2Ex1JdjHBXBnnpNoFzq5hwYNBAjs1dpYd21BDvJ2nAdbpLgDVsKbE
+9MJCQkCHpmIgu80vCRUIiA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentData>

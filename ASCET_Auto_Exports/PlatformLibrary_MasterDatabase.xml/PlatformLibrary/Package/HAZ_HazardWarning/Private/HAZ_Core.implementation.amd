@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentImplementation toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.1">
+	<ImplementationSet name="HAZ_Core" default="false" classConfig="true" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="true" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040gm004j5h01o07100gbsil50e0o">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5111"/>
+	</ImplementationSet>
+	<ImplementationSet name="Impl" default="true" classConfig="false" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="true" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040gm004j5h01o07100gbsil30d0o">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5114"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="a_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil146go">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0.0625" formula="Acceleration_normal" master="Model" physType="real64" implType="sint16" zeroNotIncluded="false">
+							<PhysicalInterval min="-25.0" max="25.0"/>
+							<ImplementationInterval min="-400" max="400"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="a_veh_x_Target_VAF" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1490o">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0.0625" formula="Acceleration_normal" master="Model" physType="real64" implType="sint16" zeroNotIncluded="false">
+							<PhysicalInterval min="-25.0" max="25.0"/>
+							<ImplementationInterval min="-400" max="400"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="ABSActive" methodName="calc" elementOID="_040gm004j5h01o07100gbsil147go">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="Brake_request" methodName="calc" elementOID="_040gm004j5h01o07100gbsil148go">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="BrakeLightSwitch" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1450o">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="BrakePressureMasterCylinder" methodName="calc" elementOID="_040gm004j5h01o07100gbsil145go">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0.03125" formula="Pressure_normal" master="Model" physType="real64" implType="sint16" zeroNotIncluded="false">
+							<PhysicalInterval min="-20.0" max="400.0"/>
+							<ImplementationInterval min="-640" max="12800"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="Cust_Addon" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1470o">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="FS_Brake_Pressure_Based_warning" elementOID="_040gm004j5h01o07100gbsil1400o">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="return" methodName="HazardWarning" elementOID="_040gm004j5h01o07100gbsil14a0o">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="TargetStateHAZ" methodName="calc" elementOID="_040gm004j5h01o071010fogtrm32a">
+					<ScalarImplementation>
+						<EnumerationImplementation memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="V_Veh_Init" methodName="Init" elementOID="_040gm004j5h01o07100gbsil14ago">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0.0078125" formula="Velocity_fine" master="Model" physType="real64" implType="uint16" zeroNotIncluded="false">
+							<PhysicalInterval min="0.0" max="100.0"/>
+							<ImplementationInterval min="0" max="12800"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="v_Veh_x" methodName="calc" elementOID="_040gm004j5h01o07100gbsil1460o">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="true" isLimitOverflow="true" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0.0078125" formula="Velocity_fine" master="Model" physType="real64" implType="uint16" zeroNotIncluded="false">
+							<PhysicalInterval min="0.0" max="100.0"/>
+							<ImplementationInterval min="0" max="12800"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="vaf_brake" methodName="calc" elementOID="_040gm004j5h01o07100gbsil149go">
+					<ScalarImplementation>
+						<LogicImplementation physType="log" implType="uint8" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic"/>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="WSS_Quality_FL" methodName="calc" elementOID="_040gm004j5h01o071010fo0dqo82a">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="false" isLimitOverflow="false" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1" formula="ident" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="WSS_Quality_FR" methodName="calc" elementOID="_040gm004j5h01o071010fo55aggia">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="false" isLimitOverflow="false" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1" formula="ident" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="WSS_Quality_RL" methodName="calc" elementOID="_040gm004j5h01o071010fo6fhsoia">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="false" isLimitOverflow="false" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1" formula="ident" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="WSS_Quality_RR" methodName="calc" elementOID="_040gm004j5h01o071010fo6fhspia">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="false" isLimitOverflow="false" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="1" formula="ident" master="Model" physType="uint32" implType="uint8" zeroNotIncluded="false">
+							<PhysicalInterval min="0" max="255"/>
+							<ImplementationInterval min="0" max="255"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_ABS_Warning" elementOID="_040gm004j5h01o071010h0o6d8eoa">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o071010h096b3q88"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_Available" elementOID="_040gm004j5h01o071010fmeeqdmi0">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o071010flrl7ujhu"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_BrakePressure_Warning" elementOID="_040gm004j5h01o071010edrhen8gs">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o07100gbpanktvgk"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_Deceleration_Warning" elementOID="_040gm004j5h01o07100gbsil1430o">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o070s608a0btuuu4"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_Output" elementOID="_040gm004j5h01o071010eedb1cvgu">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o07100gbr5rb4dgm"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_Selection_Strategy" elementOID="_040gm004j5h01o07100gbsil141go">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o070s608skkc6kf2"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_V_vech_delayed" elementOID="_040gm004j5h01o071010efe6b2q0u">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o070s7gb1hdn0ng0"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_VAF_Warning" elementOID="_040gm004j5h01o07100gbsil144go">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o070s608hnv8deea"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>mJ7e1EAwOEqoxI++PiCBQ/5mKek=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>Vsyd7nSqb+Cb7i2vQdooPkh6MdvxhtcZn7limZsZFLVqixz3Qb52uvxGyumAy8oK
+8j4fDKVTQYydBm8K0sV0VN33ynIx6l/OVhfmVovENqKUQCeDe8MTOMZOy3X0kD2l
+5EB77gh26jVBlnQqiUxtCGvpv6ItbXwjufqRBjGVTnzBGCT9vO27tsqiB/V5lWvC
+hiTKHB/dTqCHaDux98J074NMFDOodFwTZFikVdM/21qPW5S5ScMeD8Wm9MSfaMLy
+JO8S0URJ9YdW137iE5TQPNBdhgc1uodkNhTQI/D4hk9QH9gxpmKigp2o4GBTSHxG
+qW4u+AANz+kWcqMuOsR96g==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentImplementation>

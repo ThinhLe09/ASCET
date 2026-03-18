@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentImplementation toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.1">
+	<ImplementationSet name="_Environment" default="false" classConfig="true" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="true" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040qm02ncg001lo70ceh5ni0nkfek">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:49" timeStampCounter="4820"/>
+	</ImplementationSet>
+	<ImplementationSet name="Impl" default="true" classConfig="false" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="true" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040qm02ncg001lo70ceh5mkv7g8uk">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:49" timeStampCounter="4823"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_BitPos" elementOID="_040qm02ncg001lo70ceh5mmr5gcek">
+					<ComplexImplementation implementationName="Wo" implementationOID="_040qm02id4001lo704a0ge5ukql00"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_BlsQualityGrades" elementOID="_040qm02ncg001m070s10q4hhdmnqo">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm02ncg001m070s10q4756qfao"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_Constants" elementOID="_040qm02ncg001lo70ceh5mncaccuk">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm02id4001lo704a0ge6ptb3g0"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_CycleTimes" elementOID="_040qm02ncg001lo70ceh5mp9h8dek">
+					<ComplexImplementation implementationName="None" implementationOID="_040qm02id4001lo704a0ge7jc7p00"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_DirectionInfo" elementOID="_040qm02l60001lo70k40741qu8a28">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm02l60001lo70k1ggmaj12a1k"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_Environment_APBHallQualityGrades" elementOID="_040g0001j0001mg7189gj4r1qmcg4">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm03n8s001mg70o90800hc2p00"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_NumWheel" elementOID="_040qm02180001m07186h6kbf9ve5e">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm02180001m07186h633toqsle"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_PsQualityGrades" elementOID="_040qm02ncg001m070s10q3p8o6bao">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm02ncg001m070s10q1ppg63ao"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="_QualityGrades" elementOID="_040qm02ncg001lo70ceh5mqq60duk">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040qm02g4o001lo70c417ngndgo04"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>0ZQ2RAO7TgJaWrRUXzPgkhmVZEw=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>obaFR1kDoN1tRjuiwEEdOSIKPhdXz3g4eAIUOtnRhhEl9OMZL9SPY2GN4z4GKCcL
+tdXdetarTwnACIfFfxzA1O6tLBe/PURs0KxbO1dO3totdDWgB8pJ+BulAoT2OIBW
+eG6uFEPRVMPCqwXvMR433TBt1KnTaxXVPiJIJyY9oxYlXT3ywEQqIknTyMhHbdHH
++W/blH+xRlj6tIE2R+VspQYDKQs3ojH5l/ZGEy5VRZB8OPl6WjUmDY0sfj3ZSOen
+UE85sNZNOP02Tk9s0zgU6Ey6Nv3VhR6P7aIomuzwW/09/2pdFZl/TzwhNdzIY8lq
+CajUkMcuaOobZ6gE8tb2FQ==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentImplementation>

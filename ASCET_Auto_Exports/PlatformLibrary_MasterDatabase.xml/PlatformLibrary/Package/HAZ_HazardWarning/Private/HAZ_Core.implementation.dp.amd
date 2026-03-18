@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentImplementation toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.1">
+	<ImplementationSet name="HAZ_Core_DEFAULT" default="false" classConfig="true" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="true" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040gm004j5h01o07100gbsilasj0o">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5118"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="dT" elementOID="_040gm004j5h01o07100gbsil6sggo">
+					<ScalarImplementation>
+						<NumericImplementation limitAssignments="false" isLimitOverflow="false" limitOverflow="automatic" memoryLocationInstance="Default" additionalInformation="" cacheLocking="automatic" quantization="0" formula="dT" master="Model" physType="real64" implType="uint32" zeroNotIncluded="false">
+							<PhysicalInterval min="0.0" max="2147.483008"/>
+							<ImplementationInterval min="0" max="16777211"/>
+						</NumericImplementation>
+					</ScalarImplementation>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<ImplementationSet name="Impl" default="true" classConfig="false" memoryLocation="Default" generateMethodBody="true" optimizeMethodCalls="true" usingServiceRoutines="false" hierarchicalGenerationForSM="true" outlineMethodsSM="true" inlinePrivateMethodsSM="true" generateDataStructures="true" cacheLocking="automatic" userDefinedOrder="false" OID="_040gm004j5h01o07100gbsil8si0o">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5121"/>
+		<ImplementationEntry>
+			<ImplementationVariant name="default">
+				<ElementImplementation elementName="HAZ_Core" elementOID="_040gm004j5h01o07100gbsil6sh0o">
+					<ComplexImplementation implementationName="Impl" implementationOID="_040gm004j5h01o07100gbsil30d0o"/>
+				</ElementImplementation>
+			</ImplementationVariant>
+		</ImplementationEntry>
+	</ImplementationSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>NgEUJQRNMqy4FKq5kZJKhrQnxno=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>Fkf7tgyagL7nAuRJhTSlKhqgfLmkNG8Gz88xADtnALDiF8JsB0Bmzsz7WNKOdnWN
+WBsTLAEDa+tLvw2KBryyKQ5AL2FZa3x4013yf2TMpBNIN3SqXjPcMYOYVGAFlU/U
+Axb8wFlusdqxwZkBe6zloZFfBe4IwG3Qyc1hRG+2zeUgYjXBX8f8HCEZwUmjpCL4
+EciEvZPNXeyEnPmFF7HLjgHp+qAXo033RVKcnlfpj23g4NPdLMr7dVbmmSgzINEn
+V7aLaesJRQNBMBghDLIBV8g6FN5M53v3VJ4B3w1YlM1Rexk7iNSny0qji5rB5X2P
+DAIeu+93M1aQHiuD6kOqoQ==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentImplementation>

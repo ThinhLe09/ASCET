@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="HAZ_Core_DEFAULT" nameSpace=".defaultProject" OID="_040gm004j5h01o07100gbsil6sg0o" timeStamp="2026-03-09T11:14:55" componentType="ASCET_DefaultProject" specificationType="Project">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:55" timeStampCounter="5137"/>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="" configurationID=""/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements>
+			<Element name="dT" OID="_040gm004j5h01o07100gbsil6sggo" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="dt" unit="">
+					<ScalarType>
+						<PrimitiveAttributes kind="variable" scope="exported" virtual="false" dependent="false" volatile="true" calibrated="true" set="false" get="false" read="true" write="true" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="HAZ_Core" OID="_040gm004j5h01o07100gbsil6sh0o" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/HAZ_HazardWarning/Private/HAZ_Core" componentID="_040gm004j5h01o07100gbsil17ugm" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+		</Elements>
+		<MethodSignatures/>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:55"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>0QWKw9wg4XMIfFtnZTrQKGAcGGk=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>FyfpfZpR3mOj7+xoNSlZh+NStO9JMehksikDlx9ObhRuVqL/HGpjKPgbdwYK9+9t
+ho7A0WE6a2QDF5HpEEtAHA+A3/b4oYHlBAGHp4eUIs0+fwecC1BeN+rPXECqm9CJ
+12h7eZ5g2r7oBJsoOsdLh4h7KWlZt/Owc4+GnkWsFClKOoeNs2eQPN0/757c4mA4
+QLjwR4lXEklTW1FsCyq59cfRvegF1aKQLRWrqwyHhP5GEhLm43UYwiMFH2ICkjob
+nKdgkb0YkDE2NzN3WjLbkR5FUt3cIO9NtRh+oWQFyvuf8TUyyIWAj6zHyTE06GUM
+DeOt7dCNlOCte2Vcv6UwGg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>

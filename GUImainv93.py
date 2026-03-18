@@ -4,11 +4,19 @@ import json
 import re
 import time
 import traceback
+import shutil
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 import multiprocessing
 import webbrowser
+
+try:
+    import win32com.client
+    WIN32COM_AVAILABLE = True
+except ImportError:
+    WIN32COM_AVAILABLE = False
 
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
@@ -2896,7 +2904,7 @@ class DatabaseScanWorker(QThread):
                 pass
     
     def _scan_all_classes(self):
-        """Scan all classes"""
+        """Scan all classes and export diagrams"""
         self.status_signal.emit("Starting full database scan...")
         self.progress_signal.emit(30, "Scanning database structure...")
         
@@ -2921,21 +2929,32 @@ class DatabaseScanWorker(QThread):
             
             tree_result = self.scanner.build_structure_tree()
             
+            # Export and scan diagrams
+            diagram_files = []
+            self.status_signal.emit("Exporting and scanning diagrams...")
+            self.progress_signal.emit(85, "Exporting diagrams...")
+            
+            export_dir = self.export_all_diagrams()
+            if export_dir:
+                self.progress_signal.emit(90, "Scanning diagrams...")
+                diagram_files = self.scan_diagram_files(export_dir)
+            
             self.status_signal.emit("Scan completed")
             self.progress_signal.emit(100, "Scan completed")
             
             result_data = {
                 "class_paths": scan_result.data.get("class_paths", []),
                 "structure_tree": tree_result.data.get("structure_tree", {}) if tree_result.success else {},
-                "statistics": self.scanner.get_statistics()
+                "statistics": self.scanner.get_statistics(),
+                "diagram_files": diagram_files
             }
             
-            self.finished_signal.emit(True, f"Filtered scan completed: {scan_result.classes_found} classes found", result_data)
+            self.finished_signal.emit(True, f"Filtered scan completed: {scan_result.classes_found} classes found, {len(diagram_files)} diagrams found", result_data)
         else:
             self.finished_signal.emit(False, scan_result.error or scan_result.message, {})
     
     def _scan_folder(self):
-        """Scan specified folder"""
+        """Scan specified folder and export diagrams"""
         folder_path = self.params.get("folder_path", "")
         
         if not folder_path:
@@ -2953,18 +2972,135 @@ class DatabaseScanWorker(QThread):
             
             tree_result = self.scanner.build_structure_tree(folder_path)
             
+            # Export and scan diagrams
+            diagram_files = []
+            self.status_signal.emit("Exporting and scanning diagrams...")
+            self.progress_signal.emit(85, "Exporting diagrams...")
+            
+            export_dir = self.export_all_diagrams()
+            if export_dir:
+                self.progress_signal.emit(90, "Scanning diagrams...")
+                diagram_files = self.scan_diagram_files(export_dir)
+            
             self.status_signal.emit("Scan completed")
             self.progress_signal.emit(100, "Scan completed")
             
             result_data = {
                 "class_paths": scan_result.data.get("class_paths", []),
                 "structure_tree": tree_result.data.get("structure_tree", {}) if tree_result.success else {},
-                "folder_path": folder_path
+                "folder_path": folder_path,
+                "diagram_files": diagram_files
             }
             
-            self.finished_signal.emit(True, f"Folder scan completed, found {scan_result.classes_found} classes", result_data)
+            self.finished_signal.emit(True, f"Folder scan completed, found {scan_result.classes_found} classes, {len(diagram_files)} diagrams found", result_data)
         else:
             self.finished_signal.emit(False, scan_result.error or scan_result.message, {})
+    
+    # ==================== Diagram Export & Scanning Methods ====================
+    
+    def get_ascet_instance(self):
+        """Get ASCET COM instance"""
+        try:
+            return win32com.client.GetActiveObject("Ascet.Ascet.6.1.5")
+        except:
+            try:
+                return win32com.client.Dispatch("Ascet.Ascet.6.1.5")
+            except:
+                return None
+    
+    def export_all_diagrams(self) -> Optional[str]:
+        """Export all diagrams from ASCET database to temp location"""
+        if not WIN32COM_AVAILABLE:
+            self.status_signal.emit("Win32COM not available for diagram export")
+            return None
+        
+        try:
+            self.status_signal.emit("Initializing ASCET COM connection for diagram export...")
+            ascet = self.get_ascet_instance()
+            if not ascet:
+                self.status_signal.emit("Could not connect to ASCET")
+                return None
+            
+            db = ascet.GetCurrentDataBase()
+            if not db:
+                self.status_signal.emit("Could not get database from ASCET")
+                return None
+            
+            # Create temp directory for exports
+            temp_base = tempfile.gettempdir()
+            output_dir = os.path.join(temp_base, "ASCET_Auto_Exports")
+            
+            # Clean old cache if exists
+            if os.path.exists(output_dir):
+                try:
+                    shutil.rmtree(output_dir)
+                except:
+                    pass
+            os.makedirs(output_dir, exist_ok=True)
+            
+            self.status_signal.emit("Exporting diagrams from database...")
+            
+            # Get all folders
+            try:
+                folders = db.GetAllFolders()
+            except:
+                try:
+                    folders = db.GetAllAscetFolders()
+                except:
+                    folders = []
+            
+            if folders:
+                folder = folders[0]
+                safe_name = folder.GetName() if hasattr(folder, 'GetName') else 'Database'
+                safe_name = safe_name[:30] if safe_name else 'Database'
+                xml_path = os.path.normpath(os.path.join(output_dir, f"{safe_name}_MasterDatabase.xml"))
+                
+                try:
+                    folder.ExportXMLToFile(xml_path, True)
+                    self.status_signal.emit(f"Exported diagrams to {xml_path}")
+                    return output_dir
+                except Exception as e:
+                    self.status_signal.emit(f"Export error: {str(e)}")
+                    return None
+            else:
+                self.status_signal.emit("No folders found in database")
+                return None
+                
+        except Exception as e:
+            self.status_signal.emit(f"Diagram export failed: {str(e)}")
+            return None
+    
+    def scan_diagram_files(self, export_dir: str) -> List[tuple]:
+        """Scan exported directory for diagram files (.amd files)
+        Returns list of (diagram_name, file_path) tuples"""
+        diagram_files = []
+        
+        try:
+            if not os.path.exists(export_dir):
+                return diagram_files
+            
+            self.status_signal.emit("Scanning for diagram files...")
+            
+            for root_dir, _, files in os.walk(export_dir):
+                for file_name in files:
+                    if file_name.endswith('.amd'):
+                        fpath = os.path.join(root_dir, file_name)
+                        try:
+                            with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
+                                content = f.read()
+                                # Filter for valid diagram files
+                                if '<SimpleElement' in content or '<Connection' in content:
+                                    clean_name = file_name.replace('.specification.amd', '').replace('.dp.amd', '').replace('.amd', '')
+                                    diagram_files.append((clean_name, fpath))
+                        except:
+                            pass
+            
+            self.status_signal.emit(f"Found {len(diagram_files)} diagram files")
+            return diagram_files
+            
+        except Exception as e:
+            self.status_signal.emit(f"Diagram scanning error: {str(e)}")
+            return []
 
 class AgentWorker(QThread):
     """AI Agent worker thread with detailed logging"""
@@ -3381,6 +3517,7 @@ class AscetAgentMainWindow(QMainWindow):
         # Original data storage
         self.available_classes = {}
         self.structure_tree = {}
+        self.diagram_files = []  # Store diagram files: [(diagram_name, file_path), ...]
         self.selected_classes = []
         self.scan_worker = None
         self.agent_worker = None
@@ -5636,11 +5773,13 @@ class AscetAgentMainWindow(QMainWindow):
             
             self.available_classes = {path: {} for path in data.get("class_paths", [])}
             self.structure_tree = data.get("structure_tree", {})
+            self.diagram_files = data.get("diagram_files", [])  # Store diagram files
             
             self.populate_class_tree()
             
             class_count = len(self.available_classes)
-            self.classes_count_label.setText(f"Classes: {class_count}")
+            diagram_count = len(self.diagram_files)
+            self.classes_count_label.setText(f"Classes: {class_count}, Diagrams: {diagram_count}")
             
             self.append_status(f"Scan successful: {message}")
             
@@ -5654,14 +5793,15 @@ class AscetAgentMainWindow(QMainWindow):
             QMessageBox.critical(self, "Scan Failed", f"Scan failed:\n{message}")
     
     def populate_class_tree(self):
-        """Populate class structure tree"""
+        """Populate class structure tree with classes and diagrams"""
         self.class_tree.clear()
         
-        if not self.available_classes:
+        if not self.available_classes and not self.diagram_files:
             return
         
         path_dict = {}
         
+        # Add classes to tree
         for class_path in self.available_classes.keys():
             parts = class_path.split('\\')
             parts = [p for p in parts if p]
@@ -5678,11 +5818,36 @@ class AscetAgentMainWindow(QMainWindow):
                     current_dict[part] = {
                         "__path": current_path,
                         "__children": {},
-                        "__is_class": i == len(parts) - 1
+                        "__is_class": i == len(parts) - 1,
+                        "__is_diagram": False
                     }
                 
                 if i < len(parts) - 1:
                     current_dict = current_dict[part]["__children"]
+        
+        # Add diagrams to tree
+        if self.diagram_files:
+            # Create or get "Diagrams" folder node
+            if "_Diagrams_📊" not in path_dict:
+                path_dict["_Diagrams_📊"] = {
+                    "__path": "_Diagrams_📊",
+                    "__children": {},
+                    "__is_class": False,
+                    "__is_diagram": False
+                }
+            
+            diagrams_dict = path_dict["_Diagrams_📊"]["__children"]
+            
+            for diagram_name, diagram_path in self.diagram_files:
+                # Create diagram entry
+                safe_name = f"📊 {diagram_name}"
+                diagrams_dict[safe_name] = {
+                    "__path": diagram_path,
+                    "__children": {},
+                    "__is_class": False,
+                    "__is_diagram": True,
+                    "__diagram_file": diagram_path
+                }
         
         def add_items(parent, children_dict):
             for key, value in sorted(children_dict.items()):
@@ -5692,10 +5857,15 @@ class AscetAgentMainWindow(QMainWindow):
                 item = QTreeWidgetItem([key])
                 item.setData(0, Qt.UserRole, value["__path"])
                 
-                # 修复：使用PySide6的标准图标枚举
-                if value["__is_class"]:
+                # Setup icons
+                if value.get("__is_diagram", False):
+                    # Diagram file - use file icon
+                    item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_FileIcon))
+                elif value["__is_class"]:
+                    # Class - use file icon
                     item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_FileIcon))
                 else:
+                    # Folder - use folder icon
                     item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_DirIcon))
                 
                 parent.addChild(item)
@@ -5707,8 +5877,10 @@ class AscetAgentMainWindow(QMainWindow):
             item = QTreeWidgetItem([key])
             item.setData(0, Qt.UserRole, value["__path"])
             
-            # 修复：使用PySide6的标准图标枚举
-            if value["__is_class"]:
+            # Setup icons
+            if value.get("__is_diagram", False):
+                item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_FileIcon))
+            elif value["__is_class"]:
                 item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_FileIcon))
             else:
                 item.setIcon(0, self.style().standardIcon(QStyle.StandardPixmap.SP_DirIcon))

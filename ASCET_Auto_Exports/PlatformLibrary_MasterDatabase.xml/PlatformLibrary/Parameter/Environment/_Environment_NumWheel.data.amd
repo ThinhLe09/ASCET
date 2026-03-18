@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentData toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<DataSet name="_Environment_NumWheel" OID="_040qm02180001m07186h633ueau5e" default="false" classConfig="true">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:47" timeStampCounter="4745"/>
+		<DataEntry elementName="Num_Whl_FL" elementOID="_040qm02180001m07186h67e3ev75e">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="1"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="Num_Whl_FR" elementOID="_040qm02180001m07186h67e3ev85e">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="2"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="Num_Whl_RL" elementOID="_040qm02180001m07186h67e3eva5e">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="3"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="Num_Whl_RR" elementOID="_040qm02180001m07186h67e3ev95e">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="4"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<DataSet name="Data" OID="_040qm02180001m07186h633tkus5e" default="true" classConfig="false">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:47" timeStampCounter="4746"/>
+	</DataSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>GZPtoDjsnwzmCif5q4GX8HalxWc=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>Yt+LUP0I5EYmfHGsEJsx47aI7IjePWN9w6ejbEDjnIcJCHMXdt8tu9nNFeB24kPS
+laNCvr1izyilean6DiepghtQKp6D83AwfAnNBG0+J9GlLIHgyNNLh0deHJdRU6Mv
+0h7FuReXj/qRjRONZ40kCi/XQ7QuoUe4cM+041efJ2EwaSzMVB3j+2DkEnafbehv
+2kj9Qd0/nFuvBnc6JBN0Jvo+t47jT2JlVxj5yvYkBjktr30RjeBtSTbcZRfH3cQ7
+zyfvzZQbjhBlrraf14x4mB701tYCST0vkWxv9jc52QPPOpg1Dx83idc3BjZl4j8j
+YChRRRfMQ6V/ypz3+1ayJw==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentData>

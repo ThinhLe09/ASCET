@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="_Environment" nameSpace="/PlatformLibrary/Parameter/Environment" OID="_040qm02ncg001lo70ceh5mkum02ek" timeStamp="2026-03-09T11:14:50" componentType="ASCET_Class" specificationType="ESDL" defaultProjectName="_Environment_DEFAULT" defaultProjectOID="_040qm02ncg001lo70ceh5mkups2uk">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:50" timeStampCounter="4840"/>
+		<Notes>
+			<Note name="2010.10.19 11:53:57 Current Changes">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.6.50.0&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2010.10.19 11:53:57&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek</Text>
+			</Note>
+			<Note name="2007.03.29 15:01:14 Item-History">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.0&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.03.29 15:01:14&#13;
+---------------------------------------&#13;
+What: first edition&#13;
+Why : add all _Environment one Class &#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+Itempath: RM\ASW\Mosar\Parameter\Environment&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.0&#13;
+ASCET Version: V5.1&#13;
+Author       : umt2si&#13;
+When         : 2007.05.08 14:35:21&#13;
+---------------------------------------&#13;
+What: _Environment_DirectionInfo added&#13;
+Why : new ASW information Directioninfo inplemented --&gt; Decoder needed&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.1&#13;
+ASCET Version: V5.1&#13;
+Author       : umt2si&#13;
+When         : 2007.05.09 14:22:45&#13;
+---------------------------------------&#13;
+What: _Environment_DirectionInfo added&#13;
+Why : new ASW information Directioninfo inplemented --&gt; Decoder needed&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.1&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.07.15 13:15:42&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.2&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.22 17:35:06&#13;
+---------------------------------------&#13;
+What: new path&#13;
+      &#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+      &#13;
+      CSCRM00057469&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.2&#13;
+ASCET Version: V5.2&#13;
+Author       : zea2si&#13;
+When         : 2008.07.02 13:54:56&#13;
+---------------------------------------&#13;
+What: add&#13;
+      _Environment_PsQualityGrades&#13;
+      _Environment_BlsQualityGrades&#13;
+      &#13;
+Why : move from packages&#13;
+      to cover from mix process&#13;
+      CSCRM00070909&#13;
+      &#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.4&#13;
+ASCET Version: V5.2&#13;
+Author       : rat2si&#13;
+When         : 2008.07.04 14:48:30&#13;
+---------------------------------------&#13;
+What: add&#13;
+      _Environment_PsQualityGrades&#13;
+      _Environment_BlsQualityGrades&#13;
+Why : move from packages&#13;
+      to cover from mix process&#13;
+      CSCRM00070909&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.4&#13;
+ASCET Version: V5.2&#13;
+Author       : rat2si&#13;
+When         : 2008.10.13 14:25:40&#13;
+---------------------------------------&#13;
+What: _Environment_NumWheel V1.0 was added&#13;
+Why : SWGR 117111&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.4.1.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rat2si&#13;
+When         : 2008.10.13 15:02:49&#13;
+---------------------------------------&#13;
+What: _Environment_NumWheel V1.0 was added&#13;
+Why : SWGR 117111&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.4.1.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rat2si&#13;
+When         : 2008.10.13 15:03:35&#13;
+---------------------------------------&#13;
+What: _Environment_NumWheel V1.0 was added&#13;
+Why : SWGR 117111&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.6&#13;
+ASCET Version: V5.2&#13;
+Author       : rat2si&#13;
+When         : 2008.10.13 15:03:55&#13;
+---------------------------------------&#13;
+What: _Environment_NumWheel V1.0 was added&#13;
+Why : SWGR 117111&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.6&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.15 16:49:17&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.6.1.0&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.16 08:58:09&#13;
+---------------------------------------&#13;
+What: &#13;
+      Clean all objects from the ASCET items&#13;
+Why : &#13;
+      Request:  CSCRM00156278 Reduce the size of the ASCET database&#13;
+      Task: CSCRM00156311&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.6.1.0&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2010.10.19 11:50:38&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.6.50.0&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2010.10.19 11:52:16&#13;
+---------------------------------------&#13;
+What: dummy version created for BL44&#13;
+Why : To follow Naming convention for the new Ascet5 sidepaths&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.6.50.0&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2010.10.19 11:53:57&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.6.50.0.1.7&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2010.10.19 11:55:19&#13;
+---------------------------------------&#13;
+What: added  _Environment_APBHallQualityGrades v1.0&#13;
+Why : ASW BL44&#13;
+---------------------------------------&#13;
+OID     : 040qm02ncg001lo70ceh5mkum02ek</Text>
+			</Note>
+			<Note name="ASCET-SCM-TCM">
+				<Text>&lt;VersionInfos&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;_Environment&lt;/Name&gt;&#13;
+    &lt;Number&gt;5.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040qm02ncg001lo70ceh5mkum02ek&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2011-05-23T14:28:56&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+&lt;/VersionInfos&gt;</Text>
+				<View name="view"/>
+			</Note>
+		</Notes>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="V5.0" configurationID="C5.1.5.0.2.1.4.0.2.1"/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements>
+			<Element name="_BitPos" OID="_040qm02ncg001lo70ceh5mmr5gcek" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_BitPos" componentID="_040qm02id4001lo704a0ge5sndk00" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_BlsQualityGrades" OID="_040qm02ncg001m070s10q4hhdmnqo" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_BlsQualityGrades" componentID="_040qm02ncg001m070s10q4750ubqo" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_Constants" OID="_040qm02ncg001lo70ceh5mncaccuk" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_Constants" componentID="_040qm02id4001lo704a0ge6pkiu00" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_CycleTimes" OID="_040qm02ncg001lo70ceh5mp9h8dek" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_CycleTimes" componentID="_040qm02id4001lo704a0ge7ivncg0" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_DirectionInfo" OID="_040qm02l60001lo70k40741qu8a28" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_DirectionInfo" componentID="_040qm02l60001lo70k1ggmaija01k" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_Environment_APBHallQualityGrades" OID="_040g0001j0001mg7189gj4r1qmcg4" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_APBHallQualityGrades" componentID="_040qm03n8s001mg70o90800guejg0" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_NumWheel" OID="_040qm02180001m07186h6kbf9ve5e" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_NumWheel" componentID="_040qm02180001m07186h633s22mle" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_PsQualityGrades" OID="_040qm02ncg001m070s10q3p8o6bao" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_PsQualityGrades" componentID="_040qm02ncg001m070s10q1pp89sqo" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+			<Element name="_QualityGrades" OID="_040qm02ncg001lo70ceh5mqq60duk" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Parameter/Environment/_Environment_QualityGrades" componentID="_040qm02g4o001lo70c417ngldohg4" scope="local" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+		</Elements>
+		<MethodSignatures/>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:50"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:50"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:50"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:50"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:50"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:50"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>Ecaxj3TAjAXd5TqiBgmdRHYhD1s=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>O02uZtv3jWeMLXToeiVLe6v9urBasaMKbI7ZzeK6vs9LpAaJ8dLEBKZNPlxbcm9a
+cIvWEzhoEAu3kUQKEUFQ2wPnvpDm02T0obVma2n7R9TlfkTajj6AXZpVtSDnuSTE
+dkSGEvmH6tL81ZIqEc1sVYDD3PsUouSxNvuCrvKtKTJRFPDgrh/SqJgoQ63E2T9n
+XEe8MPccYaz6OnMuOVM6N+tF60h9FXoaR+6Zwf2jeTSOQThj7ylNDsnrs3iFIWfW
+foy9XT9+UShV8lntwvLNgu9Ju/tTFouZ+MyuJ3ggirewuDY7twWcj6FVOYt/6swG
+MK3GMxmeNzfxqNLLzgmbfA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>

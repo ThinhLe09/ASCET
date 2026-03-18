@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="TestValue_C" nameSpace="/PlatformLibrary/Package/BaseLibrary/Public" OID="_040g060kg0001k070g705b13u4200" timeStamp="2026-03-09T11:14:59" componentType="ASCET_Class" specificationType="CCode" defaultProjectName="TestValue_C_DEFAULT" defaultProjectOID="_040g08k1c0001k07187g7g821qimu">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:59" timeStampCounter="5333"/>
+		<Notes>
+			<Note name="2012.02.24 14:29:33 Current Changes">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.9.2.0.2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : kab1abt&#13;
+When         : 2012.02.24 14:29:33&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200</Text>
+			</Note>
+			<Note name="04-12-21 Item-History">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+Edition	: 1.1&#13;
+Author	: CS-SM/EVD2-Klug&#13;
+Date	: 11.12.2004&#13;
+-------------:&#13;
+Directory moved to  \BuildingBlocks\Baselib&#13;
+&#13;
+No functional change&#13;
+&#13;
+Compatibility to CSMosar&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E2.0&#13;
+author: zea2si&#13;
+when:2005.08.11 12:10:17&#13;
+what:&#13;
+new path&#13;
+why:&#13;
+new structure of database&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V2.0.1.0&#13;
+author: des2si&#13;
+when:2005.10.11 19:56:25&#13;
+what:&#13;
+new pathUpdate and move class to CSMosar07 structure&#13;
+&#13;
+why:&#13;
+new structure of databaseHarmonizing Mainstream V050600w28 / CSMosar07 (05.10.2005)&#13;
+&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E2.0.1.0&#13;
+ASCET_version: V5.1&#13;
+author: bmh2si&#13;
+when:2006.08.14 09:00:33&#13;
+what:&#13;
+add code for ES1135 (phys and impl)&#13;
+why:&#13;
+necessary for ASD514&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V3.0&#13;
+ASCET_version: V5.1&#13;
+author: bmh2si&#13;
+when:2006.08.15 11:16:16&#13;
+what:&#13;
+add code for ES1135 (phys and impl)add code to target ES1135&#13;
+Necessary for ASD514 and bypass&#13;
+why:&#13;
+necessary for ASD514&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E3.0&#13;
+ASCET_version: V5.1&#13;
+author: maa2abt&#13;
+when:2006.11.02 13:06:51&#13;
+what:&#13;
+1. The further modification of BTM implementation formulas conform to the CSMosar naming concept.&#13;
+2. Consideration of BTM-EEPROM-Storage-Strategy in CSMosar.&#13;
+why:&#13;
+SWR24934&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V3.1&#13;
+ASCET_version: V5.1&#13;
+author: maa2abt&#13;
+when:2006.11.22 13:11:42&#13;
+what:&#13;
+1. The further modification of BTM implementation formulas conform to the CSMosar naming concept.&#13;
+2. Consideration of BTM-EEPROM-Storage-Strategy in CSMosar.BTM mit EEPROM-Singleblock-Abspeichrung im&#13;
+ECU-Operation-Modus für BS 6.y&#13;
+why:&#13;
+SWR24934SW-Request CSCRM00024934&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E3.1&#13;
+ASCET_version: V5.1&#13;
+author: maa2abt&#13;
+when:2006.11.22 13:47:24&#13;
+what:&#13;
+&#13;
+why:&#13;
+&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V3.2&#13;
+ASCET_version: V5.1&#13;
+author: maa2abt&#13;
+when:2006.11.22 13:50:14&#13;
+what:&#13;
+&#13;
+why:&#13;
+&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.2&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.07 10:30:25&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.3&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.21 12:11:35&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+      CSCRM00057469&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.3&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.21 17:47:21&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+      CSCRM00057469&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.4&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.21 18:23:32&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+      CSCRM00057469&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.4&#13;
+ASCET Version: V5.2&#13;
+Author       : MB72SI&#13;
+When         : 2008.02.28 15:06:05&#13;
+---------------------------------------&#13;
+What: Implementation for new target "Real-Time Simulation" &#13;
+      for Physical, Quant. Phys and Implementation&#13;
+Why : new target "Real-Time Simulation"&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.5&#13;
+ASCET Version: V5.2&#13;
+Author       : mb72si&#13;
+When         : 2008.02.29 17:57:55&#13;
+---------------------------------------&#13;
+What: Implementation for new target "Real-Time Simulation" &#13;
+      for Physical, Quant. Phys and Implementation&#13;
+Why : new target "Real-Time Simulation"&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.5&#13;
+ASCET Version: V5.2&#13;
+Author       : wi72sh&#13;
+When         : 2009.01.16 14:13:02&#13;
+---------------------------------------&#13;
+What: add target PSL&#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.7&#13;
+ASCET Version: V5.2&#13;
+Author       : diortlin&#13;
+When         : 2009.01.23 12:45:44&#13;
+---------------------------------------&#13;
+What: Target 'PC Simulation Library' added&#13;
+      &#13;
+      &#13;
+Why : introduction of PSL in HAS-hev platform project&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.7&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.15 16:55:07&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.8&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.16 09:23:37&#13;
+---------------------------------------&#13;
+What: &#13;
+      Clean all objects from the ASCET items&#13;
+Why : &#13;
+      Request:  CSCRM00156278 Reduce the size of the ASCET database&#13;
+      Task: CSCRM00156311&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.8&#13;
+ASCET Version: V5.2&#13;
+Author       : wi72sh&#13;
+When         : 2009.12.04 09:14:47&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.9&#13;
+ASCET Version: V5.2&#13;
+Author       : wi72sh&#13;
+When         : 2009.12.04 10:32:34&#13;
+---------------------------------------&#13;
+What: add target PSL&#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.9&#13;
+ASCET Version: V5.2&#13;
+Author       : csn2si&#13;
+When         : 2011.02.02 09:10:14&#13;
+---------------------------------------&#13;
+What: move class to folder public&#13;
+Why : CSCRM00291664&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.9.2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : csn2si&#13;
+When         : 2011.02.03 11:06:08&#13;
+---------------------------------------&#13;
+What: move class to folder public&#13;
+Why : CSCRM00291664&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.9.2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rna5kor&#13;
+When         : 2012.01.31 13:39:10&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.9.2.0.2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rna5kor&#13;
+When         : 2012.01.31 13:45:01&#13;
+---------------------------------------&#13;
+What: Module testing was done on the class&#13;
+      Based on 3.9.2.0--&gt;3.9.2.0.2.0(MT)&#13;
+Why : CSCRM00302807&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E3.9.2.0.2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : kab1abt&#13;
+When         : 2012.02.24 14:29:33&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V3.9.2.0.2.1&#13;
+ASCET Version: V5.2&#13;
+Author       : kab1abt&#13;
+When         : 2012.02.24 14:32:44&#13;
+---------------------------------------&#13;
+What: Updated SW Documentation&#13;
+      Based on 3.9.2.0 --&gt; 3.9.2.0.2.0 (MT) --&gt; 3.9.2.0.2.1 (SD)&#13;
+Why : CSCRM00302809&#13;
+---------------------------------------&#13;
+OID     : 040g060kg0001k070g705b13u4200</Text>
+			</Note>
+			<Note name="ASCET-SCM-TCM">
+				<Text>&lt;VersionInfos&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;TestValue_C&lt;/Name&gt;&#13;
+    &lt;Number&gt;7.3.2.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040g060kg0001k070g705b13u4200&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2013-11-08T14:49:32&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;TestValue_C&lt;/Name&gt;&#13;
+    &lt;Number&gt;7.3&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040g060kg0001k070g705b13u4200&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2012-05-30T17:38:41&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+&lt;/VersionInfos&gt;</Text>
+				<View name="view"/>
+			</Note>
+		</Notes>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="V7.3.2.0" configurationID=""/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements/>
+		<MethodSignatures>
+			<MethodSignature name="AND" OID="_040g060kg0001k070g705b17g0e00" public="true" default="false" defaultMethod="true" hidden="false" availableForOS="false">
+				<Arguments>
+					<Argument name="Comparator" OID="_040g060kg0001k070g705b17g05g0" ignore="false">
+						<Comment>Comparator</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+					<Argument name="CompareValue" OID="_040g060kg0001k070g705btnvh800" ignore="false">
+						<Comment>Compare Value</Comment>
+						<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+							<ScalarType>
+								<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+							</ScalarType>
+						</ElementAttributes>
+					</Argument>
+				</Arguments>
+				<Return OID="_040g060kg0001k070g705b17g0500">
+					<Comment>AND proofs whether  Compare Value is included in Comparator</Comment>
+					<ElementAttributes modelType="scalar" basicModelType="log" unit="">
+						<ScalarType>
+							<PrimitiveAttributes kind="parameter" scope="local" virtual="false" dependent="false" volatile="false" calibrated="false" read="true" write="false"/>
+						</ScalarType>
+					</ElementAttributes>
+				</Return>
+			</MethodSignature>
+		</MethodSignatures>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>9FgxiztcOL/j044mPvne5Doiib0=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>UW5HCZVvsfR3Tp0E+e+iyJKCGQ3Lz1HAmXmUWWp6Xaulxesng0txjr936+mu0EPd
+EjQgCOEPs9ggQA5unTWD0ybt5MXU1UiBx0tqnXiuKIhkcHmkyjML1SDEJLa8mLXl
+PJyKhVaWMq4rmpUumCct3ds16iw7eOJ6GCLngkYbygDN1O2GT0xXntAHt6CgTMmp
+mC3WN46mCVIhwLsChEAvml3fY2ws+fvQrBVcC+TvnJjr3VErPkuuWyNgOSfO4z0+
+ZBoFGLPSoihkLT17YmTA58AZUThpCn+b6js3At8lzR5+NfApNdpR4RgXa24RsFC3
+wI3VdjWHfYQmF0j4npkMkw==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>

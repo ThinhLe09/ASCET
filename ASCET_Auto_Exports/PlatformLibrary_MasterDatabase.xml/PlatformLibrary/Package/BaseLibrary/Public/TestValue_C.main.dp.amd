@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="TestValue_C_DEFAULT" nameSpace=".defaultProject" OID="_040g08k1c0001k07187g7g821qimu" timeStamp="2026-03-09T11:14:59" componentType="ASCET_DefaultProject" specificationType="Project">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:59" timeStampCounter="5340"/>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="" configurationID=""/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements>
+			<Element name="dT" OID="_040g08k1c0001k07187g7g8282mmu" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="scalar" basicModelType="dt" unit="">
+					<ScalarType>
+						<PrimitiveAttributes kind="variable" scope="exported" virtual="false" dependent="false" volatile="true" calibrated="true" set="false" get="false" read="true" write="true" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="TestValue_C" OID="_040g08k1c0001k07187g7g829an6u" ignore="false">
+				<Comment></Comment>
+				<ElementAttributes modelType="complex" basicModelType="class" unit="">
+					<ComplexType>
+						<ComplexAttributes componentName="/PlatformLibrary/Package/BaseLibrary/Public/TestValue_C" componentID="_040g060kg0001k070g705b13u4200" scope="exported" set="false" get="false" read="true" write="true" reference="false"/>
+					</ComplexType>
+				</ElementAttributes>
+			</Element>
+		</Elements>
+		<MethodSignatures/>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:59"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>iO2kT0In48DWX+JX2vFUZXnfCqc=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>MGqGkZVoKYHr9eRSsvVnn0NYSh8RlnMMk51MbPGEpV3O0wouxJSv2p+lpsFgLJpH
+P239woJcQ5yyylrhPOPFPPM4qOnkM+iuPHxA0gcC27ehChe++As0W52/D15bPjhl
+Uwfb24oiHbhEkikNgGGomZysaxOAwFvOhrdtWv8GRlo/jDrtAYRCdpZPscKKTD2B
+qMLXcEuhmMP6CYXthKnbBZnD9gWMQG/tY9FvdMbyR9bZ9dnyv9JtlC117MPdiKOX
+G482jjh7BibMFm7QZoAgnxE51eG20zE/Pc+T2pBO2c3JSxnZEt0YIpVQ9tcTawTc
+wBp+9PaddGhvqzTkQ+vmOA==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>

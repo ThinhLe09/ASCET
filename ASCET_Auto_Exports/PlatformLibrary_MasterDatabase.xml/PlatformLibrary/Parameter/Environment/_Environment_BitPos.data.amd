@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentData toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.0.0">
+	<DataSet name="_Environment_BitPos" OID="_040qm02id4001lo704a0ge5v52mg0" default="false" classConfig="true">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:56" timeStampCounter="5141"/>
+		<DataEntry elementName="enumBit_0" elementOID="_040qm02id4001lo704a0ge5uc1v00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="0"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_1" elementOID="_040qm02id4001lo704a0ge5uc1s00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="1"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_10" elementOID="_040qm02id4001lo704a0ge5uc2c00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="10"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_11" elementOID="_040qm02id4001lo704a0ge5uc2i00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="11"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_12" elementOID="_040qm02id4001lo704a0ge5uc2900">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="12"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_13" elementOID="_040qm02id4001lo704a0ge5uc24g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="13"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_14" elementOID="_040qm02id4001lo704a0ge5uc2cg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="14"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_15" elementOID="_040qm02id4001lo704a0ge5uc21g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="15"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_16" elementOID="_040qm02id4001lo704a0ge5uc2fg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="16"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_17" elementOID="_040qm02id4001lo704a0ge5uc25g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="17"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_18" elementOID="_040qm02id4001lo704a0ge5uc2200">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="18"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_19" elementOID="_040qm02id4001lo704a0ge5uc2000">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="19"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_2" elementOID="_040qm02id4001lo704a0ge5uc1ng0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="2"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_20" elementOID="_040qm02id4001lo704a0ge5uc2700">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="20"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_21" elementOID="_040qm02id4001lo704a0ge5uc2e00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="21"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_22" elementOID="_040qm02id4001lo704a0ge5uc2500">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="22"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_23" elementOID="_040qm02id4001lo704a0ge5uc1u00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="23"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_24" elementOID="_040qm02id4001lo704a0ge5uc26g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="24"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_25" elementOID="_040qm02id4001lo704a0ge5uc1qg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="25"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_26" elementOID="_040qm02id4001lo704a0ge5uc2ag0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="26"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_27" elementOID="_040qm02id4001lo704a0ge5uc22g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="27"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_28" elementOID="_040qm02id4001lo704a0ge5uc1q00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="28"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_29" elementOID="_040qm02id4001lo704a0ge5uc1r00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="29"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_3" elementOID="_040qm02id4001lo704a0ge5uc1t00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="3"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_30" elementOID="_040qm02id4001lo704a0ge5uc2dg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="30"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_31" elementOID="_040qm02id4001lo704a0ge5uc2j00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="31"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_4" elementOID="_040qm02id4001lo704a0ge5uc1ug0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="4"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_5" elementOID="_040qm02id4001lo704a0ge5uc1pg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="5"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_6" elementOID="_040qm02id4001lo704a0ge5uc2bg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="6"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_7" elementOID="_040qm02id4001lo704a0ge5uc1p00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="7"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_8" elementOID="_040qm02id4001lo704a0ge5uc2800">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="8"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="enumBit_9" elementOID="_040qm02id4001lo704a0ge5uc20g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="9"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_0" elementOID="_040qm02id4001lo704a0ge5uc2h00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="1"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_1" elementOID="_040qm02id4001lo704a0ge5uc2100">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="2"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_10" elementOID="_040qm02id4001lo704a0ge5uc2g00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="1024"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_11" elementOID="_040qm02id4001lo704a0ge5uc2ig0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="2048"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_12" elementOID="_040qm02id4001lo704a0ge5uc2d00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="4096"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_13" elementOID="_040qm02id4001lo704a0ge5uc1mg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="8192"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_14" elementOID="_040qm02id4001lo704a0ge5uc2a00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="16384"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_15" elementOID="_040qm02id4001lo704a0ge5uc29g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="32768"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_16" elementOID="_040qm02id4001lo704a0ge5uc2gg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="65536"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_17" elementOID="_040qm02id4001lo704a0ge5uc1kg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="131072"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_18" elementOID="_040qm02id4001lo704a0ge5uc1sg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="262144"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_19" elementOID="_040qm02id4001lo704a0ge5uc1m00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="524288"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_2" elementOID="_040qm02id4001lo704a0ge5uc2b00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="4"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_20" elementOID="_040qm02id4001lo704a0ge5uc1n00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="1048576"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_21" elementOID="_040qm02id4001lo704a0ge5uc1rg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="2097152"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_22" elementOID="_040qm02id4001lo704a0ge5uc1l00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="4194304"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_23" elementOID="_040qm02id4001lo704a0ge5uc23g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="8388608"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_24" elementOID="_040qm02id4001lo704a0ge5uc2k00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="16777216"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_25" elementOID="_040qm02id4001lo704a0ge5uc2jg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="33554432"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_26" elementOID="_040qm02id4001lo704a0ge5uc1o00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="67108864"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_27" elementOID="_040qm02id4001lo704a0ge5uc1tg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="134217728"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_28" elementOID="_040qm02id4001lo704a0ge5uc27g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="268435456"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_29" elementOID="_040qm02id4001lo704a0ge5uc2300">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="536870912"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_3" elementOID="_040qm02id4001lo704a0ge5uc28g0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="8"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_30" elementOID="_040qm02id4001lo704a0ge5uc1lg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="1073741824"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_31" elementOID="_040qm02id4001lo704a0ge5uc1og0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="2147483648"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_4" elementOID="_040qm02id4001lo704a0ge5uc2eg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="16"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_5" elementOID="_040qm02id4001lo704a0ge5uc2hg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="32"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_6" elementOID="_040qm02id4001lo704a0ge5uc2600">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="64"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_7" elementOID="_040qm02id4001lo704a0ge5uc2f00">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="128"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_8" elementOID="_040qm02id4001lo704a0ge5uc1vg0">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="256"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+		<DataEntry elementName="ValueOf_Bit_9" elementOID="_040qm02id4001lo704a0ge5uc2400">
+			<DataVariant name="default">
+				<ScalarType>
+					<Numeric value="512"/>
+				</ScalarType>
+			</DataVariant>
+		</DataEntry>
+	</DataSet>
+	<DataSet name="Data" OID="_040qm02id4001lo704a0ge5ufqkg0" default="true" classConfig="false">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:56" timeStampCounter="5142"/>
+	</DataSet>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>kM0sEs2S6tMFPicnBJTGWb/AwdI=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>DcI1xIJf82DmEIteb9jqae0fl0bZoRUqaIYHxWmzQmuJJsNiX56iXT9wYkoYlt6z
+1wmvexTrk26xJy7zQYoYKltd10C1KrgtYgDjzzhxMa389WSOtzE2a+wh1cA11tub
+34c5wZkv8VekKVMdWZe4YU4eUFiuLqMKEos6rm+nk0mgOHdbUe3sjQwg27ttVaW0
+6vm2OYshekzmURGe82/l0Q/OKnV0ZGWCYQhMCxs2SHP0Jzask9pa/VTRs0KrpJK9
+8DWaDdw8K4+c77pzJnpuMb3paBEabBMBJZLaXowKklkvKn1/ROVtyu8SeiR1WA6P
+dl5/ATKutUlkqcvnUexsyg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentData>

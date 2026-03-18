@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ComponentMain toolVersion="V6.1.5_2.1.0" schemaVersion="6.1.1.0">
+	<Component name="_Environment_BitPos" nameSpace="/PlatformLibrary/Parameter/Environment" OID="_040qm02id4001lo704a0ge5sndk00" timeStamp="2026-03-09T11:14:56" componentType="ASCET_Class" specificationType="ESDL" defaultProjectName="_Environment_BitPos_DEFAULT" defaultProjectOID="_040qm02id4001lo704a0ge5vveng0">
+		<TimeStamp timeStampKey="applicationTimeStamp" timeStampValue="2026-03-09T11:14:56" timeStampCounter="5159"/>
+		<Notes>
+			<Note name="2009.09.15 16:49:20 Current Changes">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E2.0L&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.15 16:49:20&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00&#13;
+&#13;
+Item is Locked!</Text>
+			</Note>
+			<Note name="2006.01.23 20:33:59 Item-History">
+				<Text>This text is generated automatically!&#13;
+Only text in the what- and why-field&#13;
+is allowed to be edited!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition: -&#13;
+author: zea2si&#13;
+what:&#13;
+new class  &#13;
+why:&#13;
+new Parametertree&#13;
+CSCRM00006901&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.0&#13;
+author: zea2si&#13;
+when:2006.05.08 15:18:50&#13;
+what:&#13;
+&#13;
+why:&#13;
+&#13;
+itempath:RM\ASW\Mosar\_01_BuildingBlocks\Parameter\SW&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E1.0&#13;
+ASCET_version: V5.1&#13;
+author: zea2si&#13;
+when:2006.11.14 13:06:54&#13;
+what:&#13;
+Parameterupdate BsVu814_BL6_2__ABS_061113.dcm&#13;
+why:&#13;
+Base ABS Parameter Idiada Database 6_3&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.0.2.0&#13;
+ASCET_version: V5.1&#13;
+author: zea2si&#13;
+when:2006.11.14 13:35:13&#13;
+what:&#13;
+Parameterupdate BsVu814_BL6_2__ABS_061113.dcm&#13;
+why:&#13;
+Base ABS Parameter Idiada Database 6_3&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+edition#: E1.0.2.0&#13;
+ASCET_version: V5.1&#13;
+author: ZEA2SI&#13;
+when:2007.01.16 19:03:39&#13;
+what:&#13;
+new path&#13;
+why:&#13;
+&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+version#: V1.0&#13;
+ASCET_version: V5.1&#13;
+author: zea2si&#13;
+when:2007.01.21 13:16:40&#13;
+what:&#13;
+new pathfirst edition&#13;
+&#13;
+why:&#13;
+Anpassung Parameterstruktur  &#13;
+Baseline 9&#13;
+itempath:RM\ASW\Mosar\Parameter\Environment&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.0&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.07.15 13:15:47&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V1.0.2.0&#13;
+ASCET Version: V5.1&#13;
+Author       : zea2si&#13;
+When         : 2007.08.22 17:35:17&#13;
+---------------------------------------&#13;
+What: new path&#13;
+Why : database structure with librays and packages&#13;
+      Baseline 13&#13;
+      CSCRM00057469&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E1.0.2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rlt2si&#13;
+When         : 2009.08.14 15:41:14&#13;
+---------------------------------------&#13;
+What: calibration := no for all elements&#13;
+Why : CSCRM 172544&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V2.0&#13;
+ASCET Version: V5.2&#13;
+Author       : rlt2si&#13;
+When         : 2009.08.17 16:36:39&#13;
+---------------------------------------&#13;
+What: calibration := no for all elements&#13;
+Why : CSCRM 172544&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Edition      : E2.0L&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.15 16:49:20&#13;
+---------------------------------------&#13;
+What: &#13;
+Why : &#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00&#13;
+&#13;
+Item is Locked!&#13;
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=&#13;
+---------------------------------------&#13;
+Version      : V2.1&#13;
+ASCET Version: V5.2&#13;
+Author       : sud8kor&#13;
+When         : 2009.09.16 08:58:21&#13;
+---------------------------------------&#13;
+What: &#13;
+      Clean all objects from the ASCET items&#13;
+Why : &#13;
+      Request:  CSCRM00156278 Reduce the size of the ASCET database&#13;
+      Task: CSCRM00156311&#13;
+---------------------------------------&#13;
+OID     : 040qm02id4001lo704a0ge5sndk00</Text>
+			</Note>
+			<Note name="ASCET-SCM-TCM">
+				<Text>&lt;VersionInfos&gt;&#13;
+  &lt;VersionInfo&gt;&#13;
+    &lt;Name&gt;_Environment_BitPos&lt;/Name&gt;&#13;
+    &lt;Number&gt;6.0&lt;/Number&gt;&#13;
+    &lt;State&gt;version&lt;/State&gt;&#13;
+    &lt;Valid&gt;yes&lt;/Valid&gt;&#13;
+    &lt;Oid&gt;040qm02id4001lo704a0ge5sndk00&lt;/Oid&gt;&#13;
+    &lt;Timestamp&gt;2011-05-23T14:28:58&lt;/Timestamp&gt;&#13;
+  &lt;/VersionInfo&gt;&#13;
+&lt;/VersionInfos&gt;</Text>
+				<View name="view"/>
+			</Note>
+		</Notes>
+		<CustomerSpecificAttributes>
+			<ConfigurationManagement edition="false" versionID="V6.0" configurationID=""/>
+			<RequirementsManagement requirementsID=""/>
+			<AccessManagement read="true" write="true" import="true"/>
+		</CustomerSpecificAttributes>
+		<Elements>
+			<Element name="enumBit_0" OID="_040qm02id4001lo704a0ge5uc1v00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_1" OID="_040qm02id4001lo704a0ge5uc1s00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_10" OID="_040qm02id4001lo704a0ge5uc2c00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_11" OID="_040qm02id4001lo704a0ge5uc2i00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_12" OID="_040qm02id4001lo704a0ge5uc2900" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_13" OID="_040qm02id4001lo704a0ge5uc24g0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_14" OID="_040qm02id4001lo704a0ge5uc2cg0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_15" OID="_040qm02id4001lo704a0ge5uc21g0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_16" OID="_040qm02id4001lo704a0ge5uc2fg0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_17" OID="_040qm02id4001lo704a0ge5uc25g0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_18" OID="_040qm02id4001lo704a0ge5uc2200" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_19" OID="_040qm02id4001lo704a0ge5uc2000" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_2" OID="_040qm02id4001lo704a0ge5uc1ng0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_20" OID="_040qm02id4001lo704a0ge5uc2700" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_21" OID="_040qm02id4001lo704a0ge5uc2e00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_22" OID="_040qm02id4001lo704a0ge5uc2500" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_23" OID="_040qm02id4001lo704a0ge5uc1u00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_24" OID="_040qm02id4001lo704a0ge5uc26g0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_25" OID="_040qm02id4001lo704a0ge5uc1qg0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_26" OID="_040qm02id4001lo704a0ge5uc2ag0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_27" OID="_040qm02id4001lo704a0ge5uc22g0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_28" OID="_040qm02id4001lo704a0ge5uc1q00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_29" OID="_040qm02id4001lo704a0ge5uc1r00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_3" OID="_040qm02id4001lo704a0ge5uc1t00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_30" OID="_040qm02id4001lo704a0ge5uc2dg0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_31" OID="_040qm02id4001lo704a0ge5uc2j00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_4" OID="_040qm02id4001lo704a0ge5uc1ug0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_5" OID="_040qm02id4001lo704a0ge5uc1pg0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_6" OID="_040qm02id4001lo704a0ge5uc2bg0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_7" OID="_040qm02id4001lo704a0ge5uc1p00" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_8" OID="_040qm02id4001lo704a0ge5uc2800" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="enumBit_9" OID="_040qm02id4001lo704a0ge5uc20g0" ignore="false">
+				<Comment>bit-position</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_0" OID="_040qm02id4001lo704a0ge5uc2h00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_1" OID="_040qm02id4001lo704a0ge5uc2100" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_10" OID="_040qm02id4001lo704a0ge5uc2g00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_11" OID="_040qm02id4001lo704a0ge5uc2ig0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_12" OID="_040qm02id4001lo704a0ge5uc2d00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_13" OID="_040qm02id4001lo704a0ge5uc1mg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_14" OID="_040qm02id4001lo704a0ge5uc2a00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_15" OID="_040qm02id4001lo704a0ge5uc29g0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_16" OID="_040qm02id4001lo704a0ge5uc2gg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_17" OID="_040qm02id4001lo704a0ge5uc1kg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_18" OID="_040qm02id4001lo704a0ge5uc1sg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_19" OID="_040qm02id4001lo704a0ge5uc1m00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_2" OID="_040qm02id4001lo704a0ge5uc2b00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_20" OID="_040qm02id4001lo704a0ge5uc1n00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_21" OID="_040qm02id4001lo704a0ge5uc1rg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_22" OID="_040qm02id4001lo704a0ge5uc1l00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_23" OID="_040qm02id4001lo704a0ge5uc23g0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_24" OID="_040qm02id4001lo704a0ge5uc2k00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_25" OID="_040qm02id4001lo704a0ge5uc2jg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_26" OID="_040qm02id4001lo704a0ge5uc1o00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_27" OID="_040qm02id4001lo704a0ge5uc1tg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_28" OID="_040qm02id4001lo704a0ge5uc27g0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_29" OID="_040qm02id4001lo704a0ge5uc2300" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_3" OID="_040qm02id4001lo704a0ge5uc28g0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_30" OID="_040qm02id4001lo704a0ge5uc1lg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_31" OID="_040qm02id4001lo704a0ge5uc1og0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_4" OID="_040qm02id4001lo704a0ge5uc2eg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_5" OID="_040qm02id4001lo704a0ge5uc2hg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_6" OID="_040qm02id4001lo704a0ge5uc2600" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_7" OID="_040qm02id4001lo704a0ge5uc2f00" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_8" OID="_040qm02id4001lo704a0ge5uc1vg0" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+			<Element name="ValueOf_Bit_9" OID="_040qm02id4001lo704a0ge5uc2400" ignore="false">
+				<Comment>2^(Bit_x)</Comment>
+				<ElementAttributes modelType="scalar" basicModelType="udisc" unit="-">
+					<ScalarType>
+						<PrimitiveAttributes kind="parameter" scope="exported" virtual="false" dependent="false" volatile="false" calibrated="false" set="false" get="false" read="true" write="false" reference="false"/>
+					</ScalarType>
+				</ElementAttributes>
+			</Element>
+		</Elements>
+		<MethodSignatures/>
+		<TimeStamps>
+			<TimeStamp timeStampKey="directAccessTimeStampKey" timeStampValue="2026-03-09T11:14:56"/>
+			<TimeStamp timeStampKey="exportImportTimeStampKey" timeStampValue="2026-03-09T11:14:56"/>
+			<TimeStamp timeStampKey="formulaTimeStampKey" timeStampValue="2026-03-09T11:14:56"/>
+			<TimeStamp timeStampKey="implementationCastTimeStampKey" timeStampValue="2026-03-09T11:14:56"/>
+			<TimeStamp timeStampKey="implementationTypeTimeStampKey" timeStampValue="2026-03-09T11:14:56"/>
+			<TimeStamp timeStampKey="methodsTimeStampKey" timeStampValue="2026-03-09T11:14:56"/>
+		</TimeStamps>
+	</Component>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference>
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>khivLMQo+eCLeTAu7GLaxij9Sag=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>e8uOn9vvDiuQ8WTwRlc8EFapsvwf/O93cOdux/m/+bKOjgYmw9R2A3XPogFY1IdR
++zbrBpygWqoZwZ2LdYIFzEo2BVsdibWo+ASqniBf8Z34n9cxJjw2bGNdTsuLdEjL
+Ju5uIqJVqd/z6nq4Ml8RjJzLBGDNH31Gcpc3MP+KnLBFIYaJ2DzO8Q7Xf4SxCf+f
+16kls9q2d5EDKpl2vpG6msJBelJEgKNq20dCHnWRT7i2f9+hGdDb34KHYjnkynJz
+9TTF869epnGUsOfD0ubUC/JliJFn2gG6KPpURFGb2VIdrNwNpOM386Fe/aIIbHNr
+8hmqhB8fG/Qi0CrhjLjyxg==</SignatureValue>
+		<KeyInfo>
+			<KeyName>Etas Ascet Verification</KeyName>
+		</KeyInfo>
+	</Signature>
+</ComponentMain>
