@@ -53,6 +53,14 @@ except ImportError:
 from Structurefliter import ASCETStructureScannerAPI
 SCANNER_AVAILABLE = True
 
+# Diagram Viewer
+try:
+    from diagram_viewer import DiagramViewerDialog
+    import xml.etree.ElementTree as ET
+    DIAGRAM_VIEWER_AVAILABLE = True
+except ImportError:
+    DIAGRAM_VIEWER_AVAILABLE = False
+
 try:
 # Ascet 版本选择模块
     from util.detect_current_ascet import detect_current_ascet
@@ -3799,6 +3807,8 @@ class AscetAgentMainWindow(QMainWindow):
         self.class_tree.itemClicked.connect(self.on_tree_item_clicked)
         self.class_tree.itemSelectionChanged.connect(lambda: self.on_tree_item_clicked(None, 0))
         self.class_tree.itemDoubleClicked.connect(self.on_tree_item_double_clicked)
+        self.class_tree.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.class_tree.customContextMenuRequested.connect(self.show_tree_context_menu)
         self.class_tree.setMinimumHeight(300)
         
         db_layout.addWidget(self.class_tree)
@@ -6131,6 +6141,190 @@ class AscetAgentMainWindow(QMainWindow):
             self.append_status(f"Added {added_count} items to queue")
         elif selected_items:
             QMessageBox.information(self, "Info", "All selected items are already in the queue")
+    
+    def show_tree_context_menu(self, position):
+        """Show context menu for tree items"""
+        item = self.class_tree.itemAt(position)
+        if not item:
+            return
+        
+        path = item.data(0, Qt.UserRole)
+        if not path:
+            return
+        
+        # Check if it's a diagram
+        if path in self.diagram_files_dict:
+            menu = QMenu()
+            
+            view_diagram_action = menu.addAction("📊 View Diagram")
+            view_diagram_action.triggered.connect(lambda: self.view_diagram(path))
+            
+            add_to_queue_action = menu.addAction("➕ Add to Queue")
+            add_to_queue_action.triggered.connect(lambda: self.add_diagram_to_queue(path))
+            
+            menu.exec(self.class_tree.mapToGlobal(position))
+    
+    def view_diagram(self, diagram_path: str):
+        """View diagram in viewer dialog"""
+        if not DIAGRAM_VIEWER_AVAILABLE:
+            QMessageBox.warning(self, "Warning", "Diagram viewer not available")
+            return
+        
+        diagram_info = self.diagram_files_dict.get(diagram_path)
+        if not diagram_info:
+            return
+        
+        # Parse diagram XML
+        diagram_data = self.parse_diagram_xml(diagram_path, diagram_info['name'])
+        
+        if diagram_data:
+            # Show viewer dialog
+            viewer = DiagramViewerDialog(diagram_data, self)
+            viewer.exec()
+        else:
+            QMessageBox.critical(self, "Error", "Failed to parse diagram file")
+    
+    def parse_diagram_xml(self, xml_file_path: str, diagram_name: str) -> Optional[Dict]:
+        """Parse diagram XML file and extract block/connection data"""
+        try:
+            tree = ET.parse(xml_file_path)
+            root = tree.getroot()
+            
+            # Remove namespaces
+            for el in root.iter():
+                if '}' in el.tag:
+                    el.tag = el.tag.split('}', 1)[1]
+            
+            data = {
+                "diagram_name": diagram_name,
+                "source_xml_file": xml_file_path,
+                "blocks": [],
+                "connections": []
+            }
+            
+            # Find main specification
+            main_spec = root.find('.//Specification[@name="Main"]')
+            if main_spec is None:
+                main_spec = root.find('.//Specification')
+            
+            if main_spec is None:
+                return data
+            
+            TARGET_TAGS = ['ComplexElement', 'SimpleElement', 'Literal', 'Operator', 'Junction', 'Connector', 'ConnectionPoint']
+            parsed_blocks = {}
+            
+            # Parse blocks
+            for elem in main_spec.iter():
+                if elem.tag not in TARGET_TAGS:
+                    continue
+                
+                b_oid = elem.attrib.get('graphicOID', '')
+                if not b_oid or b_oid == "-1":
+                    continue
+                
+                pos = elem.find('./Position')
+                size = elem.find('./Size')
+                
+                if pos is None:
+                    continue
+                
+                bx = float(pos.attrib.get('x', 0))
+                by = float(pos.attrib.get('y', 0))
+                sw = float(size.attrib.get('x', 0)) if size is not None else None
+                sh = float(size.attrib.get('y', 0)) if size is not None else None
+                
+                b_type = elem.tag
+                if b_type == 'Literal':
+                    b_name = elem.attrib.get('value', '???')
+                elif b_type == 'Operator':
+                    b_name = elem.attrib.get('operator', elem.attrib.get('kind', elem.attrib.get('type', 'Op')))
+                elif b_type in ['Junction', 'Connector', 'ConnectionPoint']:
+                    b_name = ''
+                else:
+                    b_name = elem.attrib.get('elementName', elem.tag)
+                
+                block_data = {
+                    "id": b_oid,
+                    "name": b_name,
+                    "type": b_type,
+                    "position": {"x": bx, "y": by},
+                    "size": {"w": sw, "h": sh},
+                    "ports": []
+                }
+                
+                # Parse ports
+                interfaces = elem.find('.//Interfaces')
+                if interfaces is not None:
+                    for port in interfaces.iter():
+                        p_oid = port.attrib.get('graphicOID')
+                        if not p_oid or p_oid == "-1":
+                            continue
+                        
+                        is_visible = port.attrib.get('visibility', 'true').lower() == 'true'
+                        
+                        p_pos = port.find('./Position')
+                        if p_pos is not None:
+                            px = float(p_pos.attrib.get('x', 0))
+                            py = float(p_pos.attrib.get('y', 0))
+                        else:
+                            px, py = bx, by
+                        
+                        p_name = port.attrib.get('elementName', port.attrib.get('name', port.tag))
+                        
+                        block_data["ports"].append({
+                            "id": p_oid,
+                            "name": p_name,
+                            "tag": port.tag,
+                            "position": {"x": px, "y": py},
+                            "is_visible": is_visible
+                        })
+                
+                if b_oid not in parsed_blocks or len(block_data["ports"]) > len(parsed_blocks.get(b_oid, {}).get("ports", [])):
+                    parsed_blocks[b_oid] = block_data
+            
+            data["blocks"] = list(parsed_blocks.values())
+            
+            # Parse connections
+            parsed_conns = set()
+            for conn in main_spec.findall('.//Connection'):
+                start_elem = conn.find('.//Start')
+                end_elem = conn.find('.//End')
+                
+                if start_elem is None or end_elem is None:
+                    continue
+                
+                src_oid = start_elem.attrib.get('graphicOID')
+                tgt_oid = end_elem.attrib.get('graphicOID')
+                
+                if not src_oid or not tgt_oid:
+                    continue
+                
+                bends = tuple((float(b.attrib.get('x', 0)), float(b.attrib.get('y', 0))) for b in conn.findall('.//BendPoint'))
+                c_key = (src_oid, tgt_oid, bends)
+                
+                if c_key not in parsed_conns:
+                    parsed_conns.add(c_key)
+                    data["connections"].append({
+                        "source_oid": src_oid,
+                        "target_oid": tgt_oid,
+                        "bend_points": [{"x": pt[0], "y": pt[1]} for pt in bends]
+                    })
+            
+            return data
+        except Exception as e:
+            self.append_status(f"Error parsing diagram XML: {str(e)}")
+            return None
+    
+    def add_diagram_to_queue(self, diagram_path: str):
+        """Add diagram to queue"""
+        if diagram_path not in self.selected_classes:
+            self.selected_classes.append(diagram_path)
+            self.update_queue_display()
+            diagram_info = self.diagram_files_dict.get(diagram_path)
+            if diagram_info:
+                self.append_status(f"Added to queue: {diagram_info['name']} (diagram)")
+        else:
+            QMessageBox.information(self, "Info", "This diagram is already in the queue")
     
     # ==================== Helper Methods ====================
     
