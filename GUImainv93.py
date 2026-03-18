@@ -3284,10 +3284,11 @@ class BatchProcessWorker(QThread):
     class_finished_signal = Signal(bool, str, dict)
     all_finished_signal = Signal(dict)
 
-    def __init__(self, class_list: List[str], base_config: Dict[str, Any]):
+    def __init__(self, class_list: List[str], base_config: Dict[str, Any], diagram_files_dict: Dict = None):
         super().__init__()
         self.class_list = class_list
         self.base_config = base_config
+        self.diagram_files_dict = diagram_files_dict or {}  # Store diagram files dict for display names
         self.should_stop = False
         self.active_proc: Optional["multiprocessing.Process"] = None
         self.per_class_timeout = int(self.base_config.get('per_class_timeout_sec', 180))
@@ -3325,7 +3326,11 @@ class BatchProcessWorker(QThread):
                     self.status_signal.emit("Batch processing stopped")
                     break
 
-                class_name = EnhancedListWidgetItem.extract_class_name(class_path)
+                # Get display name for both classes and diagrams
+                if class_path in self.diagram_files_dict:
+                    class_name = self.diagram_files_dict[class_path]['name']
+                else:
+                    class_name = EnhancedListWidgetItem.extract_class_name(class_path)
 
                 self.current_class_signal.emit(class_path, i, total_classes)
                 self.status_signal.emit(f"Processing ({i}/{total_classes}): {class_name}")
@@ -3525,7 +3530,8 @@ class AscetAgentMainWindow(QMainWindow):
         # Original data storage
         self.available_classes = {}
         self.structure_tree = {}
-        self.diagram_files = []  # Store diagram files: [(diagram_name, file_path), ...]
+        self.diagram_files = []  # Store diagram files: [dict with name, file_path, relative_path, ...]
+        self.diagram_files_dict = {}  # Map diagram_file_path -> {name, file_path, relative_path}
         self.selected_classes = []
         self.scan_worker = None
         self.agent_worker = None
@@ -4689,8 +4695,12 @@ class AscetAgentMainWindow(QMainWindow):
         self.queue_table.setRowCount(len(self.selected_classes))
 
         for i, class_path in enumerate(self.selected_classes):
-            # Class name
-            class_name = EnhancedListWidgetItem.extract_class_name(class_path)
+            # Get name - handle both classes and diagrams
+            if class_path in self.diagram_files_dict:
+                class_name = self.diagram_files_dict[class_path]['name']
+            else:
+                class_name = EnhancedListWidgetItem.extract_class_name(class_path)
+            
             name_item = QTableWidgetItem(class_name)
             name_item.setToolTip(f"Full path: {class_path}")
             name_item.setData(Qt.UserRole, class_path)
@@ -5334,7 +5344,7 @@ class AscetAgentMainWindow(QMainWindow):
         base_config["mode"] = self.current_mode
         base_config["enable_agent_logging"] = True  # 启用详细日志
         
-        self.batch_worker = BatchProcessWorker(self.selected_classes.copy(), base_config)
+        self.batch_worker = BatchProcessWorker(self.selected_classes.copy(), base_config, self.diagram_files_dict)
         
         # 连接信号
         self.batch_worker.status_signal.connect(self.append_status)
@@ -5803,6 +5813,7 @@ class AscetAgentMainWindow(QMainWindow):
     def populate_class_tree(self):
         """Populate class structure tree with classes and diagrams in correct hierarchy"""
         self.class_tree.clear()
+        self.diagram_files_dict.clear()  # Clear diagram dict for fresh population
         
         if not self.available_classes and not self.diagram_files:
             return
@@ -5885,6 +5896,9 @@ class AscetAgentMainWindow(QMainWindow):
                     "__is_diagram": True,
                     "__diagram_file": diagram_path
                 }
+                
+                # Store diagram in dict for quick lookup during tree clicks
+                self.diagram_files_dict[diagram_path] = diagram_info
         
         def add_items(parent, children_dict):
             for key, value in sorted(children_dict.items()):
@@ -6063,43 +6077,74 @@ class AscetAgentMainWindow(QMainWindow):
     def on_tree_item_clicked(self, item, column):
         """Tree item click event"""
         selected_items = self.class_tree.selectedItems()
-        valid_classes = []
+        valid_items = []
         
         for item in selected_items:
             path = item.data(0, Qt.UserRole)
-            if path and path in self.available_classes:
-                valid_classes.append(path)
+            # Check if it's a class or a diagram
+            if path:
+                if path in self.available_classes or path in self.diagram_files_dict:
+                    valid_items.append(path)
         
-        self.add_selected_btn.setEnabled(len(valid_classes) > 0)
+        self.add_selected_btn.setEnabled(len(valid_items) > 0)
     
     def on_tree_item_double_clicked(self, item, column):
-        """Tree item double click event"""
+        """Tree item double click event - add to queue for both classes and diagrams"""
         path = item.data(0, Qt.UserRole)
-        if path and path in self.available_classes:
-            if path not in self.selected_classes:
-                self.selected_classes.append(path)
-                self.update_queue_display()
-                class_name = EnhancedListWidgetItem.extract_class_name(path)
-                self.append_status(f"Added to queue: {class_name}")
-            else:
-                QMessageBox.information(self, "Info", "This class is already in the queue")
+        
+        # Check if it's a class or a diagram
+        if path:
+            item_name = None
+            item_type = None
+            
+            if path in self.available_classes:
+                item_type = "class"
+                item_name = EnhancedListWidgetItem.extract_class_name(path)
+            elif path in self.diagram_files_dict:
+                item_type = "diagram"
+                diagram_info = self.diagram_files_dict[path]
+                item_name = diagram_info['name']
+            
+            if item_type and item_name:
+                if path not in self.selected_classes:
+                    self.selected_classes.append(path)
+                    self.update_queue_display()
+                    self.append_status(f"Added to queue: {item_name} ({item_type})")
+                else:
+                    QMessageBox.information(self, "Info", f"This {item_type} is already in the queue")
     
     def add_selected_classes(self):
-        """Add selected classes to queue"""
+        """Add selected classes and diagrams to queue"""
         selected_items = self.class_tree.selectedItems()
         added_count = 0
         
         for item in selected_items:
             path = item.data(0, Qt.UserRole)
-            if path and path in self.available_classes and path not in self.selected_classes:
-                self.selected_classes.append(path)
-                added_count += 1
+            # Check if it's a class or a diagram
+            if path:
+                if (path in self.available_classes or path in self.diagram_files_dict) and path not in self.selected_classes:
+                    self.selected_classes.append(path)
+                    added_count += 1
         
         if added_count > 0:
             self.update_queue_display()
-            self.append_status(f"Added {added_count} classes to queue")
+            self.append_status(f"Added {added_count} items to queue")
         elif selected_items:
-            QMessageBox.information(self, "Info", "All selected classes are already in the queue")
+            QMessageBox.information(self, "Info", "All selected items are already in the queue")
+    
+    # ==================== Helper Methods ====================
+    
+    def get_display_name_for_path(self, path: str) -> str:
+        """Get display name for both class paths and diagram paths"""
+        if not path:
+            return "Unknown"
+        
+        # Check if it's a diagram
+        if path in self.diagram_files_dict:
+            return self.diagram_files_dict[path]['name']
+        
+        # Otherwise treat as class path
+        return EnhancedListWidgetItem.extract_class_name(path)
     
     # ==================== General Functions ====================
     
