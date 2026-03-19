@@ -59,7 +59,7 @@ class DiagramNetlistExtractor:
                 if oid and oid != "-1":
                     name = node.attrib.get('name', node.attrib.get('elementName', node.attrib.get('methodName', node.tag)))
                     oid_map[oid] = {
-                        "block_name": "[CỔNG_NGOÀI_CÙNG_SƠ_ĐỒ]",
+                        "block_name": "[External Port]" if node.tag == 'ExternalPort' else "[Global Port]",
                         "port_name": name
                     }
 
@@ -77,11 +77,11 @@ class DiagramNetlistExtractor:
 
                 b_type = block.tag
                 if b_type == 'Literal':
-                    b_name = block.attrib.get('value', 'Hằng_Số')
+                    b_name = block.attrib.get('value', 'constant')
                 elif b_type == 'Operator':
-                    b_name = block.attrib.get('operator', block.attrib.get('kind', block.attrib.get('type', 'Toán_Tử')))
+                    b_name = block.attrib.get('operator', block.attrib.get('kind', block.attrib.get('type', 'operator')))
                 elif b_type in ['Junction', 'Connector', 'ConnectionPoint']:
-                    b_name = f"Điểm_Nối_{block.attrib.get('graphicOID', 'N/A')}"
+                    b_name = f"Connection_Point_{block.attrib.get('graphicOID', 'N/A')}"
                 else:
                     b_name = block.attrib.get('elementName', block.attrib.get('name', block.attrib.get('methodName', block.tag)))
 
@@ -90,7 +90,7 @@ class DiagramNetlistExtractor:
                     if oid and oid != "-1":
                         p_name = node.attrib.get('elementName', node.attrib.get('name', node.attrib.get('methodName', node.tag)))
                         if node == block:
-                            oid_map[oid] = {"block_name": b_name, "port_name": "Bản thân khối"}
+                            oid_map[oid] = {"block_name": b_name, "port_name": "Self"}
                         else:
                             oid_map[oid] = {"block_name": b_name, "port_name": p_name}
 
@@ -124,8 +124,8 @@ class DiagramNetlistExtractor:
 
         lines = []
         lines.append("=" * 80)
-        lines.append(" 📑 DANH SÁCH LIÊN KẾT TÍN HIỆU (NETLIST TỐI THƯỢNG)")
-        lines.append(f" Nguồn: {xml_file_path}")
+        lines.append(" 📑 CONNECTION LIST (NETLIST)")
+        lines.append(f" Source: {xml_file_path}")
         lines.append("=" * 80)
         lines.append("")
 
@@ -133,18 +133,18 @@ class DiagramNetlistExtractor:
             src_oid = conn['source_oid']
             tgt_oid = conn['target_oid']
 
-            src_info = oid_map.get(src_oid, {"block_name": f"Lỗi/Ẩn (OID {src_oid})", "port_name": "?"})
-            tgt_info = oid_map.get(tgt_oid, {"block_name": f"Lỗi/Ẩn (OID {tgt_oid})", "port_name": "?"})
+            src_info = oid_map.get(src_oid, {"block_name": f"Error/Hidden (OID {src_oid})", "port_name": "?"})
+            tgt_info = oid_map.get(tgt_oid, {"block_name": f"Error/Hidden (OID {tgt_oid})", "port_name": "?"})
 
             src_str = f"[{src_info['block_name']}]"
-            if "Bản thân khối" not in src_info['port_name']:
-                src_str += f" (Cổng: {src_info['port_name']})"
+            if "Self" not in src_info['port_name']:
+                src_str += f" (Port: {src_info['port_name']})"
 
             tgt_str = f"[{tgt_info['block_name']}]"
-            if "Bản thân khối" not in tgt_info['port_name']:
-                tgt_str += f" (Cổng: {tgt_info['port_name']})"
+            if "Self" not in tgt_info['port_name']:
+                tgt_str += f" (Port: {tgt_info['port_name']})"
 
-            lines.append(f"🔗 Dây {i:02d}: {src_str:<50} ---> {tgt_str}")
+            lines.append(f"🔗 Wire {i:02d}: {src_str:<50} ---> {tgt_str}")
 
         return "\n".join(lines)
 
@@ -179,21 +179,22 @@ class DiagramAIReviewFlow:
         )
 
         user_prompt = f"""
-Hãy review diagram netlist sau:
+Please review the following diagram netlist:
 
 {netlist_text}
 
-Yêu cầu rất quan trọng:
-1. Tên na ná nhau (ví dụ khác underscore, viết hoa/thường, viết tắt gần nghĩa) thì coi là đúng.
-2. Chỉ báo lỗi khi mismatch thật sự rõ ràng về ngữ nghĩa/tín hiệu.
-3. Nếu không có lỗi thật, trả về No Defect.
+Important requirements:
+1. Names that are very similar (e.g., different underscores, case, or abbreviations) should be considered correct.
 
-Trả kết quả ĐÚNG JSON format sau (chỉ 1 khối json):
+2. Only report errors when there is a clear semantic/signal mismatch.
+3. If there are no real errors, return No Defect.
+
+Return the result in the following JSON format (only 1 JSON block):
 ```json
 {{
   "错误类型": ["参数映射名称一致性错误"],
   "状态": ["No Defect", "Defect"],
-  "理由": "Nếu Defect thì liệt kê cụ thể dây nào sai và vì sao; nếu No Defect thì để rỗng hoặc ghi No obvious mismatch"
+  "理由": "If Defect, list the specific wires that are incorrect and why; if No Defect, leave empty or write No obvious mismatch"
 }}
 ```
 """.strip()

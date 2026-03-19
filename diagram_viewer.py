@@ -182,8 +182,8 @@ class ConnectionLogicExtractor:
         """Extract and generate netlist-style connection logic"""
         lines = []
         lines.append("=" * 80)
-        lines.append(f" 📑 DANH SÁCH LIÊN KẾT TÍN HIỆU (NETLIST TỐI THƯỢNG)")
-        lines.append(f" Sơ đồ: {diagram_data.get('diagram_name', 'Unknown')}")
+        lines.append(f" 📑 CONNECTION LIST (NETLIST)")
+        lines.append(f" Diagram: {diagram_data.get('diagram_name', 'Unknown')}")
         lines.append("=" * 80)
         lines.append("")
 
@@ -195,7 +195,7 @@ class ConnectionLogicExtractor:
             # Block itself as OID
             oid_map[b_oid] = {
                 "block_name": b_name, 
-                "port_name": "Bản thân khối"
+                "port_name": "Self"
             }
             
             # Ports
@@ -226,18 +226,18 @@ class ConnectionLogicExtractor:
             tgt_block = tgt_info['block_name']
             tgt_port = tgt_info['port_name']
             
-            # Format: 🔗 Dây 01: [Block1] (Cổng: Port1) ---> [Block2] (Cổng: Port2)
-            if src_port == "Bản thân khối":
+            # Format: 🔗 Wire 01: [Block1] (Port: Port1) ---> [Block2] (Port: Port2)
+            if src_port == "Self":
                 src_str = f"[{src_block}]"
             else:
-                src_str = f"[{src_block}] (Cổng: {src_port})"
+                src_str = f"[{src_block}] (Port: {src_port})"
             
-            if tgt_port == "Bản thân khối":
+            if tgt_port == "Self":
                 tgt_str = f"[{tgt_block}]"
             else:
-                tgt_str = f"[{tgt_block}] (Cổng: {tgt_port})"
+                tgt_str = f"[{tgt_block}] (Port: {tgt_port})"
             
-            line = f"🔗 Dây {i:02d}: {src_str:<50} ---> {tgt_str}"
+            line = f"🔗 Wire {i:02d}: {src_str:<50} ---> {tgt_str}"
             lines.append(line)
         
         lines.append("")

@@ -76,6 +76,59 @@ class AscetDataCore:
         finally:
             os.chdir(original_cwd)
 
+    @staticmethod
+    def get_diagram_version(specification_file_path):
+        """Hàm tự động tra chéo sang file .main.amd và .scm.amd để lấy Version"""
+        # Cắt đuôi chuẩn xác để tạo base path
+        if specification_file_path.endswith('.specification.amd'):
+            base_path = specification_file_path[:-18]
+        elif specification_file_path.endswith('.dp.amd'):
+            base_path = specification_file_path[:-7]
+        elif specification_file_path.endswith('.main.amd'):
+            base_path = specification_file_path[:-9]
+        elif specification_file_path.endswith('.amd'):
+            base_path = specification_file_path[:-4]
+        else:
+            return ""
+
+        main_file_path = base_path + '.main.amd'
+        scm_file_path = base_path + '.scm.amd'
+
+        v_id = ""
+        c_id = ""
+
+        if os.path.exists(main_file_path):
+            try:
+                tree = ET.parse(main_file_path)
+                root = tree.getroot()
+                for el in root.iter():
+                    if '}' in el.tag: el.tag = el.tag.split('}', 1)[1]
+                config_mgmt = root.find('.//ConfigurationManagement')
+                if config_mgmt is not None:
+                    v_id = config_mgmt.attrib.get('versionID', '')
+                    c_id = config_mgmt.attrib.get('configurationID', '')
+            except: pass
+
+        if not v_id and os.path.exists(scm_file_path):
+            try:
+                tree = ET.parse(scm_file_path)
+                root = tree.getroot()
+                for el in root.iter():
+                    if '}' in el.tag: el.tag = el.tag.split('}', 1)[1]
+                version_data = root.find('.//CurrentVersionData')
+                if version_data is not None:
+                    v_id = version_data.attrib.get('versionID', '')
+            except: pass
+
+        if v_id and c_id:
+            return f" ({v_id}-{c_id})"
+        elif v_id:
+            prefix = "" if v_id.upper().startswith("V") else "V"
+            return f" ({prefix}{v_id})"
+        elif c_id:
+            return f" ({c_id})"
+        
+        return ""
     def parse_diagram_xml(self, xml_file, diag_name):
         try:
             tree = ET.parse(xml_file)
@@ -522,7 +575,6 @@ class AscetDiagramApp(QMainWindow):
         self.btn_step2.setEnabled(False)
         
         # --- SỬ DỤNG THƯ MỤC TEMP ĐỂ NÉ HOÀN TOÀN GIỚI HẠN KÝ TỰ ---
-        # Bất kể file exe/py đặt ở đâu, data luôn kéo về C:\Users\POA9HC\AppData\Local\Temp\ASCET_Auto_Exports
         temp_base = tempfile.gettempdir()
         output_dir = os.path.join(temp_base, "ASCET_Auto_Exports")
         
@@ -532,7 +584,6 @@ class AscetDiagramApp(QMainWindow):
             except Exception as e: self.log(f"⚠️ Lỗi khi dọn dẹp cache cũ: {str(e)}")
                 
         os.makedirs(output_dir, exist_ok=True)
-        # -----------------------------------------------------------
 
         self.log(f"\n[BƯỚC 2] Bắt đầu kéo data: {selected_folder}...")
         self.log(f"📍 Nơi lưu file tạm xử lý ngầm: {output_dir}")
@@ -548,32 +599,81 @@ class AscetDiagramApp(QMainWindow):
         self.set_loading(False)
         self.btn_auto_detect.setEnabled(True)
         self.btn_step2.setEnabled(True)
-
     def build_tree(self, xml_path, output_dir, root_name):
         self.diagram_files.clear()
         self.tree_widget.clear()
-        tree_nodes = {output_dir: QTreeWidgetItem(self.tree_widget, [root_name])}
+        
+        tree_nodes = {os.path.abspath(output_dir): QTreeWidgetItem(self.tree_widget, [root_name])}
 
-        for root_dir, _, files in os.walk(xml_path):
-            if os.path.relpath(root_dir, xml_path) != ".":
-                parent_dir = os.path.dirname(root_dir)
-                parent_node = tree_nodes.get(parent_dir, tree_nodes[output_dir])
-                tree_nodes[root_dir] = QTreeWidgetItem(parent_node, [os.path.basename(root_dir)])
+        for root_dir, dirs, files in os.walk(xml_path):
+            root_dir_abs = os.path.abspath(root_dir)
+            
+            if root_dir_abs not in tree_nodes:
+                parent_dir = os.path.abspath(os.path.dirname(root_dir_abs))
+                parent_node = tree_nodes.get(parent_dir, tree_nodes[os.path.abspath(output_dir)])
+                dir_item = QTreeWidgetItem([os.path.basename(root_dir_abs)])
+                parent_node.addChild(dir_item)
+                tree_nodes[root_dir_abs] = dir_item
+                
+            current_node = tree_nodes[root_dir_abs]
+
+            # Dùng set để KHỬ TRÙNG LẶP (Vì 1 component sinh ra rất nhiều file .amd)
+            processed_components = set()
 
             for file_name in files:
-                if file_name.endswith('.amd'):
-                    fpath = os.path.join(root_dir, file_name)
-                    try:
-                        content = open(fpath, 'r', encoding='utf-8', errors='ignore').read()
+                if not file_name.endswith('.amd'):
+                    continue
+                    
+                # Chỉ xử lý khi gặp các file "chính" đại diện cho Component
+                if file_name.endswith('.specification.amd') or file_name.endswith('.main.amd') or file_name.endswith('.dp.amd'):
+                    
+                    # Bỏ qua các file cấu hình phụ (.data, .implementation, .project...) để tránh rác cây
+                    if '.project.' in file_name or '.data.' in file_name or '.implementation.' in file_name or '.scm.' in file_name:
+                        continue
+                        
+                    clean_name = file_name.replace('.specification.amd', '').replace('.main.amd', '').replace('.dp.amd', '')
+                    
+                    # Nếu Component này đã được đưa lên cây rồi thì bỏ qua
+                    if clean_name in processed_components:
+                        continue
+                    processed_components.add(clean_name)
+                    
+                    # Xác định file nào chứa nội dung vẽ đồ họa
+                    spec_file = os.path.join(root_dir_abs, f"{clean_name}.specification.amd")
+                    dp_file = os.path.join(root_dir_abs, f"{clean_name}.dp.amd")
+                    
+                    has_diagram = False
+                    fpath_to_parse = os.path.join(root_dir_abs, file_name) # File mặc định để parse
+                    
+                    # Kiểm tra xem ruột file có chứa sơ đồ không
+                    if os.path.exists(spec_file):
+                        content = open(spec_file, 'r', encoding='utf-8', errors='ignore').read()
                         if '<SimpleElement' in content or '<Connection' in content:
-                            clean_name = file_name.replace('.specification.amd', '').replace('.dp.amd', '').replace('.amd', '')
-                            QTreeWidgetItem(tree_nodes[root_dir], [f" 📊 {clean_name}"])
-                            self.diagram_files[f" 📊 {clean_name}"] = fpath
-                    except: pass
+                            has_diagram = True
+                        fpath_to_parse = spec_file
+                    elif os.path.exists(dp_file):
+                        content = open(dp_file, 'r', encoding='utf-8', errors='ignore').read()
+                        if '<SimpleElement' in content or '<Connection' in content:
+                            has_diagram = True
+                        fpath_to_parse = dp_file
+
+                    # Gọi hàm móc Version từ .main.amd
+                    version_str = AscetDataCore.get_diagram_version(fpath_to_parse)
+                    
+                    # Phân loại Icon
+                    if has_diagram:
+                        display_name = f" 📊 {clean_name}{version_str}"
+                    else:
+                        display_name = f" 📦 {clean_name}{version_str}"
+                        
+                    diagram_item = QTreeWidgetItem([display_name])
+                    current_node.addChild(diagram_item)
+                    
+                    # Lưu lại file để khi click đúp sẽ gọi hàm parse đồ họa
+                    self.diagram_files[display_name] = fpath_to_parse
         
         self.tree_widget.expandAll()
         self.log("Dựng cây hoàn tất! Hãy Click đúp vào một sơ đồ để vẽ.")
-
     def on_diagram_selected(self, item, column):
         diag_name = item.text(column)
         if diag_name not in self.diagram_files: return
