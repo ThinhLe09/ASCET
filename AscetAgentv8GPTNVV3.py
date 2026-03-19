@@ -105,6 +105,13 @@ except ImportError as e:
     print(f"ASCET data extraction module import failed: {e}")
     print("Please ensure the ASCET data extraction module is available")
 
+try:
+    from diagram_ai_review_flow import DiagramAIReviewFlow, is_diagram_item
+    DIAGRAM_FLOW_AVAILABLE = True
+except ImportError as e:
+    DIAGRAM_FLOW_AVAILABLE = False
+    print(f"Diagram AI flow import failed: {e}")
+
 # ==================== 执行进度管理 ====================
 class ProgressTracker:
     """执行进度跟踪器"""
@@ -278,6 +285,64 @@ class ReviewerState:
 
 # 全局状态对象
 global_state = None
+
+
+class DiagramQueueDummyError:
+    """Return an empty-error review result for diagram items queued from UI."""
+
+    @staticmethod
+    def is_diagram_item(class_path: Optional[str]) -> bool:
+        if DIAGRAM_FLOW_AVAILABLE:
+            return is_diagram_item(class_path)
+        if not class_path:
+            return False
+        normalized = str(class_path).strip().lower()
+        return normalized.endswith(".amd") or ".specification.amd" in normalized
+
+    @staticmethod
+    def build_result(config: Dict[str, Any], mode: str) -> Dict[str, Any]:
+        class_path = str(config.get("class_path", ""))
+        diagram_name = Path(class_path).name if class_path else "UnknownDiagram"
+        empty_error_statistics = {
+            "rule_errors": 0,
+            "ai_errors": 0,
+            "total_errors": 0,
+            "rule_error_details": [],
+            "ai_error_details": [],
+            "rule_severity_stats": {
+                "high_severity": 0,
+                "medium_severity": 0,
+                "low_severity": 0,
+                "has_high_severity": False
+            }
+        }
+
+        return {
+            "status": "success",
+            "mode": mode,
+            "execution_time": 0.0,
+            "basic_issues": [],
+            "ai_review": "Diagram item detected in queue. Dummy review applied (empty error set).",
+            "final_report": None,
+            "current_report_path": None,
+            "ascet_extraction_info": {
+                "class_path": class_path,
+                "diagram_name": diagram_name,
+                "dummy_review": True
+            },
+            "data_collection_status": "diagram_dummy",
+            "data_extraction_time": 0.0,
+            "json_data_size": 0,
+            "error_statistics": empty_error_statistics,
+            "error_statistics_json": {
+                "error_statistics": empty_error_statistics,
+                "mode": mode,
+                "class_path": class_path,
+                "note": "Diagram queue item - dummy empty error result"
+            },
+            "summary": f"Diagram queue item skipped from ASCET class review: {diagram_name}",
+            "token_statistics": "Diagram dummy review: no API calls"
+        }
 
 # ==================== ASCET数据提取Tool函数 ====================
 
@@ -1853,6 +1918,15 @@ def run_integrated_code_review(config: Dict[str, Any], mode: str = "smart_direct
     Returns:
         Dict[str, Any]: 执行结果字典
     """
+    # Diagram queue items use a dedicated AI flow (separate from class review pipeline).
+    if DiagramQueueDummyError.is_diagram_item(config.get("class_path")):
+        if DIAGRAM_FLOW_AVAILABLE:
+            print("检测到diagram队列项，进入diagram专用AI评审流")
+            return DiagramAIReviewFlow(config=config, mode=mode).run()
+
+        print("检测到diagram队列项，但diagram流不可用，返回dummy空错误结果")
+        return DiagramQueueDummyError.build_result(config, mode)
+
     if mode not in ["direct", "smart_direct"]:
         raise ValueError("模式必须是 'direct' 或 'smart_direct'")
     
