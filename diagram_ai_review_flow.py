@@ -23,6 +23,18 @@ from response_handler import create_response_handler
 from ai_error_arbitrator import extract_ai_errors
 
 
+from urllib.parse import urlparse
+
+def get_proxies_for_url(url: str):
+    host = urlparse(url).hostname or ""
+    
+    # Internal network (10.x.x.x)
+    if host.startswith("10."):
+        return {"http": None, "https": None}
+    
+    # Otherwise, use system proxy (if any)
+    return None
+
 def is_diagram_item(class_path: Optional[str]) -> bool:
     """Check whether queue item is a diagram path."""
     if not class_path:
@@ -217,7 +229,16 @@ Return the result in the following JSON format (only 1 JSON block):
         # Diagram flow needs a deterministic single response payload.
         payload["stream"] = False
 
-        response = requests.post(self.api_url, headers=headers, data=json.dumps(payload), timeout=180)
+       # response = requests.post(self.api_url, headers=headers, data=json.dumps(payload), timeout=180)
+        proxies = get_proxies_for_url(self.api_url)
+
+        response = requests.post(
+            self.api_url,
+            headers=headers,
+            data=json.dumps(payload),
+            timeout=180,
+            proxies=proxies
+        )
         response.raise_for_status()
         response_data = response.json()
 
@@ -278,6 +299,7 @@ Return the result in the following JSON format (only 1 JSON block):
 
         except Exception as e:
             execution_time = (datetime.now() - start_time).total_seconds()
+            print(f"[DiagramAIReviewFlow] Diagram review flow failed: {str(e)}")
             return {
                 "status": "error",
                 "mode": self.mode,
