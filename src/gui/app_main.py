@@ -82,7 +82,7 @@ except ImportError as e:
 # Import RAG core modules
 # RAG 模块
 try:
-    from RagCoreV1 import CodeAnalysisKnowledgeBuilder
+    from src.ai_core.rag_core import CodeAnalysisKnowledgeBuilder
     RAG_AVAILABLE = True
     print("RAG knowledge base module loaded successfully")
 except ImportError as e:

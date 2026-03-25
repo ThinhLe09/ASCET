@@ -18,9 +18,9 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, Optional, List, Tuple
 
-from model_config import create_model_config
-from response_handler import create_response_handler
-from ai_error_arbitrator import extract_ai_errors
+from src.ai_core.model_config import create_model_config
+from src.ai_core.response_handler import create_response_handler
+from src.ai_core.ai_error_arbitrator import extract_ai_errors
 
 
 from urllib.parse import urlparse

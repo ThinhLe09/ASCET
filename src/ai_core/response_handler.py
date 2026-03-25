@@ -7,7 +7,7 @@ AI模型响应处理模块
 
 import re
 from typing import Dict, Optional
-from model_config import ModelConfig
+from src.ai_core.model_config import ModelConfig
 from typing import Dict, Any, Optional, List
 
 class ResponseHandler:
@@ -371,7 +371,7 @@ def process_model_response(response_data: Dict, model_type: str = "gptoss") -> D
 
 if __name__ == "__main__":
     # 模块测试代码
-    from model_config import ModelConfig, list_supported_models
+    from src.ai_core.model_config import ModelConfig, list_supported_models
     
     print("响应处理器测试:")
     

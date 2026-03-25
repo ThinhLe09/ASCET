@@ -64,7 +64,7 @@ import traceback
 import shutil
 
 
-from ai_error_arbitrator import (
+from src.ai_core.ai_error_arbitrator import (
     AIErrorArbitrator, 
     AIErrorExtractor, 
     create_arbitrator,
@@ -73,7 +73,7 @@ from ai_error_arbitrator import (
 
 # ==================== 导入模型配置管理 ====================
 try:
-    from model_config import ModelConfig, create_model_config
+    from src.ai_core.model_config import ModelConfig, create_model_config
     print("Model Configuration module imported successfully")
 except ImportError as e:
     print(f"Model Configuration import failed: {e}")
@@ -82,7 +82,7 @@ except ImportError as e:
 
 # ==================== 导入统一Token统计系统 ====================
 try:
-    from token_tracker import global_token_tracker, track_response, get_token_summary, reset_token_tracker
+    from src.ai_core.token_tracker import global_token_tracker, track_response, get_token_summary, reset_token_tracker
     print("Token Counter ok")
 except ImportError as e:
     print(f"Token Counter error: {e}")
@@ -106,7 +106,7 @@ except ImportError as e:
     print("Please ensure the ASCET data extraction module is available")
 
 try:
-    from diagram_ai_review_flow import DiagramAIReviewFlow, is_diagram_item
+    from src.ai_core.diagram_ai_review_flow import DiagramAIReviewFlow, is_diagram_item
     DIAGRAM_FLOW_AVAILABLE = True
 except ImportError as e:
     DIAGRAM_FLOW_AVAILABLE = False
@@ -1249,7 +1249,7 @@ def perform_second_ai_analysis_for_arbitration(config: Dict[str, Any], primary_m
     """执行第二次AI分析用于仲裁 - 正确切换模型"""
     try:
         # ✅ 从仲裁配对中获取备用模型
-        from ai_error_arbitrator import ModelConfigFactory
+        from src.ai_core.ai_error_arbitrator import ModelConfigFactory
         
         primary_model_name = primary_model_config.get_model_name()
         fallback_model_name = ModelConfigFactory.ARBITRATION_PAIRS.get(primary_model_name, "gpt5-mini")
@@ -1321,7 +1321,7 @@ def perform_second_ai_analysis_for_arbitration(config: Dict[str, Any], primary_m
 def initialize_arbitration_system(config: Dict[str, Any], primary_model_config: ModelConfig):
     """初始化仲裁系统，预先创建模型配置"""
     try:
-        from ai_error_arbitrator import ModelConfigFactory, create_arbitrator
+        from src.ai_core.ai_error_arbitrator import ModelConfigFactory, create_arbitrator
         
         primary_model_name = primary_model_config.get_model_name()
         fallback_model_name = ModelConfigFactory.ARBITRATION_PAIRS.get(primary_model_name)

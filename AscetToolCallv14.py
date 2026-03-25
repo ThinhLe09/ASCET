@@ -289,11 +289,11 @@ import traceback
 
 
 # ==================== 模型适配器============================
-from model_config import ModelConfig, create_model_config, list_supported_models, REASONING_SUPPORTED_MODELS
-from response_handler import ResponseHandler, create_response_handler, process_model_response
+from src.ai_core.model_config import ModelConfig, create_model_config, list_supported_models, REASONING_SUPPORTED_MODELS
+from src.ai_core.response_handler import ResponseHandler, create_response_handler, process_model_response
 # ==================== 统一Token统计系统 ====================
 try:
-    from token_tracker import global_token_tracker, track_response, get_token_summary, reset_token_tracker
+    from src.ai_core.token_tracker import global_token_tracker, track_response, get_token_summary, reset_token_tracker
     print("Token Counter ok")
 except ImportError as e:
     print(f"Token Counter error: {e}")
