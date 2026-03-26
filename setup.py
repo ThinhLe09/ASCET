@@ -22,22 +22,23 @@ class PackagingConfig:
         self.config_file = config_file
         self.default_config = {
             "spec_file": "buildv1.spec",
-            "main_file": "GUImainv93.py",
+            "main_file": "main.py", # Đổi từ GUImainv93.py thành main.py ở thư mục gốc
             "exe_name": "AscetUnitCopilotV3_3",
             "output_dir": "AscetUnitCopilotV3_3",
             "required_modules": [
-                "RagCoreV1.py",
-                "Structurefliter.py", 
-                "token_tracker.py",
-                "AscetToolCallv14.py",
-                "AscetdsdTool.py",
-                "model_config.py",
-                "response_handler.py",
-                "dSD_GenToolV10.py",
-                "AscetAgentv8GPTNVV3.py",
-                "ai_error_arbitrator.py",
-                "util/detect_current_ascet.py",
-                "util/Spinner.py"
+                # Cập nhật toàn bộ đường dẫn trỏ vào thư mục src/
+                "src/ai_core/rag_core.py",
+                "src/ascet/structure_filter.py", 
+                "src/ai_core/token_tracker.py",
+                "src/agents/ascet_tool.py",
+                "src/tools/AscetdsdTool.py", # (Nếu file này bạn đã đổi tên thì nhớ khớp lại, ví dụ src/tools/ascet_dsd_tool.py)
+                "src/ai_core/model_config.py",
+                "src/ai_core/response_handler.py",
+                "src/tools/dsd_gen_tool.py",
+                "src/agents/ascet_agent.py",
+                "src/ai_core/ai_error_arbitrator.py",
+                "src/utils/detect_ascet.py",
+                "src/gui/spinner.py"
             ],
             "resource_directories": [
                 {"source": "svg", "target": "svg"},
