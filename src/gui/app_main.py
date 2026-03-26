@@ -50,12 +50,12 @@ except ImportError:
     MARKDOWN_AVAILABLE = False
 
 # Ascet Folder Scanner 
-from Structurefliter import ASCETStructureScannerAPI
+from src.ascet.structure_filter import ASCETStructureScannerAPI
 SCANNER_AVAILABLE = True
 
 # Diagram Viewer
 try:
-    from diagram_viewer import DiagramViewerDialog
+    from src.diagrams.diagram_viewer import DiagramViewerDialog
     import xml.etree.ElementTree as ET
     DIAGRAM_VIEWER_AVAILABLE = True
 except ImportError:
@@ -63,7 +63,7 @@ except ImportError:
 
 try:
 # Ascet 版本选择模块
-    from util.detect_current_ascet import detect_current_ascet
+    from src.utils.detect_ascet import detect_current_ascet
     ASCET_DETECTOR_AVAILABLE = True
     print("ASCET版本自动检测模块加载成功")
 except ImportError as e:

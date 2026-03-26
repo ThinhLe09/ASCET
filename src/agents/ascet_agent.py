@@ -99,14 +99,14 @@ except ImportError as e:
     print(f"RAG modules import failed: {e}")
 
 try:
-    from dSD_GenToolV10 import IntegratedAscetScanner
+    from src.tools.dsd_gen_tool import IntegratedAscetScanner
     print("ASCET data extraction module imported successfully")
 except ImportError as e:
     print(f"ASCET data extraction module import failed: {e}")
     print("Please ensure the ASCET data extraction module is available")
 
 try:
-    from src.ai_core.diagram_ai_review_flow import DiagramAIReviewFlow, is_diagram_item
+    from src.diagrams.diagram_ai_review import DiagramAIReviewFlow, is_diagram_item
     DIAGRAM_FLOW_AVAILABLE = True
 except ImportError as e:
     DIAGRAM_FLOW_AVAILABLE = False
