@@ -39,7 +39,7 @@ from PySide6.QtSvg import QSvgRenderer
 
 
 try:
-    from util.Spinner import MultiStyleSpinnerWidget, create_spinner
+    from src.gui.spinner import MultiStyleSpinnerWidget, create_spinner
     SPINNER_AVAILABLE = True
 except ImportError:
     SPINNER_AVAILABLE = False

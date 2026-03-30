@@ -183,38 +183,44 @@ class DiagramAIReviewFlow:
             return base_url
         return f"{base_url}/chat/completions"
 
+    from typing import List, Dict
+
     def _build_prompt(self, netlist_text: str) -> List[Dict[str, str]]:
         system_prompt = (
-            "You are an automotive ASCET diagram reviewer. "
-            "Review netlist-style connection text and detect only real mapping/semantic naming mistakes. "
-            "If names are very similar (underscore/case/abbreviation variants), treat them as correct and do NOT report as defect."
+            "You are an expert Automotive Software and ASCET Diagram Reviewer. "
+            "Your task is to review netlist-style connections and detect signal mapping or semantic naming mistakes. "
+            "You must strictly distinguish between harmless naming variations and actual logic/wiring defects."
         )
-
-        user_prompt = f"""
-Please review the following diagram netlist:
+        user_prompt = f"""Please perform a rigorous, line-by-line review of the following ASCET diagram netlist:
 
 {netlist_text}
 
-Important requirements:
-1. Names that are very similar (e.g., different underscores, case, or abbreviations) should be considered correct.
+### 🔍 Review Guidelines:
 
-2. Only report errors when there is a clear semantic/signal mismatch.
-3. If there are no real errors, return No Defect.
+1. **Acceptable Variations (Do NOT report as defect):**
+   - Ignoring standard module prefixes (e.g., `CM_HAZ_ABSActive` mapped to `ABSActive` is CORRECT).
+   - Case and underscore variations (e.g., `a_Veh_x_Target` mapped to `a_veh_x_Target` is CORRECT).
+   - Expected signal routing conventions.
 
-Return the result in the following JSON format (only 1 JSON block):
+2. **CRITICAL DEFECTS TO CATCH (Must report as Defect):**
+   - **Positional/Spatial Swaps:** Mixing up directional identifiers. Connecting a Right-side signal to a Left-side port is a severe error. (e.g., `FR` connected to `FL`, or `RR` to `RL`).
+   - **Functional/Logic Swaps:** Confusing the nature of the signal. Wiring a "Request" signal to a "Switch" port, or vice versa, is a severe error. (e.g., `Brake_Request` mapped to `BrakeLightSwitch`, or `Brake_Light_switch` mapped to `Brake_request`).
+   - **Crossed Wires:** Pay close attention to pairs of signals that appear to have their destination ports swapped with one another.
+
+### 📝 Output Format:
+Return your final analysis in the following JSON format ONLY (Ensure the output is exactly 1 valid JSON block).
+
 ```json
 {{
-  "错误类型": ["参数映射名称一致性错误"],
-  "状态": ["No Defect", "Defect"],
-  "理由": "If Defect, list the specific wires that are incorrect and why; if No Defect, leave empty or write No obvious mismatch"
-}}
-```
-""".strip()
+  "错误类型": ["List the categories of errors here, e.g., Positional Mismatch, Functional Swap. Leave empty if no defect"],
+  "状态": "Defect", // Strictly choose either "Defect" or "No Defect"
+  "理由": "If Defect, explicitly list EVERY incorrect Wire number and precisely explain why the source and destination do not semantically match. If No Defect, write 'No obvious mismatch'."
+}}""".strip()
 
         return [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ]
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
 
     def _call_ai(self, messages: List[Dict[str, str]]) -> str:
         if not self.api_key:
